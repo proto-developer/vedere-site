@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="ATOL Protected">
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#c9a84c" stroke-width="4"/>
+  <circle cx="60" cy="60" r="46" fill="#0d1f17"/>
+  <text x="60" y="55" text-anchor="middle" font-family="Jost, Arial, sans-serif" font-size="22" letter-spacing="2" fill="#c9a84c" font-weight="600">ATOL</text>
+  <text x="60" y="74" text-anchor="middle" font-family="Jost, Arial, sans-serif" font-size="10" letter-spacing="1.5" fill="#f2ede3">PROTECTED</text>
+</svg>
