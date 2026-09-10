@@ -1,0 +1,75 @@
+<!-- ===== Vedere page-transition loader & image fade (v45) ===== -->
+<style id="vx-loader-css">
+  /* shimmer placeholder behind every lazy-loaded image */
+  .ht-img,.band,.feat-img,figure{position:relative}
+  .vx-ph{background:linear-gradient(110deg,#ece7db 8%,#f6f3ea 24%,#ece7db 40%);background-size:200% 100%;animation:vxsh 1.3s linear infinite}
+  @keyframes vxsh{to{background-position:-200% 0}}
+  img[loading="lazy"]{opacity:0;transition:opacity .45s ease}
+  img[loading="lazy"].vx-in{opacity:1}
+  .no-js img[loading="lazy"]{opacity:1}
+  /* top progress bar */
+  #vx-bar{position:fixed;top:0;left:0;height:2px;width:0;background:var(--gold,#B8965A);z-index:9999;opacity:0;transition:width .4s ease,opacity .3s ease}
+  #vx-bar.vx-run{opacity:1;width:70%;transition:width 6s cubic-bezier(.1,.7,.1,1),opacity .2s ease}
+  /* transition veil with monogram */
+  #vx-veil{position:fixed;inset:0;background:var(--paper,#FBFAF7);z-index:9998;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .22s ease}
+  #vx-veil.vx-on{opacity:1;pointer-events:auto}
+  #vx-veil span{font-family:var(--serif,'Cormorant Garamond',serif);font-size:34px;letter-spacing:.35em;color:var(--gold,#B8965A);animation:vxp 1.1s ease-in-out infinite alternate}
+  @keyframes vxp{from{opacity:.35}to{opacity:1}}
+  @media (prefers-reduced-motion:reduce){.vx-ph{animation:none}#vx-veil span{animation:none}img[loading="lazy"]{transition:none}}
+</style>
+<div id="vx-bar" aria-hidden="true"></div>
+<div id="vx-veil" aria-hidden="true"><span>VEDERE</span></div>
+<script id="vx-loader-js">
+(function(){
+  'use strict';
+  var bar=document.getElementById('vx-bar'),veil=document.getElementById('vx-veil');
+  /* 1. image fade-in over shimmer placeholders */
+  var imgs=document.querySelectorAll('img[loading="lazy"]');
+  imgs.forEach(function(im){
+    im.decoding='async';
+    var box=im.parentElement;if(box&&!box.classList.contains('vx-ph'))box.classList.add('vx-ph');
+    var done=function(){im.classList.add('vx-in');if(box)box.classList.remove('vx-ph');};
+    if(im.complete&&im.naturalWidth>0){done();}
+    else{im.addEventListener('load',done,{once:true});im.addEventListener('error',done,{once:true});}
+  });
+  /* 2. hover / touch prefetch of internal pages */
+  var seen={};
+  function prefetch(href){
+    if(seen[href])return;seen[href]=1;
+    var l=document.createElement('link');l.rel='prefetch';l.as='document';l.href=href;
+    document.head.appendChild(l);
+  }
+  function internal(a){
+    if(!a||!a.href)return null;
+    if(a.target==='_blank'||a.hasAttribute('download'))return null;
+    if(a.origin!==location.origin)return null;
+    var h=a.getAttribute('href')||'';
+    if(h.charAt(0)==='#'||h.indexOf('mailto:')===0||h.indexOf('tel:')===0)return null;
+    return a;
+  }
+  document.addEventListener('mouseover',function(e){
+    var a=internal(e.target.closest&&e.target.closest('a'));
+    if(a)prefetch(a.href);
+  },{passive:true});
+  document.addEventListener('touchstart',function(e){
+    var a=internal(e.target.closest&&e.target.closest('a'));
+    if(a)prefetch(a.href);
+  },{passive:true});
+  /* 3. transition veil + progress bar on navigation */
+  document.addEventListener('click',function(e){
+    if(e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+    var a=internal(e.target.closest&&e.target.closest('a'));
+    if(!a)return;
+    if(a.pathname===location.pathname&&a.hash)return; /* same-page anchor */
+    veil.classList.add('vx-on');
+    bar.classList.add('vx-run');
+  });
+  /* hide veil when a page is shown — covers back/forward bfcache restores */
+  window.addEventListener('pageshow',function(){
+    veil.classList.remove('vx-on');
+    bar.classList.remove('vx-run');bar.style.width='0';
+  });
+  window.addEventListener('beforeunload',function(){ /* keep veil up while browser swaps pages */ });
+})();
+</script>
+<!-- ===== /Vedere loader ===== -->
