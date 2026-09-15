@@ -769,6 +769,21 @@ a{color:inherit;text-decoration:none}
 @media(max-width:1280px){.hdr-cta .hdr-srch{width:40px;padding:0}.hdr-cta .hdr-srch .srch-txt{display:none}.hdr-cta .hdr-wa{padding:0 14px}}
 @media(min-width:961px) and (max-width:1280px){.hdr-cta .hdr-btn{padding:0 18px}.hdr-cta{gap:12px}}
 @media(max-width:960px){.hdr-cta .hdr-wa{width:40px;padding:0}}
+
+/* ===== hotel gallery + figure alignment (site-wide parity patch) ===== */
+.ht-imgs{display:flex}
+.htg{position:relative;flex:1;height:auto;min-height:320px;overflow:hidden;background:var(--ink);outline:none}
+.htg-track{display:flex;height:100%;transition:transform .45s ease}
+@media(prefers-reduced-motion:reduce){.htg-track{transition:none}}
+.htg-slide{flex:0 0 100%;min-width:0}
+.htg-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.htg-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:40px;height:40px;border-radius:50%;border:1px solid rgba(251,250,247,.55);background:rgba(13,31,23,.55);color:#FBFAF7;font-size:19px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .25s}
+.htg-btn:hover,.htg-btn:focus-visible{background:rgba(13,31,23,.85)}
+.htg-prev{left:12px}.htg-next{right:12px}
+.htg-ind{position:absolute;right:12px;bottom:10px;z-index:3;margin:0;font-size:11px;letter-spacing:.08em;color:#FBFAF7;background:rgba(13,31,23,.55);padding:3px 9px;border-radius:10px}
+.ht:not(:has(.ht-imgs)){grid-template-columns:1fr}
+@media(max-width:860px){.htg{min-height:0;aspect-ratio:3/2}}
+.split:has(.figure){align-items:center}
 </style>
 <script>(function(){var h=location.hostname;if(h&&!/(^|\.)vederetravel\.com$/.test(h)){var m=document.createElement("meta");m.name="robots";m.content="noindex,nofollow";document.head.appendChild(m);}})();</script>
 </head>
@@ -957,6 +972,10 @@ a{color:inherit;text-decoration:none}
         <div class="glance-row"><span class="glance-k">Transfers</span><span class="glance-v">Local transport on entry tiers; private transfers above</span></div>
       </div>
     </div>
+    <figure class="figure" style="margin-top:44px">
+      <img src="assets/img/sports/f1/malaysian-grand-prix-2026/f1-malaysian-package-grandstand-experience.jpg" alt="The Formula 1 field streaming through the opening corners at Sepang International Circuit" width="900" height="600" loading="lazy">
+      <figcaption>The Turn 1&ndash;2 complex at Sepang &mdash; the view from the K1 Grandstand.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -971,7 +990,70 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <section class="tinted" id="hotels">
-  <div class="wrap split"><figure class="figure"><img src="assets/img/sports/f1/malaysian-grand-prix-2026/f1-malaysian-section-hotels.jpg" alt="A five-star hotel in Sepang" width="1000" height="667" loading="lazy"><figcaption>Where the weekend is actually spent.</figcaption></figure><div><p class="eyebrow">Hotels</p><h2 class="h2">Where to stay<br><em>in Sepang.</em></h2><div class="rule"></div><div class="body"><p><strong>The RuMa Hotel</strong> &mdash; Entry 5*. Design-led KLCC boutique with Petronas Towers views.</p><p><strong>Mandarin Oriental Kuala Lumpur</strong> &mdash; Luxury 5*. Beside the Petronas Towers and KLCC park &mdash; the classic KL address.</p><p><strong>Four Seasons Hotel Kuala Lumpur</strong> &mdash; Ultra luxury. Tallest luxury address in the city, direct KLCC connection.</p><p><strong>Banyan Tree Kuala Lumpur</strong> &mdash; Luxury 5*. Vertical urban sanctuary, rooftop dining at altitude.</p></div><div class="cta-row"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Race</a></div></div></div>
+  <div class="wrap">
+    <p class="eyebrow">Hotels</p>
+    <h2 class="h2">Where to stay<br><em>in Sepang.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">There is nothing worth staying in at Sepang itself. All four sit in KLCC, forty-five to sixty minutes from the circuit by private car and inside walking distance of the city&rsquo;s best dining.</p>
+    <div style="margin-top:44px"><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1758805768368-0e75b108b9f5?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Modern hotel facade with sleek stacked balconies, Kuala Lumpur" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1552858725-693709cc17c7?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Design-led bedside lighting in a contemporary hotel suite" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">The RuMa Hotel</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Kuala Lumpur &middot; KLCC / Jalan Kia Peng</p><div class="rule"></div>
+<p class="ht-pos">A quiet street in KLCC, five minutes&rsquo; walk from the Petronas Towers and KLCC park. Around 45&ndash;60 minutes to Sepang by car, or KLIA Transit from KL Sentral.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Urban Room / Studio Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Rooftop infinity pool, UR Spa, ATAS Modern Malaysian restaurant, fitness studio</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>A design-led KLCC boutique with Petronas Towers views and genuinely Malaysian interiors rather than international-chain neutrality. It reads far above its price tier.</p>
+<p class="ht-why"><strong>Best suited to</strong>Couples and design-minded travellers who want KLCC without a thousand-room lobby.</p>
+<p class="ht-pk">Grandstand Experience</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1777498269093-ca9514d210af?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Tall contemporary glass hotel tower exterior, Kuala Lumpur" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1730920608599-f47db70f9aab?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="City skyline seen from the edge of a rooftop hotel pool" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Mandarin Oriental Kuala Lumpur</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Kuala Lumpur &middot; Beside the Petronas Towers</p><div class="rule"></div>
+<p class="ht-pos">Directly beside the Petronas Towers with KLCC park at the door, and connected to Suria KLCC. Around an hour to Sepang with a private car on race day.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe Park View / Club Twin Towers View</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Infinity pool over KLCC park, spa and hammam, Club Lounge, several restaurants</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The classic Kuala Lumpur address, and the only one where the tower view and the park view are the same view. Service holds up across a long, humid weekend in a way the newer towers do not.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests who want the landmark outlook and a full five-star operation behind it.</p>
+<p class="ht-pk">Premium Sepang &middot; Hospitality Experience</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1763708204354-365647bcf21e?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Contemporary white luxury hotel exterior, Kuala Lumpur" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1777169794972-12095816073b?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Luxury hotel room with a high-floor city view" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Four Seasons Hotel Kuala Lumpur</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Kuala Lumpur &middot; KLCC, direct mall connection</p><div class="rule"></div>
+<p class="ht-pos">Adjacent to the Petronas Towers with a direct link into Suria KLCC, so you never step outside in the heat unless you choose to.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Premier City View King / Executive Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Two pools including adults-only, Four Seasons spa, Curate and Yun House, 24-hour fitness</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The tallest luxury address in the city and the room product against which everything else in KL is measured. The direct mall connection is not a gimmick in Malaysian humidity &mdash; it changes how the non-race days feel.</p>
+<p class="ht-why"><strong>Best suited to</strong>Clients on team hospitality and anyone who wants the highest specification in the city.</p>
+<p class="ht-pk">Luxury Race Weekend</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1768876251553-f9f14952b440?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="White modern hotel tower under a clear blue sky, Kuala Lumpur" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1774281336601-300e9192e6a6?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Rooftop pool at sunset overlooking a city skyline" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Banyan Tree Kuala Lumpur</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Kuala Lumpur &middot; Jalan Conlay, KLCC</p><div class="rule"></div>
+<p class="ht-pos">A few minutes from the Petronas Towers on the quieter Jalan Conlay side of KLCC, with the whole hotel stacked into the upper floors of the tower. Around 45&ndash;60 minutes to Sepang by car.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Oasis Retreat / Horizon Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Banyan Tree Spa, high-floor infinity pool, Vertigo rooftop bar and grill, Horizon Grill</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>A vertical urban sanctuary rather than a city hotel &mdash; the rooms begin where most buildings end, and the spa is the best in Kuala Lumpur. The rooftop dining at altitude is the reason guests book it and the reason they come back.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests who want height, calm and a spa to come back to after a long, humid day at the circuit.</p>
+<p class="ht-pk">Hospitality Experience</p>
+</div></article></div>
+    <div class="cta-row" style="margin-top:34px"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Race</a></div>
+  </div>
 </section>
 
 <section id="destination">
@@ -1237,5 +1319,20 @@ function megaHotels(destId){
 <!-- ===== /Vedere loader ===== -->
 <script src="assets/js/vx-search.js" defer></script>
 <script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a");if(!a)return;var h=a.getAttribute("href")||"";var m=null;if(h.indexOf("tel:")===0)m="phone";else if(h.indexOf("wa.me")>-1)m="whatsapp";else if(h.indexOf("mailto:")===0)m="email";if(m&&window.dataLayer)window.dataLayer.push({event:"contact_click",method:m,page:location.pathname});});</script>
+<script>
+/* hotel gallery behaviour */
+document.querySelectorAll('.htg').forEach(function(g){
+  var t=g.querySelector('.htg-track');if(!t)return;var n=t.children.length,i=0;if(n<2)return;
+  var ind=g.querySelector('.htg-ind');
+  function go(k){i=(k+n)%n;t.style.transform='translateX(-'+(i*100)+'%)';if(ind)ind.textContent=(i+1)+' / '+n;}
+  var p=g.querySelector('.htg-prev'),x=g.querySelector('.htg-next');
+  if(p)p.addEventListener('click',function(e){e.preventDefault();go(i-1)});
+  if(x)x.addEventListener('click',function(e){e.preventDefault();go(i+1)});
+  g.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){e.preventDefault();go(i-1)}else if(e.key==='ArrowRight'){e.preventDefault();go(i+1)}});
+  var x0=null;
+  g.addEventListener('pointerdown',function(e){x0=e.clientX});
+  g.addEventListener('pointerup',function(e){if(x0===null)return;var dx=e.clientX-x0;if(Math.abs(dx)>40){if(dx<0){go(i+1)}else{go(i-1)}}x0=null});
+});
+</script>
 </body>
 </html>

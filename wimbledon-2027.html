@@ -769,6 +769,21 @@ a{color:inherit;text-decoration:none}
 @media(max-width:1280px){.hdr-cta .hdr-srch{width:40px;padding:0}.hdr-cta .hdr-srch .srch-txt{display:none}.hdr-cta .hdr-wa{padding:0 14px}}
 @media(min-width:961px) and (max-width:1280px){.hdr-cta .hdr-btn{padding:0 18px}.hdr-cta{gap:12px}}
 @media(max-width:960px){.hdr-cta .hdr-wa{width:40px;padding:0}}
+
+/* ===== hotel gallery + figure alignment (site-wide parity patch) ===== */
+.ht-imgs{display:flex}
+.htg{position:relative;flex:1;height:auto;min-height:320px;overflow:hidden;background:var(--ink);outline:none}
+.htg-track{display:flex;height:100%;transition:transform .45s ease}
+@media(prefers-reduced-motion:reduce){.htg-track{transition:none}}
+.htg-slide{flex:0 0 100%;min-width:0}
+.htg-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.htg-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:40px;height:40px;border-radius:50%;border:1px solid rgba(251,250,247,.55);background:rgba(13,31,23,.55);color:#FBFAF7;font-size:19px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .25s}
+.htg-btn:hover,.htg-btn:focus-visible{background:rgba(13,31,23,.85)}
+.htg-prev{left:12px}.htg-next{right:12px}
+.htg-ind{position:absolute;right:12px;bottom:10px;z-index:3;margin:0;font-size:11px;letter-spacing:.08em;color:#FBFAF7;background:rgba(13,31,23,.55);padding:3px 9px;border-radius:10px}
+.ht:not(:has(.ht-imgs)){grid-template-columns:1fr}
+@media(max-width:860px){.htg{min-height:0;aspect-ratio:3/2}}
+.split:has(.figure){align-items:center}
 </style>
 <script>(function(){var h=location.hostname;if(h&&!/(^|\.)vederetravel\.com$/.test(h)){var m=document.createElement("meta");m.name="robots";m.content="noindex,nofollow";document.head.appendChild(m);}})();</script>
 </head>
@@ -974,6 +989,10 @@ a{color:inherit;text-decoration:none}
     <p class="eyebrow">At A Glance</p>
     <h2 class="h2">The essentials.</h2><div class="rule"></div>
     <div class="panel"><div class="pn-row"><span class="pn-k">Dates</span><span class="pn-v">28 June &ndash; 11 July 2027</span></div><div class="pn-row"><span class="pn-k">Venue</span><span class="pn-v">All England Lawn Tennis Club, Church Road, London SW19</span></div><div class="pn-row"><span class="pn-k">Access</span><span class="pn-v">Debenture seats &amp; official hospitality &mdash; the only Wimbledon tickets legally resalable in the UK</span></div><div class="pn-row"><span class="pn-k">Finals</span><span class="pn-v">Ladies&rsquo; Final Sat 10 July &middot; Gentlemen&rsquo;s Final Sun 11 July</span></div><div class="pn-row"><span class="pn-k">Getting there</span><span class="pn-v">Southfields or Wimbledon stations; private transfers from central London 40&ndash;50 min</span></div><div class="pn-row"><span class="pn-k">Climate</span><span class="pn-v">16&ndash;24&deg;C and famously changeable</span></div></div>
+    <figure class="figure" style="margin-top:44px">
+      <img src="assets/img/sports/tennis/wimbledon-2027/wimbledon-band-01.jpg" alt="Aerial view of the Wimbledon grounds with No.1 Court and the hill" width="1200" height="800" loading="lazy">
+      <figcaption>The All England Club from the air &mdash; Centre Court, No.1 Court and the hill between them.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -988,7 +1007,56 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <section class="tinted" id="hotels">
-  <div class="wrap split"><figure class="figure"><img src="assets/img/sports/tennis/wimbledon-2027/wimbledon-section-cannizaro.jpg" alt="The lawn at Cannizaro House, Wimbledon Village" width="1000" height="667" loading="lazy"><figcaption>Cannizaro House &mdash; and a walk down the hill to the Club.</figcaption></figure><div><p class="eyebrow">Hotels</p><h2 class="h2">Where to stay<br><em>for Wimbledon.</em></h2><div class="rule"></div><div class="body"><p><strong>Cannizaro House, Wimbledon Village</strong> &mdash; the only luxury address in the village itself. You walk down the hill to the Club, which during Championships fortnight is worth a great deal.</p><p><strong>The Connaught</strong> and <strong>Claridge&rsquo;s</strong> &mdash; Mayfair classics, and the right answer if you want the full London summer-season feel with the tennis as one part of it rather than the whole.</p><p><strong>The Peninsula London</strong> is the modern flagship with quick road access to SW19, and <strong>Hotel 41</strong> or <strong>The Goring</strong> are the boutique British alternatives &mdash; smaller, quieter, and closer to the Belgravia end of things.</p></div><div class="cta-row"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Tennis</a></div></div></div>
+  <div class="wrap">
+    <p class="eyebrow">Hotels</p>
+    <h2 class="h2">Where to stay<br><em>for Wimbledon.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">Three addresses we book most often across Championships fortnight &mdash; one in the village, two in town. Claridge&rsquo;s, The Goring and Hotel 41 are the boutique alternatives we also hold, and we are glad to compare them side by side.</p>
+    <div style="margin-top:44px"><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="assets/img/sports/tennis/wimbledon-2027/wimbledon-section-cannizaro.jpg" alt="The lawn at Cannizaro House, Wimbledon Village" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Classic wooden bed frame with crisp white linens in an English country-house bedroom" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Cannizaro House</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Wimbledon Village &middot; Cannizaro Park</p><div class="rule"></div>
+<p class="ht-pos">A Georgian house on the edge of Cannizaro Park, at the top of the village. Ten to fifteen minutes on foot down Church Road to the All England Club &mdash; no traffic, no transfer, no queue for a car at the end of the day.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe Double / Park View Room</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Thirty-five acres of parkland, terrace and garden dining, drawing rooms, private dining</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The only luxury address in the village itself, which during Championships fortnight is worth a great deal. Walking to the tennis in the morning and back up the hill in the evening changes the shape of the whole day.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests who want the tennis on their doorstep and a country house to return to.</p>
+<p class="ht-pk">No.1 Court Debenture Day &middot; Centre Court Debenture Day</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1786684937882-e94735ffcfa5?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Classic grand hotel facade with signage in central London" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1744776411221-702f2848b0b2?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Upscale hotel restaurant tables set for fine dining" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">The Connaught</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Mayfair &middot; Carlos Place</p><div class="rule"></div>
+<p class="ht-pos">In the quietest corner of Mayfair, a short walk from Berkeley Square and Bond Street. Forty to fifty minutes by private car to SW19 outside the morning peak.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Superior King / Mayfair Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Michelin-starred dining, one of London&rsquo;s best cocktail bars, spa and indoor pool, fitness studio</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>A Mayfair classic and the right answer if you want the full London summer-season feel, with the tennis as one part of the week rather than the whole of it. Service here is as good as anything in the city.</p>
+<p class="ht-why"><strong>Best suited to</strong>Couples and corporate guests building a London week around the Championships.</p>
+<p class="ht-pk">Finals Weekend</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1721539151779-e6dc7f9de376?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Grand multi-storey hotel facade with ornate balconies in London" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1630835425197-50feeba99ecd?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Minimalist hotel spa treatment room" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">The Peninsula London</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Belgravia &middot; Hyde Park Corner</p><div class="rule"></div>
+<p class="ht-pos">On Hyde Park Corner, looking across to Wellington Arch and the park. The fastest road run to SW19 of the three &mdash; around forty minutes, and the house cars know the route.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe Room / Park View Room</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Rooftop restaurant and bar, full spa and indoor pool, house car fleet, private dining</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The modern flagship of London hotels and the one with the quickest access to the Club. Rooms are the largest in the city and the rooftop is the best possible place to finish a long day in the sun.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests who want the newest address in London and a car that waits.</p>
+<p class="ht-pk">Hospitality Experience &middot; Finals Weekend</p>
+</div></article></div>
+    <div class="cta-row" style="margin-top:34px"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Tennis</a></div>
+  </div>
 </section>
 
 <section id="destination">
@@ -1240,5 +1308,20 @@ function megaHotels(destId){
 <!-- ===== /Vedere loader ===== -->
 <script src="assets/js/vx-search.js" defer></script>
 <script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a");if(!a)return;var h=a.getAttribute("href")||"";var m=null;if(h.indexOf("tel:")===0)m="phone";else if(h.indexOf("wa.me")>-1)m="whatsapp";else if(h.indexOf("mailto:")===0)m="email";if(m&&window.dataLayer)window.dataLayer.push({event:"contact_click",method:m,page:location.pathname});});</script>
+<script>
+/* hotel gallery behaviour */
+document.querySelectorAll('.htg').forEach(function(g){
+  var t=g.querySelector('.htg-track');if(!t)return;var n=t.children.length,i=0;if(n<2)return;
+  var ind=g.querySelector('.htg-ind');
+  function go(k){i=(k+n)%n;t.style.transform='translateX(-'+(i*100)+'%)';if(ind)ind.textContent=(i+1)+' / '+n;}
+  var p=g.querySelector('.htg-prev'),x=g.querySelector('.htg-next');
+  if(p)p.addEventListener('click',function(e){e.preventDefault();go(i-1)});
+  if(x)x.addEventListener('click',function(e){e.preventDefault();go(i+1)});
+  g.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){e.preventDefault();go(i-1)}else if(e.key==='ArrowRight'){e.preventDefault();go(i+1)}});
+  var x0=null;
+  g.addEventListener('pointerdown',function(e){x0=e.clientX});
+  g.addEventListener('pointerup',function(e){if(x0===null)return;var dx=e.clientX-x0;if(Math.abs(dx)>40){if(dx<0){go(i+1)}else{go(i-1)}}x0=null});
+});
+</script>
 </body>
 </html>

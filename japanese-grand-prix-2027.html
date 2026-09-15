@@ -769,6 +769,21 @@ a{color:inherit;text-decoration:none}
 @media(max-width:1280px){.hdr-cta .hdr-srch{width:40px;padding:0}.hdr-cta .hdr-srch .srch-txt{display:none}.hdr-cta .hdr-wa{padding:0 14px}}
 @media(min-width:961px) and (max-width:1280px){.hdr-cta .hdr-btn{padding:0 18px}.hdr-cta{gap:12px}}
 @media(max-width:960px){.hdr-cta .hdr-wa{width:40px;padding:0}}
+
+/* ===== hotel gallery + figure alignment (site-wide parity patch) ===== */
+.ht-imgs{display:flex}
+.htg{position:relative;flex:1;height:auto;min-height:320px;overflow:hidden;background:var(--ink);outline:none}
+.htg-track{display:flex;height:100%;transition:transform .45s ease}
+@media(prefers-reduced-motion:reduce){.htg-track{transition:none}}
+.htg-slide{flex:0 0 100%;min-width:0}
+.htg-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.htg-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:40px;height:40px;border-radius:50%;border:1px solid rgba(251,250,247,.55);background:rgba(13,31,23,.55);color:#FBFAF7;font-size:19px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .25s}
+.htg-btn:hover,.htg-btn:focus-visible{background:rgba(13,31,23,.85)}
+.htg-prev{left:12px}.htg-next{right:12px}
+.htg-ind{position:absolute;right:12px;bottom:10px;z-index:3;margin:0;font-size:11px;letter-spacing:.08em;color:#FBFAF7;background:rgba(13,31,23,.55);padding:3px 9px;border-radius:10px}
+.ht:not(:has(.ht-imgs)){grid-template-columns:1fr}
+@media(max-width:860px){.htg{min-height:0;aspect-ratio:3/2}}
+.split:has(.figure){align-items:center}
 </style>
 <script>(function(){var h=location.hostname;if(h&&!/(^|\.)vederetravel\.com$/.test(h)){var m=document.createElement("meta");m.name="robots";m.content="noindex,nofollow";document.head.appendChild(m);}})();</script>
 </head>
@@ -957,6 +972,10 @@ a{color:inherit;text-decoration:none}
         <div class="glance-row"><span class="glance-k">Transfers</span><span class="glance-v">Local transport on entry tiers; private transfers above</span></div>
       </div>
     </div>
+    <figure class="figure" style="margin-top:44px">
+      <img src="assets/img/sports/f1/japanese-grand-prix-2027/f1-japanese-package-grandstand-experience.jpg" alt="Formula 1 cars in the pit lane in front of a packed main grandstand at Suzuka Circuit" width="900" height="600" loading="lazy">
+      <figcaption>The pit straight at Suzuka &mdash; the grandstand that sells out first.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -971,7 +990,70 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <section class="tinted" id="hotels">
-  <div class="wrap split"><figure class="figure"><img src="assets/img/sports/f1/japanese-grand-prix-2027/f1-japanese-section-hotels.jpg" alt="A five-star hotel in Suzuka" width="1000" height="667" loading="lazy"><figcaption>Where the weekend is actually spent.</figcaption></figure><div><p class="eyebrow">Hotels</p><h2 class="h2">Where to stay<br><em>in Suzuka.</em></h2><div class="rule"></div><div class="body"><p><strong>Hilton Nagoya</strong> &mdash; High 4*. Reliable base 50 min from the circuit.</p><p><strong>Nagoya Marriott Associa</strong> &mdash; Entry 5* equiv.. Literally above Nagoya station &mdash; the Shinkansen play.</p><p><strong>The Ritz-Carlton, Kyoto (extension base)</strong> &mdash; Ultra luxury. Kamogawa riverside serenity for the bookend nights.</p><p><strong>Aman Tokyo (ultra option)</strong> &mdash; Ultra luxury. For clients topping the trip with Tokyo.</p></div><div class="cta-row"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Race</a></div></div></div>
+  <div class="wrap">
+    <p class="eyebrow">Hotels</p>
+    <h2 class="h2">Where to stay<br><em>in Suzuka.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">Nobody stays in Suzuka itself. Nagoya is the working base &mdash; forty-five minutes by Kintetsu express to Shiroko and the circuit shuttle &mdash; with Kyoto held for the bookend nights.</p>
+    <div style="margin-top:44px"><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1758805768368-0e75b108b9f5?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Modern hotel facade with sleek stacked balconies, Nagoya" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1711059985570-4c32ed12a12c?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Modern hotel bed with crisp white linens" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Hilton Nagoya</h3><span class="ht-stars">4&#9733;</span></div>
+<p class="ht-loc">Nagoya &middot; Sakae / Fushimi</p><div class="rule"></div>
+<p class="ht-pos">Central Nagoya, a short walk from Fushimi subway and ten minutes from Nagoya station. Around 50 minutes to Suzuka door to gate outside race traffic.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Hilton Guest Room King / Executive Room</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Indoor pool, fitness centre, executive lounge, Japanese and Western dining</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The most reliable four-star base in the city and the one we can hold rooms at when Nagoya fills. Rooms are larger than the Japanese norm, which matters across a five-night stay.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests on the entry tier who want a dependable, well-located base rather than a statement address.</p>
+<p class="ht-pk">Grandstand Experience</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1777498269093-ca9514d210af?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Tall contemporary glass hotel tower exterior, Nagoya" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1569803856743-4c36a6281f87?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="City skyline seen through a hotel bedroom window" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Nagoya Marriott Associa</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Nagoya &middot; Above Nagoya Station</p><div class="rule"></div>
+<p class="ht-pos">Literally inside the JR Central Towers above Nagoya station. Kintetsu trains to Shiroko and Shinkansen to Kyoto both leave from beneath you.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe King, high floor</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Sky-lobby lounge, fitness centre and pool, several restaurants, direct station access</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The Shinkansen play. On a weekend where every journey starts at the station, being able to step out of the lift and onto the platform is worth more than any amenity. High-floor rooms look straight down the city.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests combining Suzuka with Kyoto or Tokyo, and anyone who values logistics over quiet.</p>
+<p class="ht-pk">Premium Suzuka</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1763708204354-365647bcf21e?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Contemporary white luxury hotel exterior, Kyoto" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1645619200527-c6786729c2da?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Contemporary minimalist bedroom beside a large window" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">The Ritz-Carlton, Kyoto</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Kyoto &middot; Kamogawa riverside &middot; extension base</p><div class="rule"></div>
+<p class="ht-pos">On the Kamogawa in Nijo, thirty-five minutes by Shinkansen from Nagoya. Used for the nights either side of the race rather than the race nights themselves.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe Garden View / Kamogawa River Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Spa and onsen-style bath, indoor pool, Mizuki Japanese restaurant, private garden</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>Kamogawa riverside serenity for the bookend nights, and the only Kyoto address that handles Western expectations without diluting the Japanese one. If the 2027 slot holds in blossom season, this is where the trip is won.</p>
+<p class="ht-why"><strong>Best suited to</strong>Couples and clients extending either side of the race weekend.</p>
+<p class="ht-pk">Hospitality Experience &middot; Luxury Race Weekend</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="assets/img/luxury/asia/japan/japan-aman-tokyo-ext-01.jpg" alt="Aman Tokyo exterior atop the Otemachi Tower, Tokyo" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="assets/img/luxury/asia/japan/japan-aman-tokyo-int-01.jpg" alt="Guest room interior at Aman Tokyo" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Aman Tokyo</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Tokyo &middot; Otemachi &middot; ultra option</p><div class="rule"></div>
+<p class="ht-pos">The top six floors of the Otemachi Tower, a short walk from Tokyo station. Around ninety minutes by Shinkansen from Nagoya, used for the Tokyo leg rather than the race nights.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe Room / Premier Room</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Thirty-metre pool, two-floor Aman Spa, 30m-high washi-lantern lobby, Musashi by Aman</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>For clients topping the trip with Tokyo. The rooms are among the largest in the city and the lobby is the single most impressive interior space in Japanese hotelkeeping &mdash; a deliberate contrast to the compact Nagoya race nights.</p>
+<p class="ht-why"><strong>Best suited to</strong>Clients extending into Tokyo who want the ultra-luxury end of the trip at the finish rather than the start.</p>
+<p class="ht-pk">Luxury Race Weekend</p>
+</div></article></div>
+    <div class="cta-row" style="margin-top:34px"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Race</a></div>
+  </div>
 </section>
 
 <section id="destination">
@@ -1240,5 +1322,20 @@ function megaHotels(destId){
 <!-- ===== /Vedere loader ===== -->
 <script src="assets/js/vx-search.js" defer></script>
 <script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a");if(!a)return;var h=a.getAttribute("href")||"";var m=null;if(h.indexOf("tel:")===0)m="phone";else if(h.indexOf("wa.me")>-1)m="whatsapp";else if(h.indexOf("mailto:")===0)m="email";if(m&&window.dataLayer)window.dataLayer.push({event:"contact_click",method:m,page:location.pathname});});</script>
+<script>
+/* hotel gallery behaviour */
+document.querySelectorAll('.htg').forEach(function(g){
+  var t=g.querySelector('.htg-track');if(!t)return;var n=t.children.length,i=0;if(n<2)return;
+  var ind=g.querySelector('.htg-ind');
+  function go(k){i=(k+n)%n;t.style.transform='translateX(-'+(i*100)+'%)';if(ind)ind.textContent=(i+1)+' / '+n;}
+  var p=g.querySelector('.htg-prev'),x=g.querySelector('.htg-next');
+  if(p)p.addEventListener('click',function(e){e.preventDefault();go(i-1)});
+  if(x)x.addEventListener('click',function(e){e.preventDefault();go(i+1)});
+  g.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){e.preventDefault();go(i-1)}else if(e.key==='ArrowRight'){e.preventDefault();go(i+1)}});
+  var x0=null;
+  g.addEventListener('pointerdown',function(e){x0=e.clientX});
+  g.addEventListener('pointerup',function(e){if(x0===null)return;var dx=e.clientX-x0;if(Math.abs(dx)>40){if(dx<0){go(i+1)}else{go(i-1)}}x0=null});
+});
+</script>
 </body>
 </html>

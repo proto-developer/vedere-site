@@ -766,6 +766,20 @@ a{color:inherit;text-decoration:none}
 @media(max-width:1280px){.hdr-cta .hdr-srch{width:40px;padding:0}.hdr-cta .hdr-srch .srch-txt{display:none}.hdr-cta .hdr-wa{padding:0 14px}}
 @media(min-width:961px) and (max-width:1280px){.hdr-cta .hdr-btn{padding:0 18px}.hdr-cta{gap:12px}}
 @media(max-width:960px){.hdr-cta .hdr-wa{width:40px;padding:0}}
+/* ===== hotel gallery + figure alignment (site-wide parity patch) ===== */
+.ht-imgs{display:flex}
+.htg{position:relative;flex:1;height:auto;min-height:320px;overflow:hidden;background:var(--ink);outline:none}
+.htg-track{display:flex;height:100%;transition:transform .45s ease}
+@media(prefers-reduced-motion:reduce){.htg-track{transition:none}}
+.htg-slide{flex:0 0 100%;min-width:0}
+.htg-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.htg-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:40px;height:40px;border-radius:50%;border:1px solid rgba(251,250,247,.55);background:rgba(13,31,23,.55);color:#FBFAF7;font-size:19px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .25s}
+.htg-btn:hover,.htg-btn:focus-visible{background:rgba(13,31,23,.85)}
+.htg-prev{left:12px}.htg-next{right:12px}
+.htg-ind{position:absolute;right:12px;bottom:10px;z-index:3;margin:0;font-size:11px;letter-spacing:.08em;color:#FBFAF7;background:rgba(13,31,23,.55);padding:3px 9px;border-radius:10px}
+.ht:not(:has(.ht-imgs)){grid-template-columns:1fr}
+@media(max-width:860px){.htg{min-height:0;aspect-ratio:3/2}}
+.split:has(.figure){align-items:center}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Euro 2028 Hospitality Packages", "description": "Official Euro 2028 hospitality and travel packages across the UK and Ireland host stadiums. Enquiry-led; pricing follows the official sale phases.", "brand": {"@type": "Brand", "name": "Vedere Travel"}}</script>
 <script>(function(){var h=location.hostname;if(h&&!/(^|\.)vederetravel\.com$/.test(h)){var m=document.createElement("meta");m.name="robots";m.content="noindex,nofollow";document.head.appendChild(m);}})();</script>
@@ -1021,15 +1035,54 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <section class="tinted" id="hotels">
-  <div class="wrap" style="max-width:940px"><div><p class="eyebrow">Hotels</p><h2 class="h2">Where to stay<br><em>across four nations.</em></h2><div class="rule"></div>
+  <div class="wrap">
+    <p class="eyebrow">Hotels</p>
+    <h2 class="h2">Where to stay<br><em>across four nations.</em></h2>
+    <div class="rule"></div>
     <p class="lede">Rooms in the host cities will go long before most people know who they are watching. This is the part worth securing earliest.</p>
-    <div class="body">
-      <p><strong>London</strong> &mdash; Five-star for Wembley and Tottenham Hotspur Stadium, including the semi-finals and final.</p>
-      <p><strong>Cardiff and Dublin</strong> &mdash; Central hotels for the opener, and for tournament football in Ireland for the first time.</p>
-      <p><strong>Glasgow</strong> &mdash; A city-centre base for Hampden Park, Scotland&rsquo;s home and a quarter-final host.</p>
-      <p><strong>Manchester, Liverpool, Newcastle and Birmingham</strong> &mdash; The best-located hotel in each group-stage city.</p>
-    </div>
-    <div class="cta-row"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Event</a></div></div></div>
+    <div style="margin-top:44px"><article class="ht">
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1578774337542-d480965f3943?q=80&w=1600&auto=format&fit=crop" alt="Elegant classic stone hotel building facade in London" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1685592437742-3b56edb46b15?q=80&w=1600&auto=format&fit=crop" alt="Hotel bedroom suite with elegant pendant lighting" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">London</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Mayfair, St James&rsquo;s &amp; the West End</p><div class="rule"></div>
+<p class="ht-pos">Five-star for Wembley and Tottenham Hotspur Stadium &mdash; both semi-finals and the final on 9 July are played under the arch, and Wembley Park is around forty minutes from central London by car.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Superior King / Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Spa and pool, fine-dining restaurant, cocktail bar, chauffeur service to Wembley</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>London holds the three matches everyone will want, and rooms in the city for that week will be gone long before the draw is made. This is the one to secure first and worry about fixtures afterwards.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests aiming at the semi-finals or the final, and corporate parties.</p>
+<p class="ht-pk">The Final &middot; Knockout Rounds</p>
+</div></article><article class="ht">
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1758805768368-0e75b108b9f5?q=80&w=1600&auto=format&fit=crop" alt="Modern hotel facade with sleek stacked balconies, Cardiff city centre" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1629140727571-9b5c6f6267b4?q=80&w=1600&auto=format&fit=crop" alt="Minimalist modern hotel bedroom with a grey accent pillow" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Cardiff</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">City centre &middot; Cardiff Bay side</p><div class="rule"></div>
+<p class="ht-pos">A central hotel for the opener on Friday 9 June at the National Stadium of Wales, and for a quarter-final later in the tournament. The ground is a walk from the city centre, not a journey.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe King</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>City-centre location, restaurant and bar, fitness suite, secure parking</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>Cardiff is the rarest thing in tournament football &mdash; a host city where you can walk from the hotel to the ground and back afterwards. Under a closed roof the opening night will be the loudest of the month.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests who want the occasion without a transfer at either end of it.</p>
+<p class="ht-pk">Group Stage &middot; Knockout Rounds</p>
+</div></article><article class="ht">
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1721539151779-e6dc7f9de376?q=80&w=1600&auto=format&fit=crop" alt="Grand multi-storey hotel facade with ornate balconies, Dublin" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1742844552193-2fd3425cd26d?q=80&w=1600&auto=format&fit=crop" alt="Grand sunlit hotel lobby with elegant decor" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Dublin</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Georgian centre &amp; Ballsbridge</p><div class="rule"></div>
+<p class="ht-pos">Central five-star for Dublin Arena, walkable from Ballsbridge and a short taxi from the Georgian squares. Ireland host tournament football for the first time, and a quarter-final comes here.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe King / Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Drawing-room bar, spa, restaurant, 24-hour concierge</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>Dublin does a major sporting week better than almost anywhere, and the ground sits inside the city rather than outside it. Room supply is the constraint here, not tickets.</p>
+<p class="ht-why"><strong>Best suited to</strong>Groups following Ireland, and anyone who wants the city to carry the trip.</p>
+<p class="ht-pk">Follow Your Nation &middot; Knockout Rounds</p>
+</div></article></div>
+    <div class="body" style="margin-top:34px"><p><strong>Glasgow</strong> &mdash; a city-centre base for Hampden Park, Scotland&rsquo;s home and a quarter-final host.</p><p><strong>Manchester, Liverpool, Newcastle and Birmingham</strong> &mdash; the best-located hotel in each group-stage city, held to the same standard and quoted the same way.</p></div>
+    <div class="cta-row"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Event</a></div>
+  </div>
 </section>
 
 <section id="destination">
@@ -1327,5 +1380,20 @@ function megaHotels(destId){
 <!-- ===== /Vedere loader ===== -->
 <script src="assets/js/vx-search.js" defer></script>
 <script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a");if(!a)return;var h=a.getAttribute("href")||"";var m=null;if(h.indexOf("tel:")===0)m="phone";else if(h.indexOf("wa.me")>-1)m="whatsapp";else if(h.indexOf("mailto:")===0)m="email";if(m&&window.dataLayer)window.dataLayer.push({event:"contact_click",method:m,page:location.pathname});});</script>
+<script>
+/* hotel gallery behaviour */
+document.querySelectorAll('.htg').forEach(function(g){
+  var t=g.querySelector('.htg-track');if(!t)return;var n=t.children.length,i=0;if(n<2)return;
+  var ind=g.querySelector('.htg-ind');
+  function go(k){i=(k+n)%n;t.style.transform='translateX(-'+(i*100)+'%)';if(ind)ind.textContent=(i+1)+' / '+n;}
+  var p=g.querySelector('.htg-prev'),x=g.querySelector('.htg-next');
+  if(p)p.addEventListener('click',function(e){e.preventDefault();go(i-1)});
+  if(x)x.addEventListener('click',function(e){e.preventDefault();go(i+1)});
+  g.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){e.preventDefault();go(i-1)}else if(e.key==='ArrowRight'){e.preventDefault();go(i+1)}});
+  var x0=null;
+  g.addEventListener('pointerdown',function(e){x0=e.clientX});
+  g.addEventListener('pointerup',function(e){if(x0===null)return;var dx=e.clientX-x0;if(Math.abs(dx)>40){if(dx<0){go(i+1)}else{go(i-1)}}x0=null});
+});
+</script>
 </body>
 </html>

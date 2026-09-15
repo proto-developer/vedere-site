@@ -769,6 +769,20 @@ a{color:inherit;text-decoration:none}
 @media(max-width:1280px){.hdr-cta .hdr-srch{width:40px;padding:0}.hdr-cta .hdr-srch .srch-txt{display:none}.hdr-cta .hdr-wa{padding:0 14px}}
 @media(min-width:961px) and (max-width:1280px){.hdr-cta .hdr-btn{padding:0 18px}.hdr-cta{gap:12px}}
 @media(max-width:960px){.hdr-cta .hdr-wa{width:40px;padding:0}}
+/* ===== hotel gallery + figure alignment (site-wide parity patch) ===== */
+.ht-imgs{display:flex}
+.htg{position:relative;flex:1;height:auto;min-height:320px;overflow:hidden;background:var(--ink);outline:none}
+.htg-track{display:flex;height:100%;transition:transform .45s ease}
+@media(prefers-reduced-motion:reduce){.htg-track{transition:none}}
+.htg-slide{flex:0 0 100%;min-width:0}
+.htg-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.htg-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:40px;height:40px;border-radius:50%;border:1px solid rgba(251,250,247,.55);background:rgba(13,31,23,.55);color:#FBFAF7;font-size:19px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .25s}
+.htg-btn:hover,.htg-btn:focus-visible{background:rgba(13,31,23,.85)}
+.htg-prev{left:12px}.htg-next{right:12px}
+.htg-ind{position:absolute;right:12px;bottom:10px;z-index:3;margin:0;font-size:11px;letter-spacing:.08em;color:#FBFAF7;background:rgba(13,31,23,.55);padding:3px 9px;border-radius:10px}
+.ht:not(:has(.ht-imgs)){grid-template-columns:1fr}
+@media(max-width:860px){.htg{min-height:0;aspect-ratio:3/2}}
+.split:has(.figure){align-items:center}
 </style>
 <script>(function(){var h=location.hostname;if(h&&!/(^|\.)vederetravel\.com$/.test(h)){var m=document.createElement("meta");m.name="robots";m.content="noindex,nofollow";document.head.appendChild(m);}})();</script>
 </head>
@@ -957,6 +971,10 @@ a{color:inherit;text-decoration:none}
         <div class="glance-row"><span class="glance-k">Transfers</span><span class="glance-v">Local transport on entry tiers; private transfers above</span></div>
       </div>
     </div>
+    <figure class="figure" style="margin-top:44px">
+      <img src="assets/img/sports/f1/turkish-grand-prix-2027/f1-turkish-band-01.jpg" alt="Istanbul Park seen from the grandstands during the Turkish Grand Prix" width="1000" height="667" loading="lazy">
+      <figcaption>Istanbul Park &mdash; the grandstand view across the circuit.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -971,7 +989,70 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <section class="tinted" id="hotels">
-  <div class="wrap split"><figure class="figure"><img src="assets/img/sports/f1/turkish-grand-prix-2027/f1-turkish-section-hotels.jpg" alt="A five-star hotel in Istanbul" width="1000" height="667" loading="lazy"><figcaption>Where the weekend is actually spent.</figcaption></figure><div><p class="eyebrow">Hotels</p><h2 class="h2">Where to stay<br><em>in Istanbul.</em></h2><div class="rule"></div><div class="body"><p><strong>Fairmont Quasar Istanbul</strong> &mdash; Entry 5*. Modern tower base with Bosphorus glimpses.</p><p><strong>The Peninsula Istanbul</strong> &mdash; Luxury 5*. Galataport waterfront sensation &mdash; the new benchmark.</p><p><strong>Four Seasons Sultanahmet</strong> &mdash; Luxury 5*. Inside the old city, minutes from Hagia Sophia.</p><p><strong>Çırağan Palace Kempinski</strong> &mdash; Ultra luxury. An actual Ottoman palace on the Bosphorus &mdash; suites in the palace wing for statement clients.</p></div><div class="cta-row"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Race</a></div></div></div>
+  <div class="wrap">
+    <p class="eyebrow">Hotels</p>
+    <h2 class="h2">Where to stay<br><em>in Istanbul.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">All four sit on the European side, within reach of the Bosphorus and the old city, and sixty to ninety minutes from Istanbul Park on the Asian side once bridge traffic is allowed for.</p>
+    <div style="margin-top:44px"><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1578774337542-d480965f3943?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Elegant classic stone five-star hotel facade in Istanbul" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Classic wooden bed frame with crisp white linens in a five-star guest room" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Fairmont Quasar Istanbul</h3><span class="ht-stars">5★</span></div>
+<p class="ht-loc">Levent · Beşiktaş, European side</p><div class="rule"></div>
+<p class="ht-pos">In the Levent business district, around fifteen minutes from Taksim and the Bosphorus shore. Allow sixty to ninety minutes to Istanbul Park on race days.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe King</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Indoor pool, Willow Stream Spa, fitness centre, two restaurants</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>Our entry five-star in the city, built around the restored Art Deco tower of the old liquor factory. Rooms are larger than the old-city equivalents and the higher floors pick up Bosphorus glimpses.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests who want a well-priced five-star base with space, and a clean run out to the circuit.</p>
+<p class="ht-pk">Grandstand Experience</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1786684937882-e94735ffcfa5?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Classic European grand hotel facade with signage" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1742844552193-2fd3425cd26d?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Grand sunlit hotel lobby with elegant decor" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">The Peninsula Istanbul</h3><span class="ht-stars">5★</span></div>
+<p class="ht-loc">Galataport · Karaköy waterfront</p><div class="rule"></div>
+<p class="ht-pos">Directly on the Bosphorus at Galataport, a short walk from Karaköy and the climb up to Galata. Sixty to ninety minutes to Istanbul Park depending on the bridges.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe Room / Bosphorus View Room</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Waterfront pool, Peninsula Spa, rooftop restaurant, private jetty</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The Galataport waterfront sensation, and the new benchmark for the city: four restored quayside buildings, a deep-water terrace and service that holds its own against anything in western Europe.</p>
+<p class="ht-why"><strong>Best suited to</strong>Couples and corporate guests who want the best address on the water.</p>
+<p class="ht-pk">Premium Istanbul · Hospitality Experience</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1721539151779-e6dc7f9de376?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Grand historic hotel facade with ornate balconies, in the style of Istanbul's old city" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1698927100805-2a32718a7e05?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Luxurious bedroom suite with large bed and artwork" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Four Seasons Sultanahmet</h3><span class="ht-stars">5★</span></div>
+<p class="ht-loc">Sultanahmet · inside the old city</p><div class="rule"></div>
+<p class="ht-pos">Within the walls of the old city, a few minutes on foot from Hagia Sophia and the Blue Mosque. Sixty to ninety minutes to Istanbul Park on the Asian side.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe Room / Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Courtyard garden restaurant, terrace with views over Hagia Sophia, fitness centre, concierge-led old-city guiding</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The one address inside the old city we rate without qualification: a converted neoclassical building arranged around a courtyard, with the monuments a walk rather than a drive away. Sixty-odd rooms, so it goes early for a race weekend.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests who want the monuments on foot and will trade Bosphorus frontage for the old city.</p>
+<p class="ht-pk">Hospitality Experience</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1787858742932-149e3385b45f?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Grand historic palace-style hotel facade" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1685592437742-3b56edb46b15?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Hotel suite bedroom with elegant pendant lighting" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Çırağan Palace Kempinski</h3><span class="ht-stars">5★</span></div>
+<p class="ht-loc">Beşiktaş · Bosphorus shoreline</p><div class="rule"></div>
+<p class="ht-pos">On the water between Beşiktaş and Ortaköy, ten minutes from Taksim. Sixty to ninety minutes to Istanbul Park on the Asian side.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe Bosphorus Room / Palace Wing Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Bosphorus-edge infinity pool, Sanitas Spa, Tuğra restaurant, private jetty</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>An actual Ottoman palace on the Bosphorus, and the only address in the city that reads as an occasion in itself. The palace-wing suites are what we book for statement clients.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests for whom the hotel is half the reason for the trip.</p>
+<p class="ht-pk">Luxury Race Weekend</p>
+</div></article></div>
+    <div class="cta-row" style="margin-top:34px"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Race</a></div>
+  </div>
 </section>
 
 <section id="destination">
@@ -1238,5 +1319,20 @@ function megaHotels(destId){
 <!-- ===== /Vedere loader ===== -->
 <script src="assets/js/vx-search.js" defer></script>
 <script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a");if(!a)return;var h=a.getAttribute("href")||"";var m=null;if(h.indexOf("tel:")===0)m="phone";else if(h.indexOf("wa.me")>-1)m="whatsapp";else if(h.indexOf("mailto:")===0)m="email";if(m&&window.dataLayer)window.dataLayer.push({event:"contact_click",method:m,page:location.pathname});});</script>
+<script>
+/* hotel gallery behaviour */
+document.querySelectorAll('.htg').forEach(function(g){
+  var t=g.querySelector('.htg-track');if(!t)return;var n=t.children.length,i=0;if(n<2)return;
+  var ind=g.querySelector('.htg-ind');
+  function go(k){i=(k+n)%n;t.style.transform='translateX(-'+(i*100)+'%)';if(ind)ind.textContent=(i+1)+' / '+n;}
+  var p=g.querySelector('.htg-prev'),x=g.querySelector('.htg-next');
+  if(p)p.addEventListener('click',function(e){e.preventDefault();go(i-1)});
+  if(x)x.addEventListener('click',function(e){e.preventDefault();go(i+1)});
+  g.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){e.preventDefault();go(i-1)}else if(e.key==='ArrowRight'){e.preventDefault();go(i+1)}});
+  var x0=null;
+  g.addEventListener('pointerdown',function(e){x0=e.clientX});
+  g.addEventListener('pointerup',function(e){if(x0===null)return;var dx=e.clientX-x0;if(Math.abs(dx)>40){if(dx<0){go(i+1)}else{go(i-1)}}x0=null});
+});
+</script>
 </body>
 </html>

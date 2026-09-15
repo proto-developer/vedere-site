@@ -779,6 +779,20 @@ a{color:inherit;text-decoration:none}
 @media(max-width:1280px){.hdr-cta .hdr-srch{width:40px;padding:0}.hdr-cta .hdr-srch .srch-txt{display:none}.hdr-cta .hdr-wa{padding:0 14px}}
 @media(min-width:961px) and (max-width:1280px){.hdr-cta .hdr-btn{padding:0 18px}.hdr-cta{gap:12px}}
 @media(max-width:960px){.hdr-cta .hdr-wa{width:40px;padding:0}}
+/* ===== hotel gallery + figure alignment (site-wide parity patch) ===== */
+.ht-imgs{display:flex}
+.htg{position:relative;flex:1;height:auto;min-height:320px;overflow:hidden;background:var(--ink);outline:none}
+.htg-track{display:flex;height:100%;transition:transform .45s ease}
+@media(prefers-reduced-motion:reduce){.htg-track{transition:none}}
+.htg-slide{flex:0 0 100%;min-width:0}
+.htg-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.htg-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:40px;height:40px;border-radius:50%;border:1px solid rgba(251,250,247,.55);background:rgba(13,31,23,.55);color:#FBFAF7;font-size:19px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .25s}
+.htg-btn:hover,.htg-btn:focus-visible{background:rgba(13,31,23,.85)}
+.htg-prev{left:12px}.htg-next{right:12px}
+.htg-ind{position:absolute;right:12px;bottom:10px;z-index:3;margin:0;font-size:11px;letter-spacing:.08em;color:#FBFAF7;background:rgba(13,31,23,.55);padding:3px 9px;border-radius:10px}
+.ht:not(:has(.ht-imgs)){grid-template-columns:1fr}
+@media(max-width:860px){.htg{min-height:0;aspect-ratio:3/2}}
+.split:has(.figure){align-items:center}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Six Nations Hospitality Packages", "description": "Six Nations rugby hospitality and travel packages at Twickenham, Murrayfield and the Principality Stadium. Enquiry-led with hand-picked hotels.", "brand": {"@type": "Brand", "name": "Vedere Travel"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SportsEvent", "name": "Six Nations Championship 2027", "startDate": "2027-02-05", "endDate": "2027-03-13", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": [{"@type": "Place", "name": "Twickenham Stadium", "address": {"@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB"}}, {"@type": "Place", "name": "Principality Stadium", "address": {"@type": "PostalAddress", "addressLocality": "Cardiff", "addressCountry": "GB"}}, {"@type": "Place", "name": "Murrayfield Stadium", "address": {"@type": "PostalAddress", "addressLocality": "Edinburgh", "addressCountry": "GB"}}], "description": "The 2027 Six Nations Championship, 5 February to 13 March 2027."}</script>
@@ -973,15 +987,54 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <section class="tinted" id="hotels">
-  <div class="wrap" style="max-width:940px"><div><p class="eyebrow">Hotels</p><h2 class="h2">Where to stay<br><em>for match weekend.</em></h2><div class="rule"></div>
+  <div class="wrap">
+    <p class="eyebrow">Hotels</p>
+    <h2 class="h2">Where to stay<br><em>for match weekend.</em></h2>
+    <div class="rule"></div>
     <p class="lede">Luxury hotels in each host city, chosen so the ground is easy and the rest of the weekend is better.</p>
-    <div class="body">
-      <p><strong>Dublin</strong> &mdash; Central five-star within reach of Ballsbridge and the walk to the Aviva.</p>
-      <p><strong>London</strong> &mdash; A Mayfair weekend, thirty-five minutes from Twickenham.</p>
-      <p><strong>Paris</strong> &mdash; A Palace-hotel weekend, with Eurostar there and back.</p>
-      <p><strong>Edinburgh, Cardiff and Rome</strong> &mdash; Old-town Edinburgh, walk-to-ground Cardiff, and central Rome for the value pick.</p>
-    </div>
-    <div class="cta-row"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#cities">Beyond The Event</a></div></div></div>
+    <div style="margin-top:44px"><article class="ht">
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1786684937882-e94735ffcfa5?q=80&w=1600&auto=format&fit=crop" alt="Classic European grand hotel facade with signage, Dublin" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1731336478850-6bce7235e320?q=80&w=1600&auto=format&fit=crop" alt="Elegant hotel bedroom with a white bed and wooden headboard" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Dublin</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Ballsbridge &amp; the Georgian centre</p><div class="rule"></div>
+<p class="ht-pos">Central five-star within easy reach of Ballsbridge and the walk to the Aviva Stadium. Ireland play England here in Round 1 and France on Super Saturday.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe King / Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Drawing-room bar, spa and treatment rooms, fine-dining restaurant, 24-hour concierge</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>Dublin is the friendliest match-day city in the game, and the walk down to the ground is half the occasion. We keep you on the right side of the Grand Canal so the car stays where it is.</p>
+<p class="ht-why"><strong>Best suited to</strong>Groups who want the pubs, the restaurants and the ground all on foot.</p>
+<p class="ht-pk">Super Saturday &middot; Match Weekend</p>
+</div></article><article class="ht">
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1721539151779-e6dc7f9de376?q=80&w=1600&auto=format&fit=crop" alt="Grand multi-storey hotel facade with ornate balconies, London" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1742844552193-2fd3425cd26d?q=80&w=1600&auto=format&fit=crop" alt="Grand sunlit hotel lobby with elegant decor" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">London</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Mayfair &amp; St James&rsquo;s</p><div class="rule"></div>
+<p class="ht-pos">A Mayfair weekend, roughly thirty-five minutes from Allianz Stadium, Twickenham, with private cars both ways on match day.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Superior King</dd></div>
+<div><dt>Board</dt><dd>Room only</dd></div>
+<div><dt>Facilities</dt><dd>Champagne bar, spa and pool, fitness suite, chauffeur service to Twickenham</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>Twickenham is the one ground of the six you cannot sensibly walk to, so we stop trying and put you in the best part of London instead. Le Crunch and the Calcutta Cup are both played here in 2027.</p>
+<p class="ht-why"><strong>Best suited to</strong>Couples and corporate guests pairing the match with a West End weekend.</p>
+<p class="ht-pk">Match Weekend &middot; Hospitality Weekend</p>
+</div></article><article class="ht">
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1787858742932-149e3385b45f?q=80&w=1600&auto=format&fit=crop" alt="Grand historic palace-style hotel facade in Paris" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1744776411221-702f2848b0b2?q=80&w=1600&auto=format&fit=crop" alt="Upscale hotel restaurant tables set for fine dining" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Paris</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Rive Droite &middot; 8th arrondissement</p><div class="rule"></div>
+<p class="ht-pos">A Palace-hotel address a short drive from the Stade de France at Saint-Denis, with Eurostar into Gare du Nord at both ends of the trip.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe Room / Junior Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Michelin-starred dining, spa and indoor pool, courtyard bar, chauffeur service</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>Eurostar there and back means no airport at either end, which on a two-night trip is worth more than it sounds. Paris then does the rest of the weekend without being asked.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests who want the match to be the second-best thing about the trip.</p>
+<p class="ht-pk">Hospitality Weekend &middot; More Than One Round</p>
+</div></article></div>
+    <div class="body" style="margin-top:34px"><p><strong>Edinburgh, Cardiff and Rome</strong> &mdash; old-town Edinburgh a short walk or tram from Murrayfield, walk-to-ground Cardiff with the roof closed, and central Rome for the value pick of the championship. We hold five-star rooms in all three, and quote them the same way.</p></div>
+    <div class="cta-row"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#cities">Beyond The Event</a></div>
+  </div>
 </section>
 
 <section class="dark" id="cities">
@@ -1249,5 +1302,20 @@ function megaHotels(destId){
 <!-- ===== /Vedere loader ===== -->
 <script src="assets/js/vx-search.js" defer></script>
 <script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a");if(!a)return;var h=a.getAttribute("href")||"";var m=null;if(h.indexOf("tel:")===0)m="phone";else if(h.indexOf("wa.me")>-1)m="whatsapp";else if(h.indexOf("mailto:")===0)m="email";if(m&&window.dataLayer)window.dataLayer.push({event:"contact_click",method:m,page:location.pathname});});</script>
+<script>
+/* hotel gallery behaviour */
+document.querySelectorAll('.htg').forEach(function(g){
+  var t=g.querySelector('.htg-track');if(!t)return;var n=t.children.length,i=0;if(n<2)return;
+  var ind=g.querySelector('.htg-ind');
+  function go(k){i=(k+n)%n;t.style.transform='translateX(-'+(i*100)+'%)';if(ind)ind.textContent=(i+1)+' / '+n;}
+  var p=g.querySelector('.htg-prev'),x=g.querySelector('.htg-next');
+  if(p)p.addEventListener('click',function(e){e.preventDefault();go(i-1)});
+  if(x)x.addEventListener('click',function(e){e.preventDefault();go(i+1)});
+  g.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){e.preventDefault();go(i-1)}else if(e.key==='ArrowRight'){e.preventDefault();go(i+1)}});
+  var x0=null;
+  g.addEventListener('pointerdown',function(e){x0=e.clientX});
+  g.addEventListener('pointerup',function(e){if(x0===null)return;var dx=e.clientX-x0;if(Math.abs(dx)>40){if(dx<0){go(i+1)}else{go(i-1)}}x0=null});
+});
+</script>
 </body>
 </html>

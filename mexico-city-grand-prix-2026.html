@@ -769,6 +769,21 @@ a{color:inherit;text-decoration:none}
 @media(max-width:1280px){.hdr-cta .hdr-srch{width:40px;padding:0}.hdr-cta .hdr-srch .srch-txt{display:none}.hdr-cta .hdr-wa{padding:0 14px}}
 @media(min-width:961px) and (max-width:1280px){.hdr-cta .hdr-btn{padding:0 18px}.hdr-cta{gap:12px}}
 @media(max-width:960px){.hdr-cta .hdr-wa{width:40px;padding:0}}
+
+/* ===== hotel gallery + figure alignment (site-wide parity patch) ===== */
+.ht-imgs{display:flex}
+.htg{position:relative;flex:1;height:auto;min-height:320px;overflow:hidden;background:var(--ink);outline:none}
+.htg-track{display:flex;height:100%;transition:transform .45s ease}
+@media(prefers-reduced-motion:reduce){.htg-track{transition:none}}
+.htg-slide{flex:0 0 100%;min-width:0}
+.htg-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.htg-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:40px;height:40px;border-radius:50%;border:1px solid rgba(251,250,247,.55);background:rgba(13,31,23,.55);color:#FBFAF7;font-size:19px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .25s}
+.htg-btn:hover,.htg-btn:focus-visible{background:rgba(13,31,23,.85)}
+.htg-prev{left:12px}.htg-next{right:12px}
+.htg-ind{position:absolute;right:12px;bottom:10px;z-index:3;margin:0;font-size:11px;letter-spacing:.08em;color:#FBFAF7;background:rgba(13,31,23,.55);padding:3px 9px;border-radius:10px}
+.ht:not(:has(.ht-imgs)){grid-template-columns:1fr}
+@media(max-width:860px){.htg{min-height:0;aspect-ratio:3/2}}
+.split:has(.figure){align-items:center}
 </style>
 <script>(function(){var h=location.hostname;if(h&&!/(^|\.)vederetravel\.com$/.test(h)){var m=document.createElement("meta");m.name="robots";m.content="noindex,nofollow";document.head.appendChild(m);}})();</script>
 </head>
@@ -957,6 +972,10 @@ a{color:inherit;text-decoration:none}
         <div class="glance-row"><span class="glance-k">Transfers</span><span class="glance-v">Local transport on entry tiers; private transfers above</span></div>
       </div>
     </div>
+    <figure class="figure" style="margin-top:44px">
+      <img src="assets/img/sports/f1/mexico-city-grand-prix-2026/f1-mexico-city-package-grandstand-experience.jpg" alt="Packed grandstands watching a Formula 1 car through the stadium section at the Aut&oacute;dromo Hermanos Rodr&iacute;guez" width="900" height="600" loading="lazy">
+      <figcaption>The stadium section &mdash; the loudest grandstand on the calendar.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -971,7 +990,70 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <section class="tinted" id="hotels">
-  <div class="wrap split"><figure class="figure"><img src="assets/img/sports/f1/mexico-city-grand-prix-2026/f1-mexico-city-section-hotels.jpg" alt="A five-star hotel in Mexico City" width="1000" height="667" loading="lazy"><figcaption>Where the weekend is actually spent.</figcaption></figure><div><p class="eyebrow">Hotels</p><h2 class="h2">Where to stay<br><em>in Mexico City.</em></h2><div class="rule"></div><div class="body"><p><strong>Sofitel Mexico City Reforma</strong> &mdash; Entry 5*. Glass tower on Paseo de la Reforma with a knockout rooftop.</p><p><strong>The St. Regis Mexico City</strong> &mdash; Luxury 5*. Reforma landmark, butler service, Diana Fountain views.</p><p><strong>Four Seasons Hotel Mexico City</strong> &mdash; Luxury 5*. Hacienda-style courtyard calm off Reforma.</p><p><strong>Ritz-Carlton Mexico City</strong> &mdash; Ultra luxury. Chapultepec-view tower above the park &mdash; the modern statement.</p></div><div class="cta-row"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Race</a></div></div></div>
+  <div class="wrap">
+    <p class="eyebrow">Hotels</p>
+    <h2 class="h2">Where to stay<br><em>in Mexico City.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">All four sit on or immediately off Paseo de la Reforma, the axis that makes this city work &mdash; thirty to forty-five minutes east to the Aut&oacute;dromo in race traffic, and walking distance to Chapultepec and the Zona Rosa restaurants.</p>
+    <div style="margin-top:44px"><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1772590505970-97f3e983e10b?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Striking modern glass hotel building, Mexico City" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1776763255218-d2213907cefc?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Rooftop pool overlooking a city skyline" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Sofitel Mexico City Reforma</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Paseo de la Reforma &middot; Ju&aacute;rez</p><div class="rule"></div>
+<p class="ht-pos">A glass tower on Reforma opposite the Diana Fountain, with Chapultepec at one end of the avenue and the Centro at the other. Around 30&ndash;45 minutes to the Aut&oacute;dromo by private car on race day.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Luxury King / Reforma View Room</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Rooftop pool and Cient&iacute;fico bar, Balc&oacute;n del Z&oacute;calo&rsquo;s sibling dining, spa, fitness centre</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The knockout rooftop is the reason. At 2,240 metres the light over Reforma at dusk is genuinely different, and this is the best seat in the city to watch it from &mdash; for an entry-tier rate.</p>
+<p class="ht-why"><strong>Best suited to</strong>First-time visitors on the grandstand tier who want a central, modern base.</p>
+<p class="ht-pk">Grandstand Experience</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1768876251553-f9f14952b440?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="White low-rise luxury hotel building under a clear blue sky, Mexico City" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1744782996368-dc5b7e697f4c?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Elegant hotel lounge interior with large windows onto a garden" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Four Seasons Hotel Mexico City</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Paseo de la Reforma &middot; Ju&aacute;rez</p><div class="rule"></div>
+<p class="ht-pos">Set back off Reforma around a planted colonial-style courtyard, a few minutes&rsquo; walk from Chapultepec park. The same 30&ndash;45 minute run to the circuit.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe Courtyard View / Four Seasons Executive Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Courtyard garden and terrace dining, spa, heated pool, 24-hour fitness centre</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>Hacienda-style courtyard calm off one of the loudest avenues in Latin America &mdash; step through the arch and the city stops. It is the address we recommend most often for guests who find Mexico City intense.</p>
+<p class="ht-why"><strong>Best suited to</strong>Couples and corporate guests who want quiet, and groups using the courtyard for pre-dinner drinks.</p>
+<p class="ht-pk">Premium Mexico City &middot; Hospitality Experience</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1776262438118-18e2a5613eca?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Modern hotel entrance illuminated at dusk, Mexico City" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1786526818707-d28a60d7c21f?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Hotel room desk with sheer curtains and a city view" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">The St. Regis Mexico City</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Paseo de la Reforma &middot; Diana Fountain</p><div class="rule"></div>
+<p class="ht-pos">A landmark tower on Reforma above the Diana Fountain roundabout, with the high floors looking straight down the avenue.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Grand Deluxe Reforma View / St. Regis Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Butler service on every floor, Rem&egrave;de spa, indoor pool, King Cole Bar, J&amp;G Grill</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>Butler service and Diana Fountain views, and the tightest operation in the city for clients who arrive late from a long-haul flight and want everything handled. The high-floor Reforma rooms are worth the upgrade.</p>
+<p class="ht-why"><strong>Best suited to</strong>Clients on team hospitality and anyone travelling with a full private programme.</p>
+<p class="ht-pk">Luxury Race Weekend</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1777498269093-ca9514d210af?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Tall contemporary glass hotel tower exterior, Mexico City" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1777169794972-12095816073b?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Luxury hotel room with a high-floor city view" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Ritz-Carlton Mexico City</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Paseo de la Reforma &middot; above Chapultepec</p><div class="rule"></div>
+<p class="ht-pos">High in a glass tower on Reforma with the whole of Chapultepec park below the windows. The same 30&ndash;45 minute run east to the Aut&oacute;dromo on race day.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe Park View / Ritz-Carlton Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Top-floor Samos restaurant and bar, spa, indoor pool, fitness centre, Club Lounge</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The modern statement address in the city. Every room sits high enough to see the park and the volcanoes on a clear morning, and the tower is new enough that nothing in the building feels tired.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests who want the newest rooms and the biggest view, and clients for whom the outlook is the point.</p>
+<p class="ht-pk">Luxury Race Weekend</p>
+</div></article></div>
+    <div class="cta-row" style="margin-top:34px"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Race</a></div>
+  </div>
 </section>
 
 <section id="destination">
@@ -1239,5 +1321,20 @@ function megaHotels(destId){
 <!-- ===== /Vedere loader ===== -->
 <script src="assets/js/vx-search.js" defer></script>
 <script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a");if(!a)return;var h=a.getAttribute("href")||"";var m=null;if(h.indexOf("tel:")===0)m="phone";else if(h.indexOf("wa.me")>-1)m="whatsapp";else if(h.indexOf("mailto:")===0)m="email";if(m&&window.dataLayer)window.dataLayer.push({event:"contact_click",method:m,page:location.pathname});});</script>
+<script>
+/* hotel gallery behaviour */
+document.querySelectorAll('.htg').forEach(function(g){
+  var t=g.querySelector('.htg-track');if(!t)return;var n=t.children.length,i=0;if(n<2)return;
+  var ind=g.querySelector('.htg-ind');
+  function go(k){i=(k+n)%n;t.style.transform='translateX(-'+(i*100)+'%)';if(ind)ind.textContent=(i+1)+' / '+n;}
+  var p=g.querySelector('.htg-prev'),x=g.querySelector('.htg-next');
+  if(p)p.addEventListener('click',function(e){e.preventDefault();go(i-1)});
+  if(x)x.addEventListener('click',function(e){e.preventDefault();go(i+1)});
+  g.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){e.preventDefault();go(i-1)}else if(e.key==='ArrowRight'){e.preventDefault();go(i+1)}});
+  var x0=null;
+  g.addEventListener('pointerdown',function(e){x0=e.clientX});
+  g.addEventListener('pointerup',function(e){if(x0===null)return;var dx=e.clientX-x0;if(Math.abs(dx)>40){if(dx<0){go(i+1)}else{go(i-1)}}x0=null});
+});
+</script>
 </body>
 </html>

@@ -769,6 +769,20 @@ a{color:inherit;text-decoration:none}
 @media(max-width:1280px){.hdr-cta .hdr-srch{width:40px;padding:0}.hdr-cta .hdr-srch .srch-txt{display:none}.hdr-cta .hdr-wa{padding:0 14px}}
 @media(min-width:961px) and (max-width:1280px){.hdr-cta .hdr-btn{padding:0 18px}.hdr-cta{gap:12px}}
 @media(max-width:960px){.hdr-cta .hdr-wa{width:40px;padding:0}}
+/* ===== hotel gallery + figure alignment (site-wide parity patch) ===== */
+.ht-imgs{display:flex}
+.htg{position:relative;flex:1;height:auto;min-height:320px;overflow:hidden;background:var(--ink);outline:none}
+.htg-track{display:flex;height:100%;transition:transform .45s ease}
+@media(prefers-reduced-motion:reduce){.htg-track{transition:none}}
+.htg-slide{flex:0 0 100%;min-width:0}
+.htg-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.htg-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:40px;height:40px;border-radius:50%;border:1px solid rgba(251,250,247,.55);background:rgba(13,31,23,.55);color:#FBFAF7;font-size:19px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .25s}
+.htg-btn:hover,.htg-btn:focus-visible{background:rgba(13,31,23,.85)}
+.htg-prev{left:12px}.htg-next{right:12px}
+.htg-ind{position:absolute;right:12px;bottom:10px;z-index:3;margin:0;font-size:11px;letter-spacing:.08em;color:#FBFAF7;background:rgba(13,31,23,.55);padding:3px 9px;border-radius:10px}
+.ht:not(:has(.ht-imgs)){grid-template-columns:1fr}
+@media(max-width:860px){.htg{min-height:0;aspect-ratio:3/2}}
+.split:has(.figure){align-items:center}
 </style>
 <script>(function(){var h=location.hostname;if(h&&!/(^|\.)vederetravel\.com$/.test(h)){var m=document.createElement("meta");m.name="robots";m.content="noindex,nofollow";document.head.appendChild(m);}})();</script>
 </head>
@@ -957,6 +971,10 @@ a{color:inherit;text-decoration:none}
         <div class="glance-row"><span class="glance-k">Transfers</span><span class="glance-v">Local transport on entry tiers; private transfers above</span></div>
       </div>
     </div>
+    <figure class="figure" style="margin-top:44px">
+      <img src="assets/img/sports/f1/portuguese-grand-prix-2027/f1-portuguese-section-circuit.jpg" alt="Grandstands above the ridge-top start-finish straight at the Autódromo Internacional do Algarve, Portimão" width="1000" height="667" loading="lazy">
+      <figcaption>Built across the hills above Portim&atilde;o &mdash; the elevation is the whole point of this circuit.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -971,7 +989,70 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <section class="tinted" id="hotels">
-  <div class="wrap split"><figure class="figure"><img src="assets/img/sports/f1/portuguese-grand-prix-2027/f1-portuguese-section-hotels.jpg" alt="A five-star hotel in Portimão" width="1000" height="667" loading="lazy"><figcaption>Where the weekend is actually spent.</figcaption></figure><div><p class="eyebrow">Hotels</p><h2 class="h2">Where to stay<br><em>in Portimão.</em></h2><div class="rule"></div><div class="body"><p><strong>Tivoli Marina Vilamoura (or NAU Salgados)</strong> &mdash; High 4*. Marina-front value base 30&ndash;40 min out.</p><p><strong>W Algarve</strong> &mdash; Entry-lux 5*. Cliff-top design resort above Albufeira's coves.</p><p><strong>Anantara Vilamoura</strong> &mdash; Luxury 5*. Golf-resort polish on the Victoria course &mdash; the golfer's obvious home.</p><p><strong>Vila Vita Parc</strong> &mdash; Ultra luxury. The Algarve's grande dame estate &mdash; Ocean (2 Michelin stars), cliff gardens, our flagship.</p></div><div class="cta-row"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Race</a></div></div></div>
+  <div class="wrap">
+    <p class="eyebrow">Hotels</p>
+    <h2 class="h2">Where to stay<br><em>in Portimão.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">All four sit on the Algarve coast, within 15&ndash;40 minutes of the Autódromo and close enough to the beaches and the golf to make the weekend a holiday rather than a race trip.</p>
+    <div style="margin-top:44px"><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1768876251553-f9f14952b440?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="White modern hotel building under a clear blue sky" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1731336478850-6bce7235e320?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Elegant hotel bedroom with a white bed and wooden headboard" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Tivoli Marina Vilamoura</h3><span class="ht-stars">4&#9733;</span></div>
+<p class="ht-loc">Vilamoura &middot; On the marina</p><div class="rule"></div>
+<p class="ht-pos">Directly on the Vilamoura marina with the beach on its doorstep, around 30&ndash;40 minutes east of the Autódromo Internacional do Algarve.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Superior Marina View</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Outdoor pools, direct beach access, spa, marina-front restaurants and bars on the doorstep</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The value base on this coast, and the one that still puts you somewhere worth walking out into in the evening. The marina is the Algarve&rsquo;s best concentration of restaurants and bars, and it is all a few steps from the lobby.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests on the entry tier who want a high 4* marina-front base and are happy with a longer transfer to the circuit. NAU Salgados is our alternative on the same tier.</p>
+<p class="ht-pk">Grandstand Experience</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="assets/img/luxury/europe/portugal/portugal-w-algarve-ext-01.jpg" alt="W Algarve exterior on the clifftop above Praia da Galé, Albufeira" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="assets/img/luxury/europe/portugal/portugal-w-algarve-int-01.jpg" alt="Wonderful Sea View guest room interior at W Algarve" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">W Algarve</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Albufeira &middot; Clifftop above Praia da Galé</p><div class="rule"></div>
+<p class="ht-pos">Set on the cliffs above Albufeira&rsquo;s coves, roughly 25 minutes east of the Autódromo Internacional do Algarve outside race traffic.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Wonderful Sea View King</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Clifftop infinity pools, AWAY spa, beach club below, three restaurants and a rooftop bar</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The most design-led resort on this coast and the one that feels least like the Algarve of twenty years ago. Every sea-view room looks straight down the cliffs, and the pools stay open late enough to matter after a long day at the circuit.</p>
+<p class="ht-why"><strong>Best suited to</strong>Couples and younger groups who want the coast with some energy to it.</p>
+<p class="ht-pk">Premium Portim&atilde;o</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1597221336986-7a948756cd3a?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Mediterranean resort architecture on the water in southern Europe" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1630835425197-50feeba99ecd?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Minimalist spa treatment room with a round table" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Anantara Vilamoura</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Vilamoura &middot; Victoria golf course</p><div class="rule"></div>
+<p class="ht-pos">On the Victoria course at Vilamoura, a few minutes from the marina and around 35&ndash;40 minutes east of the circuit.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe Golf View / Premier Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Anantara spa and thermal circuit, two outdoor pools, direct golf access, Ria restaurant</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>Golf-resort polish without the blandness that usually comes with it, and the obvious home if anyone in the party intends to play. The spa is the best of its kind in the central Algarve and the marina is a short drive for dinner.</p>
+<p class="ht-why"><strong>Best suited to</strong>Golfing parties and families who want space and a resort to come back to.</p>
+<p class="ht-pk">Hospitality Experience</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="assets/img/luxury/europe/portugal/portugal-vila-vita-parc-ext-01.jpg" alt="Vila Vita Parc exterior, the clifftop estate above Armação de Pêra, Porches" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="assets/img/luxury/europe/portugal/portugal-vila-vita-parc-int-01.jpg" alt="Ocean View guest room interior at Vila Vita Parc" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Vila Vita Parc</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Porches &middot; Clifftop estate above Armação de Pêra</p><div class="rule"></div>
+<p class="ht-pos">A 22-hectare clifftop estate between Portimão and Albufeira, around 20&ndash;25 minutes from the circuit and the closest of the three to it.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe Ocean View / Private villa</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Ocean (two Michelin stars) and nine further restaurants, sub-tropical cliff gardens, private beach, Sisley spa</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The Algarve&rsquo;s grande dame and our flagship on this coast &mdash; a working estate rather than a hotel, with gardens running down the cliff to its own beach. Ocean is the best table in southern Portugal and worth booking the moment your dates are fixed.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests who want the finest address in the Algarve and are happy never to leave the estate.</p>
+<p class="ht-pk">Luxury Race Weekend</p>
+</div></article></div>
+    <div class="cta-row" style="margin-top:32px"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Race</a></div>
+  </div>
 </section>
 
 <section id="destination">
@@ -1237,5 +1318,20 @@ function megaHotels(destId){
 <!-- ===== /Vedere loader ===== -->
 <script src="assets/js/vx-search.js" defer></script>
 <script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a");if(!a)return;var h=a.getAttribute("href")||"";var m=null;if(h.indexOf("tel:")===0)m="phone";else if(h.indexOf("wa.me")>-1)m="whatsapp";else if(h.indexOf("mailto:")===0)m="email";if(m&&window.dataLayer)window.dataLayer.push({event:"contact_click",method:m,page:location.pathname});});</script>
+<script>
+/* hotel gallery behaviour */
+document.querySelectorAll('.htg').forEach(function(g){
+  var t=g.querySelector('.htg-track');if(!t)return;var n=t.children.length,i=0;if(n<2)return;
+  var ind=g.querySelector('.htg-ind');
+  function go(k){i=(k+n)%n;t.style.transform='translateX(-'+(i*100)+'%)';if(ind)ind.textContent=(i+1)+' / '+n;}
+  var p=g.querySelector('.htg-prev'),x=g.querySelector('.htg-next');
+  if(p)p.addEventListener('click',function(e){e.preventDefault();go(i-1)});
+  if(x)x.addEventListener('click',function(e){e.preventDefault();go(i+1)});
+  g.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){e.preventDefault();go(i-1)}else if(e.key==='ArrowRight'){e.preventDefault();go(i+1)}});
+  var x0=null;
+  g.addEventListener('pointerdown',function(e){x0=e.clientX});
+  g.addEventListener('pointerup',function(e){if(x0===null)return;var dx=e.clientX-x0;if(Math.abs(dx)>40){if(dx<0){go(i+1)}else{go(i-1)}}x0=null});
+});
+</script>
 </body>
 </html>

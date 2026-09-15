@@ -769,6 +769,21 @@ a{color:inherit;text-decoration:none}
 @media(max-width:1280px){.hdr-cta .hdr-srch{width:40px;padding:0}.hdr-cta .hdr-srch .srch-txt{display:none}.hdr-cta .hdr-wa{padding:0 14px}}
 @media(min-width:961px) and (max-width:1280px){.hdr-cta .hdr-btn{padding:0 18px}.hdr-cta{gap:12px}}
 @media(max-width:960px){.hdr-cta .hdr-wa{width:40px;padding:0}}
+
+/* ===== hotel gallery + figure alignment (site-wide parity patch) ===== */
+.ht-imgs{display:flex}
+.htg{position:relative;flex:1;height:auto;min-height:320px;overflow:hidden;background:var(--ink);outline:none}
+.htg-track{display:flex;height:100%;transition:transform .45s ease}
+@media(prefers-reduced-motion:reduce){.htg-track{transition:none}}
+.htg-slide{flex:0 0 100%;min-width:0}
+.htg-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.htg-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:40px;height:40px;border-radius:50%;border:1px solid rgba(251,250,247,.55);background:rgba(13,31,23,.55);color:#FBFAF7;font-size:19px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .25s}
+.htg-btn:hover,.htg-btn:focus-visible{background:rgba(13,31,23,.85)}
+.htg-prev{left:12px}.htg-next{right:12px}
+.htg-ind{position:absolute;right:12px;bottom:10px;z-index:3;margin:0;font-size:11px;letter-spacing:.08em;color:#FBFAF7;background:rgba(13,31,23,.55);padding:3px 9px;border-radius:10px}
+.ht:not(:has(.ht-imgs)){grid-template-columns:1fr}
+@media(max-width:860px){.htg{min-height:0;aspect-ratio:3/2}}
+.split:has(.figure){align-items:center}
 </style>
 <script>(function(){var h=location.hostname;if(h&&!/(^|\.)vederetravel\.com$/.test(h)){var m=document.createElement("meta");m.name="robots";m.content="noindex,nofollow";document.head.appendChild(m);}})();</script>
 </head>
@@ -957,6 +972,10 @@ a{color:inherit;text-decoration:none}
         <div class="glance-row"><span class="glance-k">Transfers</span><span class="glance-v">Local transport on entry tiers; private transfers above</span></div>
       </div>
     </div>
+    <figure class="figure" style="margin-top:44px">
+      <img src="assets/img/sports/f1/austrian-grand-prix-2027/f1-austrian-band-01.jpg" alt="Red Bull Ring seen from the grandstands" width="1200" height="800" loading="lazy">
+      <figcaption>Red Bull Ring &mdash; the Styrian hills that ring the circuit on every side.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -971,7 +990,70 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <section class="tinted" id="hotels">
-  <div class="wrap split"><figure class="figure"><img src="assets/img/sports/f1/austrian-grand-prix-2027/f1-austrian-section-hotels.jpg" alt="A five-star hotel in Spielberg" width="1000" height="667" loading="lazy"><figcaption>Where the weekend is actually spent.</figcaption></figure><div><p class="eyebrow">Hotels</p><h2 class="h2">Where to stay<br><em>in Spielberg.</em></h2><div class="rule"></div><div class="body"><p><strong>Hotel Wiesler Graz</strong> &mdash; 4* character. Riverside Graz institution with attitude.</p><p><strong>Kai 36, Graz</strong> &mdash; Boutique 5*-level. Design hotel beneath the Schlossberg &mdash; our Graz flagship.</p><p><strong>Hotel Steirerschlössl, Zeltweg</strong> &mdash; Ultra (circuit-side). Red Bull's own manor house minutes from the Ring &mdash; tiny, extraordinary, contract a year out.</p><p><strong>Falkensteiner/G'Schlössl Murtal (alt near-circuit)</strong> &mdash; 4*. Backup near-circuit inventory for groups.</p></div><div class="cta-row"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Race</a></div></div></div>
+  <div class="wrap">
+    <p class="eyebrow">Hotels</p>
+    <h2 class="h2">Where to stay<br><em>in Spielberg.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">Spielberg itself has very few beds, so we base guests in Graz, about an hour from the Ring, with one circuit-side option for those who want to be minutes from the gates &mdash; each mapped to a package tier below.</p>
+    <div style="margin-top:44px"><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1786684937882-e94735ffcfa5?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Classic European grand hotel facade with signage, in keeping with Graz's riverside institutions" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1742844552193-2fd3425cd26d?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Grand sunlit hotel lobby with elegant decor" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Hotel Wiesler Graz</h3><span class="ht-stars">4★</span></div>
+<p class="ht-loc">Graz · riverside, Mur</p><div class="rule"></div>
+<p class="ht-pos">A Graz institution on the banks of the Mur, around an hour from Red Bull Ring, with the old town on your doorstep.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Superior Room, River View</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Rooftop terrace, bar, restaurant, riverside location in the UNESCO old town</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>Riverside character and genuine local attitude rather than a generic four-star &mdash; it has been part of Graz's identity for over a century, and it shows.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests who want to be based in the old town with plenty of personality.</p>
+<p class="ht-pk">Grandstand Experience</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1578774337542-d480965f3943?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Elegant classic stone hotel building facade" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1731336478850-6bce7235e320?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Elegant bedroom with white bed and wooden headboard" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Kai 36, Graz</h3><span class="ht-stars">5★</span></div>
+<p class="ht-loc">Graz · beneath the Schlossberg</p><div class="rule"></div>
+<p class="ht-pos">A design-led boutique property beneath the Schlossberg, around an hour from Red Bull Ring, and our Graz flagship for this race.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Design Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Design-led interiors, bar, restaurant, walking distance to the Schlossberg funicular</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The best-designed hotel in Graz, and the one we default to for guests who want a boutique five-star feel rather than a large corporate property.</p>
+<p class="ht-why"><strong>Best suited to</strong>Couples and design-conscious guests basing themselves in Graz.</p>
+<p class="ht-pk">Premium Spielberg · Hospitality Experience</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1787858742932-149e3385b45f?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Grand historic palace-style manor house facade, evocative of the Styrian countryside near the Ring" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1744776411221-702f2848b0b2?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Upscale restaurant tables set for fine dining in a historic manor house" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Hotel Steirerschlössl, Zeltweg</h3><span class="ht-stars">5★</span></div>
+<p class="ht-loc">Zeltweg · circuit-side</p><div class="rule"></div>
+<p class="ht-pos">A converted manor house minutes from the Red Bull Ring gates &mdash; the closest genuine five-star property to the circuit.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Manor Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Restaurant, gardens, a handful of rooms only &mdash; contract a year out</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>Tiny, extraordinary, and about as close to the Ring as it is possible to sleep &mdash; Red Bull's own manor house rather than a chain hotel bolted on for race week.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests who prioritise proximity to the circuit above everything else.</p>
+<p class="ht-pk">Luxury Race Weekend</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1763708204354-365647bcf21e?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Contemporary white hotel exterior against a clear sky, in keeping with the Murtal valley" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1645619200527-c6786729c2da?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Contemporary minimalist bedroom beside a large window" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Falkensteiner / G'Schlössl Murtal</h3><span class="ht-stars">4★</span></div>
+<p class="ht-loc">Murtal · near-circuit</p><div class="rule"></div>
+<p class="ht-pos">Near-circuit inventory in the Murtal valley, a short drive from the Red Bull Ring &mdash; our alternative base when the Zeltweg rooms have gone.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Superior Double</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Restaurant and bar, wellness area, parking, room blocks that can take a whole party</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>Backup near-circuit inventory, and on this weekend that is worth holding. Spielberg runs out of beds long before the calendar is confirmed, and this is where we place groups who need to be minutes from the Ring rather than an hour away in Graz.</p>
+<p class="ht-why"><strong>Best suited to</strong>Groups and later bookers who need rooms close to the circuit.</p>
+<p class="ht-pk">Grandstand Experience</p>
+</div></article></div>
+    <div class="cta-row" style="margin-top:32px"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Race</a></div>
+  </div>
 </section>
 
 <section id="destination">
@@ -1239,5 +1321,20 @@ function megaHotels(destId){
 <!-- ===== /Vedere loader ===== -->
 <script src="assets/js/vx-search.js" defer></script>
 <script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a");if(!a)return;var h=a.getAttribute("href")||"";var m=null;if(h.indexOf("tel:")===0)m="phone";else if(h.indexOf("wa.me")>-1)m="whatsapp";else if(h.indexOf("mailto:")===0)m="email";if(m&&window.dataLayer)window.dataLayer.push({event:"contact_click",method:m,page:location.pathname});});</script>
+<script>
+/* hotel gallery behaviour */
+document.querySelectorAll('.htg').forEach(function(g){
+  var t=g.querySelector('.htg-track');if(!t)return;var n=t.children.length,i=0;if(n<2)return;
+  var ind=g.querySelector('.htg-ind');
+  function go(k){i=(k+n)%n;t.style.transform='translateX(-'+(i*100)+'%)';if(ind)ind.textContent=(i+1)+' / '+n;}
+  var p=g.querySelector('.htg-prev'),x=g.querySelector('.htg-next');
+  if(p)p.addEventListener('click',function(e){e.preventDefault();go(i-1)});
+  if(x)x.addEventListener('click',function(e){e.preventDefault();go(i+1)});
+  g.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){e.preventDefault();go(i-1)}else if(e.key==='ArrowRight'){e.preventDefault();go(i+1)}});
+  var x0=null;
+  g.addEventListener('pointerdown',function(e){x0=e.clientX});
+  g.addEventListener('pointerup',function(e){if(x0===null)return;var dx=e.clientX-x0;if(Math.abs(dx)>40){if(dx<0){go(i+1)}else{go(i-1)}}x0=null});
+});
+</script>
 </body>
 </html>

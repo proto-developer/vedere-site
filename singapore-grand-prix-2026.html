@@ -769,6 +769,20 @@ a{color:inherit;text-decoration:none}
 @media(max-width:1280px){.hdr-cta .hdr-srch{width:40px;padding:0}.hdr-cta .hdr-srch .srch-txt{display:none}.hdr-cta .hdr-wa{padding:0 14px}}
 @media(min-width:961px) and (max-width:1280px){.hdr-cta .hdr-btn{padding:0 18px}.hdr-cta{gap:12px}}
 @media(max-width:960px){.hdr-cta .hdr-wa{width:40px;padding:0}}
+/* ===== hotel gallery + figure alignment (site-wide parity patch) ===== */
+.ht-imgs{display:flex}
+.htg{position:relative;flex:1;height:auto;min-height:320px;overflow:hidden;background:var(--ink);outline:none}
+.htg-track{display:flex;height:100%;transition:transform .45s ease}
+@media(prefers-reduced-motion:reduce){.htg-track{transition:none}}
+.htg-slide{flex:0 0 100%;min-width:0}
+.htg-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.htg-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:40px;height:40px;border-radius:50%;border:1px solid rgba(251,250,247,.55);background:rgba(13,31,23,.55);color:#FBFAF7;font-size:19px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .25s}
+.htg-btn:hover,.htg-btn:focus-visible{background:rgba(13,31,23,.85)}
+.htg-prev{left:12px}.htg-next{right:12px}
+.htg-ind{position:absolute;right:12px;bottom:10px;z-index:3;margin:0;font-size:11px;letter-spacing:.08em;color:#FBFAF7;background:rgba(13,31,23,.55);padding:3px 9px;border-radius:10px}
+.ht:not(:has(.ht-imgs)){grid-template-columns:1fr}
+@media(max-width:860px){.htg{min-height:0;aspect-ratio:3/2}}
+.split:has(.figure){align-items:center}
 </style>
 <script>(function(){var h=location.hostname;if(h&&!/(^|\.)vederetravel\.com$/.test(h)){var m=document.createElement("meta");m.name="robots";m.content="noindex,nofollow";document.head.appendChild(m);}})();</script>
 </head>
@@ -948,7 +962,7 @@ a{color:inherit;text-decoration:none}
     <div class="split" style="margin-top:40px">
       <div class="body">
         <p class="lede" style="margin-bottom:20px">How you reach the circuit, and where you sit once you are there, shapes this weekend more than anything else. The full ticket ladder follows below.</p>
-        <p>Circuit is downtown: all four hotels are walkable to the gates &mdash; no transfer needed for the race itself, a luxury in its own right. Private airport transfers all tiers (Changi ~20 min); road closures from Thursday, brief guests on gate routing.</p>
+        <p>Circuit is downtown: every hotel we recommend is walkable to the gates &mdash; no transfer needed for the race itself, a luxury in its own right. Private airport transfers all tiers (Changi ~20 min); road closures from Thursday, brief guests on gate routing.</p>
       </div>
       <div class="glance">
         <h3>At a glance</h3><div class="rule" style="margin:14px 0 6px"></div>
@@ -957,6 +971,10 @@ a{color:inherit;text-decoration:none}
         <div class="glance-row"><span class="glance-k">Transfers</span><span class="glance-v">Local transport on entry tiers; private transfers above</span></div>
       </div>
     </div>
+    <figure class="figure" style="margin-top:44px">
+      <img src="assets/img/sports/f1/singapore-grand-prix-2026/f1-singapore-band-01.jpg" alt="Marina Bay Street Circuit seen from the grandstands during the Singapore Grand Prix" width="1200" height="800" loading="lazy">
+      <figcaption>Marina Bay under lights &mdash; the skyline is part of the circuit.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -971,7 +989,70 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <section class="tinted" id="hotels">
-  <div class="wrap split"><figure class="figure"><img src="assets/img/sports/f1/singapore-grand-prix-2026/f1-singapore-section-hotels.jpg" alt="A five-star hotel in Singapore" width="1000" height="667" loading="lazy"><figcaption>Where the weekend is actually spent.</figcaption></figure><div><p class="eyebrow">Hotels</p><h2 class="h2">Where to stay<br><em>in Singapore.</em></h2><div class="rule"></div><div class="body"><p><strong>The Fullerton Hotel</strong> &mdash; Entry 5*. Heritage landmark ON the circuit &mdash; the colonnade overlooks the track; some rooms see the racing line.</p><p><strong>The Ritz-Carlton, Millenia</strong> &mdash; Luxury 5*. THE track-view hotel: bay-facing rooms watch Turns 7&ndash;9 and the fireworks from bed.</p><p><strong>Mandarin Oriental Singapore</strong> &mdash; Luxury 5*. Marina-front elegance, minutes on foot to the gates, superb club lounge.</p><p><strong>Raffles Singapore</strong> &mdash; Ultra luxury. The most famous hotel in Asia &mdash; suites, butlers, Long Bar; the once-in-a-lifetime frame around the weekend.</p></div><div class="cta-row"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Race</a></div></div></div>
+  <div class="wrap">
+    <p class="eyebrow">Hotels</p>
+    <h2 class="h2">Where to stay<br><em>in Singapore.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">The circuit is downtown, so all four are walking distance from the gates &mdash; no race-day transfer at all, which on this weekend is a luxury in its own right.</p>
+    <div style="margin-top:44px"><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1578774337542-d480965f3943?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Elegant classic stone hotel building facade" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1759177715489-74112089de1a?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Opulent hotel lobby with ornate stone columns" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">The Fullerton Hotel</h3><span class="ht-stars">5★</span></div>
+<p class="ht-loc">Marina Bay &middot; Fullerton Square</p><div class="rule"></div>
+<p class="ht-pos">Directly on the circuit &mdash; the colonnade overlooks the track and the gates are a few minutes on foot. No race-day transfer required.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Courtyard Room / Quay Room</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Infinity pool over the bay, spa, The Courtyard, heritage 1928 building</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The old General Post Office, and the only heritage landmark that sits on the track itself &mdash; a handful of rooms look straight down the racing line. Ask early if you want one of them.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests who want architecture and the shortest possible walk to the gates.</p>
+<p class="ht-pk">Grandstand Experience</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1777498269093-ca9514d210af?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Tall contemporary glass hotel tower exterior" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1730920608599-f47db70f9aab?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="City skyline view from the edge of a rooftop pool" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">The Ritz-Carlton, Millenia</h3><span class="ht-stars">5★</span></div>
+<p class="ht-loc">Marina Centre &middot; Raffles Avenue</p><div class="rule"></div>
+<p class="ht-pos">Inside the circuit perimeter on the bay side, a short walk from the Pit Grandstand and the Padang stages.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe Marina Bay View</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Outdoor pool and terrace, spa, Club Lounge, museum-grade art collection</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The track-view hotel. Bay-facing rooms look down on Turns 7 to 9 and across to the fireworks, and the octagonal bathroom windows are a genuine reason to book it. Nothing else in Singapore gives you the race from your own room.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests who want to watch part of the weekend without leaving the hotel.</p>
+<p class="ht-pk">Premium Marina Bay &middot; Hospitality Experience</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1758805768368-0e75b108b9f5?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Modern hotel facade with sleek stacked balconies" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1569803856743-4c36a6281f87?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="City skyline seen through a hotel bedroom window" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Mandarin Oriental Singapore</h3><span class="ht-stars">5★</span></div>
+<p class="ht-loc">Marina Centre &middot; Raffles Avenue, on the bay</p><div class="rule"></div>
+<p class="ht-pos">On the Marina Bay waterfront a few minutes on foot from the gates, with the bay-facing wings looking across the circuit.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Marina Bay View / Club Room</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Oriental Club Lounge, infinity pool over the bay, The Spa, waterfront dining</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>Marina-front elegance without the scale of its neighbours, and the club lounge is the best in the city &mdash; somewhere civilised to sit out the hottest part of the afternoon before the evening sessions begin.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests who want the bay on the doorstep and a quieter, more polished hotel than the crowds around it.</p>
+<p class="ht-pk">Hospitality Experience</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1689962777952-1388595de443?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Classic white colonial-style hotel exterior framed by palm trees" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Classic wooden bed frame with crisp white linens" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Raffles Singapore</h3><span class="ht-stars">5★</span></div>
+<p class="ht-loc">Civic District &middot; Beach Road</p><div class="rule"></div>
+<p class="ht-pos">Ten minutes on foot from the northern gates, set back just far enough from the circuit to stay quiet after the sessions.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Courtyard Suite / Palm Court Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>All-suite with butler service, Raffles Spa, courtyard pool, the Long Bar and Tiffin Room</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The most famous hotel in Asia, and after the restoration the best one in the city. Every room is a suite, every suite has a butler, and the Long Bar becomes a destination in its own right on race weekend.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests for whom the hotel is half the reason for the trip.</p>
+<p class="ht-pk">Luxury Race Weekend</p>
+</div></article></div>
+    <div class="cta-row" style="margin-top:32px"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Race</a></div>
+  </div>
 </section>
 
 <section id="destination">
@@ -1240,5 +1321,20 @@ function megaHotels(destId){
 <!-- ===== /Vedere loader ===== -->
 <script src="assets/js/vx-search.js" defer></script>
 <script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a");if(!a)return;var h=a.getAttribute("href")||"";var m=null;if(h.indexOf("tel:")===0)m="phone";else if(h.indexOf("wa.me")>-1)m="whatsapp";else if(h.indexOf("mailto:")===0)m="email";if(m&&window.dataLayer)window.dataLayer.push({event:"contact_click",method:m,page:location.pathname});});</script>
+<script>
+/* hotel gallery behaviour */
+document.querySelectorAll('.htg').forEach(function(g){
+  var t=g.querySelector('.htg-track');if(!t)return;var n=t.children.length,i=0;if(n<2)return;
+  var ind=g.querySelector('.htg-ind');
+  function go(k){i=(k+n)%n;t.style.transform='translateX(-'+(i*100)+'%)';if(ind)ind.textContent=(i+1)+' / '+n;}
+  var p=g.querySelector('.htg-prev'),x=g.querySelector('.htg-next');
+  if(p)p.addEventListener('click',function(e){e.preventDefault();go(i-1)});
+  if(x)x.addEventListener('click',function(e){e.preventDefault();go(i+1)});
+  g.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){e.preventDefault();go(i-1)}else if(e.key==='ArrowRight'){e.preventDefault();go(i+1)}});
+  var x0=null;
+  g.addEventListener('pointerdown',function(e){x0=e.clientX});
+  g.addEventListener('pointerup',function(e){if(x0===null)return;var dx=e.clientX-x0;if(Math.abs(dx)>40){if(dx<0){go(i+1)}else{go(i-1)}}x0=null});
+});
+</script>
 </body>
 </html>

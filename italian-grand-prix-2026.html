@@ -769,6 +769,21 @@ a{color:inherit;text-decoration:none}
 @media(max-width:1280px){.hdr-cta .hdr-srch{width:40px;padding:0}.hdr-cta .hdr-srch .srch-txt{display:none}.hdr-cta .hdr-wa{padding:0 14px}}
 @media(min-width:961px) and (max-width:1280px){.hdr-cta .hdr-btn{padding:0 18px}.hdr-cta{gap:12px}}
 @media(max-width:960px){.hdr-cta .hdr-wa{width:40px;padding:0}}
+
+/* ===== hotel gallery + figure alignment (site-wide parity patch) ===== */
+.ht-imgs{display:flex}
+.htg{position:relative;flex:1;height:auto;min-height:320px;overflow:hidden;background:var(--ink);outline:none}
+.htg-track{display:flex;height:100%;transition:transform .45s ease}
+@media(prefers-reduced-motion:reduce){.htg-track{transition:none}}
+.htg-slide{flex:0 0 100%;min-width:0}
+.htg-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.htg-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:40px;height:40px;border-radius:50%;border:1px solid rgba(251,250,247,.55);background:rgba(13,31,23,.55);color:#FBFAF7;font-size:19px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .25s}
+.htg-btn:hover,.htg-btn:focus-visible{background:rgba(13,31,23,.85)}
+.htg-prev{left:12px}.htg-next{right:12px}
+.htg-ind{position:absolute;right:12px;bottom:10px;z-index:3;margin:0;font-size:11px;letter-spacing:.08em;color:#FBFAF7;background:rgba(13,31,23,.55);padding:3px 9px;border-radius:10px}
+.ht:not(:has(.ht-imgs)){grid-template-columns:1fr}
+@media(max-width:860px){.htg{min-height:0;aspect-ratio:3/2}}
+.split:has(.figure){align-items:center}
 </style>
 <script>(function(){var h=location.hostname;if(h&&!/(^|\.)vederetravel\.com$/.test(h)){var m=document.createElement("meta");m.name="robots";m.content="noindex,nofollow";document.head.appendChild(m);}})();</script>
 </head>
@@ -957,6 +972,10 @@ a{color:inherit;text-decoration:none}
         <div class="glance-row"><span class="glance-k">Transfers</span><span class="glance-v">Local transport on entry tiers; private transfers above</span></div>
       </div>
     </div>
+    <figure class="figure" style="margin-top:44px">
+      <img src="assets/img/sports/f1/italian-grand-prix-2026/f1-italian-band-01.jpg" alt="Autodromo Nazionale Monza seen from the grandstands" width="1200" height="800" loading="lazy">
+      <figcaption>Monza &mdash; the Temple of Speed, set inside the royal park.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -971,7 +990,65 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <section class="tinted" id="hotels">
-  <div class="wrap split"><figure class="figure"><img src="assets/img/sports/f1/italian-grand-prix-2026/f1-italian-section-hotels.jpg" alt="A five-star hotel in Monza" width="1000" height="667" loading="lazy"><figcaption>Where the weekend is actually spent.</figcaption></figure><div><p class="eyebrow">Hotels</p><h2 class="h2">Where to stay<br><em>in Monza.</em></h2><div class="rule"></div><div class="body"><p><strong>ME Milan Il Duca</strong> &mdash; Entry 5*. Design-led 5-star on Piazza della Repubblica with the city's best rooftop bar.</p><p><strong>Excelsior Hotel Gallia</strong> &mdash; Luxury 5*. Art-deco landmark by Centrale station &mdash; practical for Monza trains, spectacular in its own right.</p><p><strong>Mandarin Oriental Milan</strong> &mdash; Luxury 5*. Quiet luxury off Via Montenapoleone, two-Michelin-star Seta.</p><p><strong>Four Seasons Hotel Milano</strong> &mdash; Ultra luxury. Converted 15th-century convent in the fashion quadrilatero &mdash; Milan's definitive address.</p></div><div class="cta-row"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Race</a></div></div></div>
+  <div class="wrap"><p class="eyebrow">Hotels</p><h2 class="h2">Where to stay<br><em>in Monza.</em></h2><div class="rule"></div><p class="lede">Four central Milan addresses, each mapped to a package tier. Monza is around fifteen minutes by train from Milano Centrale and forty by road outside race traffic &mdash; staying in the city is the right call for this weekend.</p>
+    <div style="margin-top:44px"><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1758805768368-0e75b108b9f5?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Modern hotel facade with sleek stacked balconies" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1583426189374-8090f9dd26cf?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Stylish restaurant interior with pendant lighting" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">ME Milan Il Duca</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Milan &middot; Piazza della Repubblica</p><div class="rule"></div>
+<p class="ht-pos">On Piazza della Repubblica, ten minutes on foot from Milano Centrale and two metro stops from the Duomo. Around 15 minutes to Monza by train, 40 by road outside race traffic.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe Room / ME+ Room</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Radio Rooftop bar and terrace, STK restaurant, fitness centre, concierge</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The best-value design-led five-star in Milan, and the rooftop is genuinely the best in the city for a drink before dinner. Close enough to Centrale that the Monza train is never a chore.</p>
+<p class="ht-why"><strong>Best suited to</strong>Couples and groups who want the city at night and the circuit by train.</p>
+<p class="ht-pk">Grandstand Experience</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1786684937882-e94735ffcfa5?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Classic European grand hotel facade with signage" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1685592437742-3b56edb46b15?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Hotel bedroom suite with elegant pendant lighting" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Excelsior Hotel Gallia</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Milan &middot; Piazza Duca d'Aosta, Centrale</p><div class="rule"></div>
+<p class="ht-pos">Directly opposite Milano Centrale, which makes the Monza train a two-minute walk from the lobby. Around 15 minutes to Monza by rail.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe Room / Gallia Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Terrazza Gallia rooftop restaurant and bar, Shiseido spa, indoor pool, fitness centre</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>An art-deco landmark that happens to be the single most practical address for a Monza weekend &mdash; the station is across the square, and the rooftop looks over the whole city. Spectacular in its own right, not just convenient.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests travelling by rail to the circuit, and anyone who values a short walk on Sunday night.</p>
+<p class="ht-pk">Premium Monza</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1578774337542-d480965f3943?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Elegant classic stone hotel building facade" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1744776411221-702f2848b0b2?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Upscale restaurant tables set for fine dining" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Mandarin Oriental Milan</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Milan &middot; Via Andegari, off Montenapoleone</p><div class="rule"></div>
+<p class="ht-pos">On a quiet side street between La Scala and Via Montenapoleone, five minutes from the Duomo. Around 40 minutes to Monza by private car outside race traffic.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Superior Room / Deluxe Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Two-Michelin-star Seta, Mandarin Bar and courtyard, spa with indoor pool, fitness centre</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>Four eighteenth-century buildings around a private courtyard, which makes it the quietest luxury hotel in central Milan. Seta is the best restaurant you will eat in all weekend, circuit hospitality included.</p>
+<p class="ht-why"><strong>Best suited to</strong>Corporate guests and couples who want calm, dining and the quadrilatero on foot.</p>
+<p class="ht-pk">Hospitality Experience</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1787858742932-149e3385b45f?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Grand historic palace-style hotel facade" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1759050483129-512154ddd640?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Contemporary hotel terrace dining area with greenery" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Four Seasons Hotel Milano</h3><span class="ht-stars">5&#9733;</span></div>
+<p class="ht-loc">Milan &middot; Via Ges&ugrave;, the fashion quadrilatero</p><div class="rule"></div>
+<p class="ht-pos">In the middle of the quadrilatero on Via Ges&ugrave;, a minute from Montenapoleone. Around 40 minutes to Monza by private car outside race traffic.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe Room / Cloister Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Zelo restaurant and cloister garden, Stilla bar, spa and fitness centre, courtyard terrace</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>A fifteenth-century convent turned into the quietest courtyard in Milan, with the original cloister still at its centre. The definitive address in the city, and the property the Luxury Race Weekend is built around.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests on the top tier who want the hotel to be part of the occasion.</p>
+<p class="ht-pk">Luxury Race Weekend</p>
+</div></article></div>
+    <div class="cta-row" style="margin-top:36px"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Race</a></div></div>
 </section>
 
 <section id="destination">
@@ -1238,5 +1315,20 @@ function megaHotels(destId){
 <!-- ===== /Vedere loader ===== -->
 <script src="assets/js/vx-search.js" defer></script>
 <script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a");if(!a)return;var h=a.getAttribute("href")||"";var m=null;if(h.indexOf("tel:")===0)m="phone";else if(h.indexOf("wa.me")>-1)m="whatsapp";else if(h.indexOf("mailto:")===0)m="email";if(m&&window.dataLayer)window.dataLayer.push({event:"contact_click",method:m,page:location.pathname});});</script>
+<script>
+/* hotel gallery behaviour */
+document.querySelectorAll('.htg').forEach(function(g){
+  var t=g.querySelector('.htg-track');if(!t)return;var n=t.children.length,i=0;if(n<2)return;
+  var ind=g.querySelector('.htg-ind');
+  function go(k){i=(k+n)%n;t.style.transform='translateX(-'+(i*100)+'%)';if(ind)ind.textContent=(i+1)+' / '+n;}
+  var p=g.querySelector('.htg-prev'),x=g.querySelector('.htg-next');
+  if(p)p.addEventListener('click',function(e){e.preventDefault();go(i-1)});
+  if(x)x.addEventListener('click',function(e){e.preventDefault();go(i+1)});
+  g.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){e.preventDefault();go(i-1)}else if(e.key==='ArrowRight'){e.preventDefault();go(i+1)}});
+  var x0=null;
+  g.addEventListener('pointerdown',function(e){x0=e.clientX});
+  g.addEventListener('pointerup',function(e){if(x0===null)return;var dx=e.clientX-x0;if(Math.abs(dx)>40){if(dx<0){go(i+1)}else{go(i-1)}}x0=null});
+});
+</script>
 </body>
 </html>

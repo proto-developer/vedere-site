@@ -769,6 +769,20 @@ a{color:inherit;text-decoration:none}
 @media(max-width:1280px){.hdr-cta .hdr-srch{width:40px;padding:0}.hdr-cta .hdr-srch .srch-txt{display:none}.hdr-cta .hdr-wa{padding:0 14px}}
 @media(min-width:961px) and (max-width:1280px){.hdr-cta .hdr-btn{padding:0 18px}.hdr-cta{gap:12px}}
 @media(max-width:960px){.hdr-cta .hdr-wa{width:40px;padding:0}}
+/* ===== hotel gallery + figure alignment (site-wide parity patch) ===== */
+.ht-imgs{display:flex}
+.htg{position:relative;flex:1;height:auto;min-height:320px;overflow:hidden;background:var(--ink);outline:none}
+.htg-track{display:flex;height:100%;transition:transform .45s ease}
+@media(prefers-reduced-motion:reduce){.htg-track{transition:none}}
+.htg-slide{flex:0 0 100%;min-width:0}
+.htg-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.htg-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:40px;height:40px;border-radius:50%;border:1px solid rgba(251,250,247,.55);background:rgba(13,31,23,.55);color:#FBFAF7;font-size:19px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .25s}
+.htg-btn:hover,.htg-btn:focus-visible{background:rgba(13,31,23,.85)}
+.htg-prev{left:12px}.htg-next{right:12px}
+.htg-ind{position:absolute;right:12px;bottom:10px;z-index:3;margin:0;font-size:11px;letter-spacing:.08em;color:#FBFAF7;background:rgba(13,31,23,.55);padding:3px 9px;border-radius:10px}
+.ht:not(:has(.ht-imgs)){grid-template-columns:1fr}
+@media(max-width:860px){.htg{min-height:0;aspect-ratio:3/2}}
+.split:has(.figure){align-items:center}
 </style>
 <script>(function(){var h=location.hostname;if(h&&!/(^|\.)vederetravel\.com$/.test(h)){var m=document.createElement("meta");m.name="robots";m.content="noindex,nofollow";document.head.appendChild(m);}})();</script>
 </head>
@@ -955,6 +969,10 @@ a{color:inherit;text-decoration:none}
     <p class="eyebrow">At A Glance</p>
     <h2 class="h2">The essentials.</h2><div class="rule"></div>
     <div class="panel"><div class="pn-row"><span class="pn-k">Dates</span><span class="pn-v">29 August &ndash; 12 September 2027 (Fan Week precedes the main draw)</span></div><div class="pn-row"><span class="pn-k">Venue</span><span class="pn-v">USTA Billie Jean King National Tennis Center, Flushing Meadows, Queens</span></div><div class="pn-row"><span class="pn-k">Courts</span><span class="pn-v">Arthur Ashe Stadium (roof), Louis Armstrong Stadium, Grandstand</span></div><div class="pn-row"><span class="pn-k">Sessions</span><span class="pn-v">Day and night sessions; finals weekend 11&ndash;12 September</span></div><div class="pn-row"><span class="pn-k">Getting there</span><span class="pn-v">Fly JFK or EWR; LIRR from Manhattan 20 min, or private transfers</span></div><div class="pn-row"><span class="pn-k">Climate</span><span class="pn-v">24&ndash;30&deg;C and humid early, cooling into September</span></div></div>
+    <figure class="figure" style="margin-top:44px">
+      <img src="assets/img/sports/tennis/us-open-2027/us-open-band-01.jpg" alt="Flushing Meadows from the air with the Unisphere in frame" width="1000" height="667" loading="lazy">
+      <figcaption>Flushing Meadows &mdash; Arthur Ashe, Armstrong and the Grandstand on one site in Queens.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -969,7 +987,70 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <section class="tinted" id="hotels">
-  <div class="wrap split"><figure class="figure"><img src="assets/img/sports/tennis/us-open-2027/us-open-section-rooftop.jpg" alt="A rooftop tennis court with the Manhattan skyline behind" width="1000" height="667" loading="lazy"><figcaption>Late-summer New York &mdash; rooftops, Broadway, and Labor Day energy.</figcaption></figure><div><p class="eyebrow">Hotels</p><h2 class="h2">Where to stay<br><em>in Manhattan.</em></h2><div class="rule"></div><div class="body"><p><strong>The Mark</strong> &mdash; the Upper East Side benchmark, and the closest thing New York has to a European grand hotel with a downtown attitude. Good for the LIRR run out to Queens.</p><p><strong>Mandarin Oriental New York</strong> at Columbus Circle for the skyline rooms &mdash; the view over Central Park is the argument, and it wins. <strong>The Langham, Fifth Avenue</strong> has the largest rooms of the four and Midtown convenience.</p><p><strong>Baccarat Hotel</strong> &mdash; jewel-box glamour opposite MoMA, and the most New York of the four in the way the word is usually meant. Smaller, louder, and very good at what it does.</p></div><div class="cta-row"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Tennis</a></div></div></div>
+  <div class="wrap">
+    <p class="eyebrow">Hotels</p>
+    <h2 class="h2">Where to stay<br><em>in Manhattan.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">All four are Manhattan addresses, because this is the slam where the city and the tennis stay separate. Flushing Meadows is twenty minutes on the LIRR from Penn Station, or a private car on the upper tiers.</p>
+    <div style="margin-top:44px"><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1758805768368-0e75b108b9f5?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Hotel facade with sleek stacked balconies in a modern city" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1569803856743-4c36a6281f87?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="City skyline seen through a hotel bedroom window" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">The Mark</h3><span class="ht-stars">5★</span></div>
+<p class="ht-loc">Upper East Side · East 77th Street</p><div class="rule"></div>
+<p class="ht-pos">Off Madison at 77th, a block from Central Park and the museums. Around thirty to forty minutes by car to Flushing Meadows, or the LIRR from Penn Station in twenty.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Deluxe King / Park View Suite</dd></div>
+<div><dt>Board</dt><dd>Room only</dd></div>
+<div><dt>Facilities</dt><dd>The Mark Restaurant by Jean-Georges, Frédéric Fekkai salon, fitness centre, in-house bar</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The Upper East Side benchmark, and the closest thing New York has to a European grand hotel with a downtown attitude. Jacques Grange's interiors still look better than anything built since.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests who want the quiet side of Manhattan and a serious hotel to come back to.</p>
+<p class="ht-pk">Finals in Manhattan</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1777498269093-ca9514d210af?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Tall contemporary glass hotel tower in a modern city" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1777169794972-12095816073b?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Luxury hotel room with a city view over the skyline" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Mandarin Oriental New York</h3><span class="ht-stars">5★</span></div>
+<p class="ht-loc">Columbus Circle · Central Park South</p><div class="rule"></div>
+<p class="ht-pos">High above Columbus Circle at the south-west corner of Central Park. Straightforward for both airports and a direct run out to Queens.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Park View King / Central Park Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Indoor lap pool, spa, 35th-floor lounge, fitness centre</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The skyline rooms are the argument, and they win. From the thirty-fifth floor upwards the view over Central Park does something no other hotel in the city can offer.</p>
+<p class="ht-why"><strong>Best suited to</strong>Couples and corporate guests who want the view and the Midtown convenience.</p>
+<p class="ht-pk">Ashe Premium · Courtside &amp; Hospitality</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1578774337542-d480965f3943?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Elegant classic stone hotel building facade on a Midtown avenue" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1698927100805-2a32718a7e05?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Spacious hotel bedroom suite with a large bed and artwork" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">The Langham, Fifth Avenue</h3><span class="ht-stars">5★</span></div>
+<p class="ht-loc">Midtown · Fifth Avenue at 36th Street</p><div class="rule"></div>
+<p class="ht-pos">On Fifth in Midtown, a short walk from Penn Station for the twenty-minute LIRR run out to Flushing Meadows, and close to Bryant Park and the shopping.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Superior King / One-Bedroom Suite</dd></div>
+<div><dt>Board</dt><dd>Breakfast daily</dd></div>
+<div><dt>Facilities</dt><dd>Ai Fiori restaurant, Chuan Body + Soul spa, fitness centre, in-room dining around the clock</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>The largest rooms of the four, which in Manhattan is not a small thing. Midtown convenience with the shortest reliable journey to the tennis of any of our addresses.</p>
+<p class="ht-why"><strong>Best suited to</strong>Families and guests who want space, and anyone taking the train out to Queens each day.</p>
+<p class="ht-pk">New York Experience · Ashe Premium</p>
+</div></article><article class="ht">
+
+<div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="https://images.unsplash.com/photo-1776262438118-18e2a5613eca?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Modern hotel entrance illuminated at dusk" width="1600" height="900" loading="lazy"></div><div class="htg-slide"><img src="https://images.unsplash.com/photo-1702814160779-4a88cfb330c7?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Elegant lounge seating area with candlelit tables" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
+<div class="ht-head"><h3 class="ht-name">Baccarat Hotel</h3><span class="ht-stars">5★</span></div>
+<p class="ht-loc">Midtown · West 53rd Street, opposite MoMA</p><div class="rule"></div>
+<p class="ht-pos">On 53rd across from MoMA, in the middle of Midtown and a short walk from Fifth Avenue. Twenty minutes on the LIRR from Penn Station to the tennis.</p>
+<dl class="ht-facts">
+<div><dt>Room</dt><dd>Classic King</dd></div>
+<div><dt>Board</dt><dd>Room only</dd></div>
+<div><dt>Facilities</dt><dd>Indoor pool, Spa de La Mer, Grand Salon bar, fitness centre</dd></div>
+</dl>
+<p class="ht-why"><strong>Why we selected it</strong>Jewel-box glamour opposite MoMA, and the most New York of our three in the way the word is usually meant. Smaller and louder than the others, and very good at what it does.</p>
+<p class="ht-why"><strong>Best suited to</strong>Guests who want the evenings to matter as much as the tennis.</p>
+<p class="ht-pk">New York Experience · Ashe Premium</p>
+</div></article></div>
+    <div class="cta-row" style="margin-top:34px"><a class="btn btn-solid" href="#enquire">Request A Quotation</a><a class="btn btn-line" href="#destination">Beyond The Tennis</a></div>
+  </div>
 </section>
 
 <section id="destination">
@@ -1221,5 +1302,20 @@ function megaHotels(destId){
 <!-- ===== /Vedere loader ===== -->
 <script src="assets/js/vx-search.js" defer></script>
 <script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a");if(!a)return;var h=a.getAttribute("href")||"";var m=null;if(h.indexOf("tel:")===0)m="phone";else if(h.indexOf("wa.me")>-1)m="whatsapp";else if(h.indexOf("mailto:")===0)m="email";if(m&&window.dataLayer)window.dataLayer.push({event:"contact_click",method:m,page:location.pathname});});</script>
+<script>
+/* hotel gallery behaviour */
+document.querySelectorAll('.htg').forEach(function(g){
+  var t=g.querySelector('.htg-track');if(!t)return;var n=t.children.length,i=0;if(n<2)return;
+  var ind=g.querySelector('.htg-ind');
+  function go(k){i=(k+n)%n;t.style.transform='translateX(-'+(i*100)+'%)';if(ind)ind.textContent=(i+1)+' / '+n;}
+  var p=g.querySelector('.htg-prev'),x=g.querySelector('.htg-next');
+  if(p)p.addEventListener('click',function(e){e.preventDefault();go(i-1)});
+  if(x)x.addEventListener('click',function(e){e.preventDefault();go(i+1)});
+  g.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){e.preventDefault();go(i-1)}else if(e.key==='ArrowRight'){e.preventDefault();go(i+1)}});
+  var x0=null;
+  g.addEventListener('pointerdown',function(e){x0=e.clientX});
+  g.addEventListener('pointerup',function(e){if(x0===null)return;var dx=e.clientX-x0;if(Math.abs(dx)>40){if(dx<0){go(i+1)}else{go(i-1)}}x0=null});
+});
+</script>
 </body>
 </html>
