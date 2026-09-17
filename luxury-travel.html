@@ -3,6 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/site/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/site/brand/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/site/brand/apple-touch-icon.png">
+<link rel="mask-icon" href="assets/img/site/brand/mark-vedere-v.svg" color="#0D1F17">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#0D1F17">
+<meta name="apple-mobile-web-app-title" content="Vedere">
+<meta name="application-name" content="Vedere">
 <title>Luxury Holidays &amp; Tailor-Made Travel | Vedere Travel</title>
 <meta name="description" content="Tailor-made luxury holidays from Vedere — beach escapes, safaris, city stays and villas, planned around you by one dedicated specialist. ATOL protected.">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
@@ -695,8 +704,10 @@ a{color:inherit;text-decoration:none}
 .vxs{position:fixed;inset:0;z-index:600;background:rgba(10,23,16,.66);backdrop-filter:blur(6px);display:flex;align-items:flex-start;justify-content:center;padding:9vh 18px 18px}
 .vxs-box{width:100%;max-width:640px;background:var(--paper,#FBFAF7);border:1px solid rgba(184,150,90,.35);box-shadow:0 30px 80px rgba(0,0,0,.4)}
 .vxs-row{display:flex;align-items:center;border-bottom:1px solid var(--line,#E5E0D2)}
-.vxs-in{flex:1;border:0;background:transparent;padding:18px 20px;font-family:var(--sans);font-size:16px;color:var(--ink);outline:none}
-.vxs-x{border:0;background:transparent;font-size:26px;line-height:1;color:var(--mid);padding:0 18px;cursor:pointer}
+.vxs-in{flex:1;min-width:0;border:0;background:transparent;padding:18px 20px;font-family:var(--sans);font-size:16px;color:var(--ink);outline:none;-webkit-appearance:none;appearance:none}
+.vxs-in::-webkit-search-cancel-button,.vxs-in::-webkit-search-decoration,.vxs-in::-webkit-search-results-button{-webkit-appearance:none;appearance:none;display:none}
+.vxs-x{flex:none;align-self:stretch;display:flex;align-items:center;justify-content:center;width:54px;min-height:54px;border:0;background:transparent;font-size:26px;line-height:1;color:var(--mid);padding:0;cursor:pointer;transition:color .25s}
+.vxs-x:hover,.vxs-x:focus-visible{color:var(--ink)}
 .vxs-live{margin:0;padding:6px 20px 0;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mid)}
 .vxs-list{max-height:52vh;overflow:auto;padding:8px 8px 12px}
 .vxs-g{margin:12px 12px 4px;font-size:10.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#80622D}
@@ -766,7 +777,7 @@ a{color:inherit;text-decoration:none}
 </div></div></li>
       
       <li><a href="about.html">About</a><div class="mini">
-        <a href="about.html">About Us</a><a href="about.html">Who We Are</a><a href="luxury-travel.html#circle">The Vedere Circle</a>
+        <a href="about.html">About Us</a><a href="about.html">Who We Are</a><a href="luxury-travel.html#founders-club">The Founders Club</a>
       </div></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -799,7 +810,7 @@ a{color:inherit;text-decoration:none}
         <a href="middle-east.html">Middle East</a><a href="europe.html">Europe</a><a href="caribbean.html">Caribbean</a><a href="indian-ocean.html">Indian Ocean</a><a href="africa.html">Africa</a><a href="asia.html">Asia</a><a href="north-america.html">North America</a><a href="villas.html">Villas</a><a class="lead" href="luxury-travel.html">All Luxury Travel</a>
       </div></div>
     </div>
-    <a class="mnav-link" href="luxury-travel.html#circle">The Vedere Circle</a>
+    <a class="mnav-link" href="luxury-travel.html#founders-club">The Founders Club</a>
     <a class="mnav-link" href="about.html">About</a>
     <a class="mnav-link" href="#enquire">Contact</a>
   </div>
@@ -966,12 +977,12 @@ a{color:inherit;text-decoration:none}
 </article></div>
   </div>
 </section>
-<!-- THE VEDERE CIRCLE -->
-<section class="circle-sec" id="circle">
+<!-- THE FOUNDERS CLUB -->
+<span id="circle" aria-hidden="true"></span><section class="circle-sec" id="founders-club">
   <div class="wrap">
     <div class="circle-head">
       <p class="eyebrow">Membership</p>
-      <h2 class="h2">The Vedere Circle</h2>
+      <h2 class="h2">The Founders Club</h2>
       <div class="rule mid"></div>
       <p class="circle-lede">Every journey you book with us earns points, and those points come straight off your next one. There is nothing to join &mdash; you become a member the moment you travel with us for the first time.</p>
       <p class="circle-pts"><b>100 points</b><span>&equals; &pound;1 off your next journey</span></p>
@@ -1096,7 +1107,7 @@ a{color:inherit;text-decoration:none}
   <h3 class="tier-nm">Gold</h3>
   <p class="tier-th">40,000 lifetime points</p>
   <p class="tier-earn">1.5 points per £1 spent</p>
-  <ul class="tier-bens"><li>Everything in Silver</li><li>1.5 points per £1 — half again on every booking</li><li>Guaranteed early check-in and late checkout where available</li><li>Annual resort credit applied to your next journey</li><li>Direct line to your specialist, including out of hours</li></ul>
+  <ul class="tier-bens"><li>Everything in Silver</li><li>1.5 points per £1 — half again on every booking</li><li>Early check-in and late checkout arranged wherever the hotel allows</li><li>Annual resort credit applied to your next journey</li><li>Direct line to your specialist, including out of hours</li></ul>
 </article><article class="tier-card tier-platinum">
   <svg class="tier-emblem" viewBox="0 0 120 120" width="118" height="118" role="img" aria-label="Platinum tier emblem">
   <defs>
@@ -1147,8 +1158,8 @@ a{color:inherit;text-decoration:none}
 </article></div>
 
     <div class="circle-foot">
-      <a class="btn btn-solid" href="luxury-travel.html#circle">Discover The Circle</a>
-      <p class="circle-note">Points are calculated on the value of each confirmed booking and credited once you return. Full terms apply.</p>
+      <a class="btn btn-solid" href="contact.html">Speak to a specialist</a>
+      <p class="circle-note">Points are calculated on the value of each confirmed booking and credited once you return. Your specialist confirms the full membership terms in writing before you book.</p>
     </div>
   </div>
 </section>
@@ -1202,7 +1213,7 @@ a{color:inherit;text-decoration:none}
       <p class="lede" style="color:rgba(251,250,247,.62)">Whether you know exactly where you want to go or are still deciding, the conversation starts the same way. We reply to every enquiry within one working day.</p>
       <p class="contact"><a href="tel:+441616975895">0161 697 5895</a><br><a href="mailto:Info@Vederetravel.com">Info@Vederetravel.com</a></p>
     </div>
-    <form class="form" onsubmit="return submitEnq(event)"><input class="hp-fld" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <form class="form" action="/enquire" method="post" onsubmit="return submitEnq(event)"><input class="hp-fld" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
       <div class="field"><label for="fn">First name</label><input id="fn" name="first_name" type="text" required autocomplete="given-name"></div>
       <div class="field"><label for="ln">Last name</label><input id="ln" name="last_name" type="text" required autocomplete="family-name"></div>
       <div class="field"><label for="em">Email</label><input id="em" name="email" type="email" required autocomplete="email"></div>
@@ -1232,7 +1243,7 @@ a{color:inherit;text-decoration:none}
     </ul></div>
     <div><p class="foot-h">Vedere</p><ul>
       <li><a href="about.html">About us</a></li><li><a href="villas.html">Villas</a></li>
-      <li><a href="luxury-travel.html#circle">The Vedere Circle</a></li><li><a href="sports-travel.html">Sports travel</a></li>
+      <li><a href="luxury-travel.html#founders-club">The Founders Club</a></li><li><a href="sports-travel.html">Sports travel</a></li>
       <li><a href="booking-conditions.html">Booking conditions</a></li><li><a href="atol.html">ATOL protection</a></li></ul></div>
   </div>
   <div class="foot-trust"><img src="assets/img/site/trust/atol-12703-01.png" alt="ATOL protected &mdash; ATOL 12703" width="360" height="360" loading="lazy"><img class="ft-mk" src="assets/img/site/trust/iata-white-01.png" alt="IATA accredited agent" width="437" height="280" loading="lazy"><a class="ft-tp" href="https://uk.trustpilot.com/review/vederetravel.com" target="_blank" rel="noopener">Read our independent reviews on Trustpilot</a><img class="ft-mk ft-tta" src="assets/img/site/trust/tta-x3919-white-01.png" alt="Travel Trust Association member X3919" width="440" height="238" loading="lazy"><p class="ft-note">Flight-inclusive packages are financially protected by the ATOL scheme (ATOL 12703); other bookings are protected through our Travel Trust Association membership (X3919). ATOL protection does not apply to standalone tickets.</p></div>
@@ -1283,11 +1294,19 @@ function megaHotels(destId){
   var burger=document.getElementById('burger'), mnav=document.getElementById('mnav'),
       x=document.getElementById('mnavX');
   if(!burger||!mnav) return;
+  var FOCUSABLE='a[href],button:not([disabled]),input,select,textarea,[tabindex]:not([tabindex="-1"])';
+  function focusables(){
+    return Array.prototype.filter.call(mnav.querySelectorAll(FOCUSABLE),function(el){
+      return el.offsetWidth||el.offsetHeight||el.getClientRects().length; });
+  }
   function setOpen(o){
     if(o) mnav.removeAttribute('hidden');
     requestAnimationFrame(function(){ mnav.classList.toggle('open',o); });
     burger.classList.toggle('on',o); burger.setAttribute('aria-expanded',o);
     document.body.style.overflow=o?'hidden':'';
+    /* keyboard: move focus into the drawer on open, hand it back to the burger on close */
+    if(o){ setTimeout(function(){ var f=focusables(); if(f.length) try{f[0].focus({preventScroll:true});}catch(e){f[0].focus();} },60); }
+    else { try{ burger.focus({preventScroll:true}); }catch(e){ burger.focus(); } }
     if(!o) setTimeout(function(){ if(!mnav.classList.contains('open')) mnav.setAttribute('hidden',''); },420);
   }
   burger.addEventListener('click',function(e){ e.preventDefault(); setOpen(!mnav.classList.contains('open')); });
@@ -1303,7 +1322,17 @@ function megaHotels(destId){
   mnav.querySelectorAll('a').forEach(function(a){
     a.addEventListener('click',function(){ if(a.getAttribute('href').indexOf('tel:')!==0) setOpen(false); });
   });
-  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&mnav.classList.contains('open')) setOpen(false); });
+  document.addEventListener('keydown',function(e){
+    if(!mnav.classList.contains('open')) return;
+    if(e.key==='Escape'){ setOpen(false); return; }
+    /* keep Tab inside the drawer while it covers the page */
+    if(e.key!=='Tab') return;
+    var f=focusables(); if(!f.length) return;
+    var first=f[0], last=f[f.length-1];
+    if(!mnav.contains(document.activeElement)){ e.preventDefault(); (e.shiftKey?last:first).focus(); return; }
+    if(e.shiftKey&&document.activeElement===first){ e.preventDefault(); last.focus(); }
+    else if(!e.shiftKey&&document.activeElement===last){ e.preventDefault(); first.focus(); }
+  });
   window.addEventListener('resize',function(){ if(window.innerWidth>960&&mnav.classList.contains('open')) setOpen(false); });
 })();
 </script>

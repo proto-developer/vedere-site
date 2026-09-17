@@ -3,6 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/site/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/site/brand/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/site/brand/apple-touch-icon.png">
+<link rel="mask-icon" href="assets/img/site/brand/mark-vedere-v.svg" color="#0D1F17">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#0D1F17">
+<meta name="apple-mobile-web-app-title" content="Vedere">
+<meta name="application-name" content="Vedere">
 <title>Horse Racing Packages | Cheltenham, Royal Ascot &amp; the Arc | Vedere</title>
 <meta name="description" content="Horse racing travel packages: Cheltenham Festival, Royal Ascot, the Grand National, the Arc in Paris, the Kentucky Derby and the Dubai World Cup — with hospitality and five-star hotels.">
 <meta name="robots" content="index,follow,max-image-preview:large">
@@ -725,8 +734,10 @@ a{color:inherit;text-decoration:none}
 .vxs{position:fixed;inset:0;z-index:600;background:rgba(10,23,16,.66);backdrop-filter:blur(6px);display:flex;align-items:flex-start;justify-content:center;padding:9vh 18px 18px}
 .vxs-box{width:100%;max-width:640px;background:var(--paper,#FBFAF7);border:1px solid rgba(184,150,90,.35);box-shadow:0 30px 80px rgba(0,0,0,.4)}
 .vxs-row{display:flex;align-items:center;border-bottom:1px solid var(--line,#E5E0D2)}
-.vxs-in{flex:1;border:0;background:transparent;padding:18px 20px;font-family:var(--sans);font-size:16px;color:var(--ink);outline:none}
-.vxs-x{border:0;background:transparent;font-size:26px;line-height:1;color:var(--mid);padding:0 18px;cursor:pointer}
+.vxs-in{flex:1;min-width:0;border:0;background:transparent;padding:18px 20px;font-family:var(--sans);font-size:16px;color:var(--ink);outline:none;-webkit-appearance:none;appearance:none}
+.vxs-in::-webkit-search-cancel-button,.vxs-in::-webkit-search-decoration,.vxs-in::-webkit-search-results-button{-webkit-appearance:none;appearance:none;display:none}
+.vxs-x{flex:none;align-self:stretch;display:flex;align-items:center;justify-content:center;width:54px;min-height:54px;border:0;background:transparent;font-size:26px;line-height:1;color:var(--mid);padding:0;cursor:pointer;transition:color .25s}
+.vxs-x:hover,.vxs-x:focus-visible{color:var(--ink)}
 .vxs-live{margin:0;padding:6px 20px 0;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mid)}
 .vxs-list{max-height:52vh;overflow:auto;padding:8px 8px 12px}
 .vxs-g{margin:12px 12px 4px;font-size:10.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#80622D}
@@ -754,7 +765,7 @@ a{color:inherit;text-decoration:none}
 .opt{font-size:10px;font-weight:400;color:var(--mid);margin-left:7px;letter-spacing:.04em;text-transform:none}
 
 /* ===== package flag row reserve ===== */
-@media(min-width:641px){.pk-grid:has(.pk-flag) .pk:not(:has(.pk-flag)) .pk-top::after{content:" a0";display:block;font-size:9px;font-weight:600;letter-spacing:.16em;padding:4px 8px;border:1px solid transparent;visibility:hidden}}
+@media(min-width:641px){.pk-grid:has(.pk-flag) .pk:not(:has(.pk-flag)) .pk-top::after{content:"\00a0";display:block;font-size:9px;font-weight:600;letter-spacing:.16em;padding:4px 8px;border:1px solid transparent;visibility:hidden}}
 
 /* ===== header actions (unified) + search close ===== */
 .vxs[hidden]{display:none}
@@ -809,7 +820,7 @@ a{color:inherit;text-decoration:none}
 </div></div></li>
       
       <li><a href="about.html">About</a><div class="mini">
-        <a href="about.html">About Us</a><a href="about.html">Who We Are</a><a href="luxury-travel.html#circle">The Vedere Circle</a>
+        <a href="about.html">About Us</a><a href="about.html">Who We Are</a><a href="luxury-travel.html#founders-club">The Founders Club</a>
       </div></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -841,7 +852,7 @@ a{color:inherit;text-decoration:none}
         <a href="middle-east.html">Middle East</a><a href="europe.html">Europe</a><a href="caribbean.html">Caribbean</a><a href="indian-ocean.html">Indian Ocean</a><a href="africa.html">Africa</a><a href="asia.html">Asia</a><a href="north-america.html">North America</a><a href="villas.html">Villas</a><a class="lead" href="luxury-travel.html">All Luxury Travel</a>
       </div></div>
     </div>
-    <a class="mnav-link" href="luxury-travel.html#circle">The Vedere Circle</a>
+    <a class="mnav-link" href="luxury-travel.html#founders-club">The Founders Club</a>
     <a class="mnav-link" href="about.html">About</a>
     <a class="mnav-link" href="#enquire">Contact</a>
   </div>
@@ -1117,7 +1128,7 @@ a{color:inherit;text-decoration:none}
       <p class="lede" style="color:rgba(251,250,247,.62)">Tell us the package you have in mind &mdash; or simply the dates &mdash; and your specialist will come back with what is available and a firm quote.</p>
       <p class="contact"><a href="tel:+441616975895">0161 697 5895</a><br><a href="mailto:Info@Vederetravel.com">Info@Vederetravel.com</a></p>
     </div>
-    <form class="form" onsubmit="return submitEnq(event)"><input class="hp-fld" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <form class="form" action="/enquire" method="post" onsubmit="return submitEnq(event)"><input class="hp-fld" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
       <div class="field"><label for="fn">First name</label><input id="fn" name="first_name" type="text" required autocomplete="given-name"></div>
       <div class="field"><label for="ln">Last name</label><input id="ln" name="last_name" type="text" required autocomplete="family-name"></div>
       <div class="field"><label for="em">Email</label><input id="em" name="email" type="email" required autocomplete="email"></div>
@@ -1162,7 +1173,7 @@ var p=b.nextElementSibling;p.style.maxHeight=o?null:p.scrollHeight+'px';}
 function tgFaq(b){var f=b.parentElement,a=b.nextElementSibling,o=f.classList.contains('open');
 f.classList.toggle('open');b.setAttribute('aria-expanded',!o);a.style.maxHeight=o?null:a.scrollHeight+'px';}
 function openEnq(sel){var s=document.getElementById('pkg')||document.getElementById('hotel');if(s&&sel){for(var i=0;i<s.options.length;i++){if(s.options[i].text===sel){s.selectedIndex=i;break}}}var t=document.getElementById('enquire');if(t)t.scrollIntoView({behavior:'smooth'});var f=document.getElementById('fn');if(f)setTimeout(function(){try{f.focus({preventScroll:true})}catch(e){}},700);}
-function submitEnq(e){e.preventDefault();var f=e.target,b=f.querySelector('button[type=submit]');if(f.dataset.busy)return false;f.dataset.busy='1';if(window.dataLayer){window.dataLayer.push({event:'enquiry_attempt',page:'us-masters-2027'})}b.textContent='Sending\u2026';b.disabled=true;var fd=new FormData(f);fd.append('page','us-masters-2027');fd.append('url',location.pathname);fetch('/enquire',{method:'POST',body:fd}).then(function(r){if(!r.ok)throw 0;b.textContent='Enquiry received \u2713';var ok=f.querySelector('.form-ok');if(!ok){ok=document.createElement('p');ok.className='form-ok';f.appendChild(ok);}ok.innerHTML='Thank you \u2014 your enquiry is with our specialists and you\u2019ll hear from us within one working day. If it\u2019s urgent, call <a href=\'tel:+441616975895\'>0161\u00a0697\u00a05895</a>.';var er0=f.querySelector('.form-err');if(er0)er0.remove();if(window.dataLayer){window.dataLayer.push({event:'enquiry_received',page:'us-masters-2027'})}}).catch(function(){b.textContent='Try again';b.disabled=false;delete f.dataset.busy;var er=f.querySelector('.form-err');if(!er){er=document.createElement('p');er.className='form-err';f.appendChild(er);}er.innerHTML='We could not send your enquiry just now. Please try again in a moment, or email <a href=\'mailto:Info@Vederetravel.com\'>Info@Vederetravel.com</a> or call 0161\u00a0697\u00a05895 \u2014 your details are still in the form.';});return false;}
+function submitEnq(e){e.preventDefault();var f=e.target,b=f.querySelector('button[type=submit]');if(f.dataset.busy)return false;f.dataset.busy='1';if(window.dataLayer){window.dataLayer.push({event:'enquiry_attempt',page:'horse-racing'})}b.textContent='Sending\u2026';b.disabled=true;var fd=new FormData(f);fd.append('page','horse-racing');fd.append('url',location.pathname);fetch('/enquire',{method:'POST',body:fd}).then(function(r){if(!r.ok)throw 0;b.textContent='Enquiry received \u2713';var ok=f.querySelector('.form-ok');if(!ok){ok=document.createElement('p');ok.className='form-ok';f.appendChild(ok);}ok.innerHTML='Thank you \u2014 your enquiry is with our specialists and you\u2019ll hear from us within one working day. If it\u2019s urgent, call <a href=\'tel:+441616975895\'>0161\u00a0697\u00a05895</a>.';var er0=f.querySelector('.form-err');if(er0)er0.remove();if(window.dataLayer){window.dataLayer.push({event:'enquiry_received',page:'horse-racing'})}}).catch(function(){b.textContent='Try again';b.disabled=false;delete f.dataset.busy;var er=f.querySelector('.form-err');if(!er){er=document.createElement('p');er.className='form-err';f.appendChild(er);}er.innerHTML='We could not send your enquiry just now. Please try again in a moment, or email <a href=\'mailto:Info@Vederetravel.com\'>Info@Vederetravel.com</a> or call 0161\u00a0697\u00a05895 \u2014 your details are still in the form.';});return false;}
 if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){clearInterval(timer);}
 
 function megaPick(kind, id){
@@ -1191,11 +1202,19 @@ function megaHotels(destId){
   var burger=document.getElementById('burger'), mnav=document.getElementById('mnav'),
       x=document.getElementById('mnavX');
   if(!burger||!mnav) return;
+  var FOCUSABLE='a[href],button:not([disabled]),input,select,textarea,[tabindex]:not([tabindex="-1"])';
+  function focusables(){
+    return Array.prototype.filter.call(mnav.querySelectorAll(FOCUSABLE),function(el){
+      return el.offsetWidth||el.offsetHeight||el.getClientRects().length; });
+  }
   function setOpen(o){
     if(o) mnav.removeAttribute('hidden');
     requestAnimationFrame(function(){ mnav.classList.toggle('open',o); });
     burger.classList.toggle('on',o); burger.setAttribute('aria-expanded',o);
     document.body.style.overflow=o?'hidden':'';
+    /* keyboard: move focus into the drawer on open, hand it back to the burger on close */
+    if(o){ setTimeout(function(){ var f=focusables(); if(f.length) try{f[0].focus({preventScroll:true});}catch(e){f[0].focus();} },60); }
+    else { try{ burger.focus({preventScroll:true}); }catch(e){ burger.focus(); } }
     if(!o) setTimeout(function(){ if(!mnav.classList.contains('open')) mnav.setAttribute('hidden',''); },420);
   }
   burger.addEventListener('click',function(e){ e.preventDefault(); setOpen(!mnav.classList.contains('open')); });
@@ -1211,7 +1230,17 @@ function megaHotels(destId){
   mnav.querySelectorAll('a').forEach(function(a){
     a.addEventListener('click',function(){ if(a.getAttribute('href').indexOf('tel:')!==0) setOpen(false); });
   });
-  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&mnav.classList.contains('open')) setOpen(false); });
+  document.addEventListener('keydown',function(e){
+    if(!mnav.classList.contains('open')) return;
+    if(e.key==='Escape'){ setOpen(false); return; }
+    /* keep Tab inside the drawer while it covers the page */
+    if(e.key!=='Tab') return;
+    var f=focusables(); if(!f.length) return;
+    var first=f[0], last=f[f.length-1];
+    if(!mnav.contains(document.activeElement)){ e.preventDefault(); (e.shiftKey?last:first).focus(); return; }
+    if(e.shiftKey&&document.activeElement===first){ e.preventDefault(); last.focus(); }
+    else if(!e.shiftKey&&document.activeElement===last){ e.preventDefault(); first.focus(); }
+  });
   window.addEventListener('resize',function(){ if(window.innerWidth>960&&mnav.classList.contains('open')) setOpen(false); });
 })();
 </script>
