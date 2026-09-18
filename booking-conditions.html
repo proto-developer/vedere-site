@@ -598,6 +598,8 @@ a{color:inherit;text-decoration:none}
 .vxs-in{flex:1;min-width:0;border:0;background:transparent;padding:18px 20px;font-family:var(--sans);font-size:16px;color:var(--ink);outline:none;-webkit-appearance:none;appearance:none}
 .vxs-in::-webkit-search-cancel-button,.vxs-in::-webkit-search-decoration,.vxs-in::-webkit-search-results-button{-webkit-appearance:none;appearance:none;display:none}
 .vxs-x{flex:none;align-self:stretch;display:flex;align-items:center;justify-content:center;width:54px;min-height:54px;border:0;background:transparent;font-size:26px;line-height:1;color:var(--mid);padding:0;cursor:pointer;transition:color .25s}
+.vxs-in:focus-visible{outline:2px solid var(--gold);outline-offset:-3px}
+.field input:focus-visible,.field select:focus-visible,.field textarea:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .vxs-x:hover,.vxs-x:focus-visible{color:var(--ink)}
 .vxs-live{margin:0;padding:6px 20px 0;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mid)}
 .vxs-list{max-height:52vh;overflow:auto;padding:8px 8px 12px}
@@ -625,6 +627,11 @@ a{color:inherit;text-decoration:none}
 @media(max-width:1280px){.hdr-cta .hdr-srch{width:40px;padding:0}.hdr-cta .hdr-srch .srch-txt{display:none}.hdr-cta .hdr-wa{padding:0 14px}}
 @media(min-width:961px) and (max-width:1280px){.hdr-cta .hdr-btn{padding:0 18px}.hdr-cta{gap:12px}}
 @media(max-width:960px){.hdr-cta .hdr-wa{width:40px;padding:0}}
+/* logo — strapline-free wordmark, slightly larger (brief s.5) */
+.hdr-logo img{width:142px;height:auto}
+.mnav-top img{width:132px;height:auto}
+.foot-grid img{width:128px;height:auto}
+@media(max-width:960px){.hdr-logo img{width:120px}}
 </style>
 <script>(function(){var h=location.hostname;if(h&&!/(^|\.)vederetravel\.com$/.test(h)){var m=document.createElement("meta");m.name="robots";m.content="noindex,nofollow";document.head.appendChild(m);}})();</script>
 <!-- TrustBox script -->
@@ -634,8 +641,8 @@ a{color:inherit;text-decoration:none}
 <body>
 <header class="hdr" id="hdr">
   <div class="hdr-in">
-    <a class="hdr-logo" href="index.html" aria-label="Vedere Travel">
-      <img src="assets/img/site/brand/logo-vedere-wordmark-01.png" alt="Vedere Travel" width="1200" height="253"></a>
+    <a class="hdr-logo" href="index.html" aria-label="Vedere Travel — home">
+      <img src="assets/img/site/brand/logo-vedere-wordmark-02.png" alt="Vedere Travel" width="1200" height="160"></a>
     <ul class="hdr-nav" id="hdrNav">
       <li><a href="sports-travel.html">Sports Travel</a><div class="mega"><div class="mega-in">
   <div class="mega-col"><p class="mega-hd">Sport</p><ul class="mega-list"><li class="act" data-cat="formula-one"><button type="button" onmouseenter="megaPick('s','formula-one')" onclick="location.href='formula-one.html'">Formula One<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="football"><button type="button" onmouseenter="megaPick('s','football')" onclick="location.href='football.html'">Football<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="tennis"><button type="button" onmouseenter="megaPick('s','tennis')" onclick="location.href='tennis.html'">Tennis<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="golf"><button type="button" onmouseenter="megaPick('s','golf')" onclick="location.href='golf.html'">Golf<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="us-sports"><button type="button" onmouseenter="megaPick('s','us-sports')" onclick="location.href='us-sports.html'">US Sports<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="cricket"><button type="button" onmouseenter="megaPick('s','cricket')" onclick="location.href='cricket.html'">Cricket<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="rugby"><button type="button" onmouseenter="megaPick('s','rugby')" onclick="location.href='rugby.html'">Rugby<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="other-sports"><button type="button" onmouseenter="megaPick('s','other-sports')" onclick="location.href='other-sports.html'">Other Sports<span class="chev">&rsaquo;</span></button></li></ul></div>
@@ -670,7 +677,7 @@ a{color:inherit;text-decoration:none}
 </div></div></li>
       
       <li><a href="about.html">About</a><div class="mini">
-        <a href="about.html">About Us</a><a href="about.html">Who We Are</a><a href="luxury-travel.html#founders-club">The Founders Club</a>
+        <a href="about.html">About Us</a><a href="about.html">Who We Are</a><a href="luxury-travel.html#founders-club">Vedere Founders Club</a>
       </div></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -697,7 +704,7 @@ a{color:inherit;text-decoration:none}
 </main>
 <footer class="foot"><div class="wrap">
   <div class="foot-grid">
-    <div><img src="assets/img/site/brand/logo-vedere-wordmark-01.png" alt="Vedere Travel" width="1200" height="253">
+    <div><img src="assets/img/site/brand/logo-vedere-wordmark-02.png" alt="Vedere Travel" width="1200" height="160">
       <p class="foot-t">One partner. Every journey. Luxury travel and bespoke sports packages through one specialist team.</p>
       <p class="contact"><a href="tel:+441616975895">0161 697 5895</a><br><a href="mailto:Info@Vederetravel.com">Info@Vederetravel.com</a><br>Sowerby Bridge, HX6 2AG</p></div>
     <div><p class="foot-h">Middle East</p><ul>

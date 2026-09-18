@@ -21,14 +21,14 @@
 <meta property="og:locale" content="en_GB">
 <meta property="og:title" content="Luxury Holidays | Vedere Travel">
 <meta property="og:description" content="Beach escapes, safaris, city stays and villas, planned around you by one dedicated specialist.">
-<meta name="twitter:image" content="https://vederetravel.com/assets/img/luxury/index/luxury-hero-01.jpg">
+<meta name="twitter:image" content="https://vederetravel.com/assets/img/heroes/luxury-travel/luxury-travel-slide-01.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta property="og:image" content="https://vederetravel.com/assets/img/luxury/index/luxury-hero-01.jpg">
-<meta property="og:image:alt" content="Luxury tailor-made travel with Vedere Travel">
+<meta property="og:image" content="https://vederetravel.com/assets/img/heroes/luxury-travel/luxury-travel-slide-01.jpg">
+<meta property="og:image:alt" content="Cheval Blanc Randheli in the Maldives at sunset, with a lagoon villa over the water">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/img/luxury/index/luxury-hero-01.jpg" fetchpriority="high">
+<link rel="preload" as="image" type="image/webp" href="assets/img/heroes/luxury-travel/luxury-travel-slide-01-1600.webp" imagesrcset="assets/img/heroes/luxury-travel/luxury-travel-slide-01-1000.webp 1000w, assets/img/heroes/luxury-travel/luxury-travel-slide-01-1600.webp 1600w, assets/img/heroes/luxury-travel/luxury-travel-slide-01-2400.webp 2400w" imagesizes="100vw" fetchpriority="high">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What makes Vedere different from booking direct?", "acceptedAnswer": {"@type": "Answer", "text": "Advice and accountability. Our recommendations are specific — where a property actually sits, which rooms to ask for and who it suits — and one specialist looks after the whole holiday, from flights and transfers to restaurant reservations. Where hotels extend added benefits to our guests, we pass them on."}}, {"@type": "Question", "name": "Do you only sell the destinations listed?", "acceptedAnswer": {"@type": "Answer", "text": "No. The destinations on these pages are where our knowledge runs deepest, but we arrange tailor-made travel worldwide. If you have somewhere in mind that is not listed, tell us — we will either know it well or tell you honestly that we do not."}}, {"@type": "Question", "name": "How does the process work?", "acceptedAnswer": {"@type": "Answer", "text": "One conversation to understand what you want from the trip, then a tailored proposal within a few days. Nothing is booked until you are happy. From confirmation onward, one specialist looks after the entire trip — flights, hotels, transfers, restaurants and anything else."}}, {"@type": "Question", "name": "Are your holidays ATOL protected?", "acceptedAnswer": {"@type": "Answer", "text": "Flight-inclusive holidays booked with Vedere are ATOL protected. Your certificate is issued at the point of booking."}}, {"@type": "Question", "name": "Can you arrange multi-centre trips?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — twin- and multi-centre holidays work well. Dubai with the Maldives, Cape Town with a safari, Tokyo with Kyoto and a beach to finish. We handle the internal flights, the transfers and the timing."}}, {"@type": "Question", "name": "What is the typical budget?", "acceptedAnswer": {"@type": "Answer", "text": "It varies enormously by destination and season. As a rough guide, a week to ten days in the hotels we feature usually starts from around £5,000 per couple, and rises with peak dates and suite categories. We will always tell you honestly what a budget can achieve."}}, {"@type": "Question", "name": "Do you arrange villas as well as hotels?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Private villas and residences worldwide, with staff, chef and concierge arranged around you. It is often the right answer for multi-generational family trips and groups of couples travelling together."}}, {"@type": "Question", "name": "How far in advance should I book?", "acceptedAnswer": {"@type": "Answer", "text": "For peak periods — Christmas, February half term, Easter — six to nine months. The most sought-after rooms go first. Outside those windows, three to four months is usually comfortable."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vederetravel.com"}, {"@type": "ListItem", "position": 2, "name": "Luxury Travel", "item": "https://vederetravel.com/luxury-travel"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TravelAgency", "name": "Vedere Travel", "url": "https://vederetravel.com", "telephone": "+44 161 697 5895", "email": "Info@Vederetravel.com", "address": {"@type": "PostalAddress", "addressLocality": "Sowerby Bridge", "postalCode": "HX6 2AG", "addressCountry": "GB"}, "areaServed": ["Europe", "The Caribbean", "The Indian Ocean", "The Middle East", "Africa", "Asia", "North America"]}</script>
@@ -103,6 +103,8 @@ section.tight{padding-block:clamp(36px,4.5vw,60px)}
 .hero-dots{position:absolute;bottom:clamp(18px,2.5vw,28px);right:var(--pad);z-index:3;display:flex;gap:8px}
 .hero-dot{width:22px;height:2px;background:rgba(255,255,255,.3);border:none;padding:0;cursor:pointer;transition:all .4s}
 .hero-dot.on{background:var(--gold);width:38px}
+.hero-pause{position:absolute;right:22px;bottom:22px;z-index:4;width:38px;height:38px;border-radius:50%;border:1px solid rgba(251,250,247,.5);background:rgba(13,31,23,.45);color:#FBFAF7;font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.hero-pause:hover{background:rgba(13,31,23,.75)}
 /* strip */
 .strip{background:var(--ink2);border-bottom:1px solid rgba(184,150,90,.13)}
 .strip-in{max-width:var(--wrap);margin:0 auto;padding-inline:var(--pad);display:grid;grid-template-columns:repeat(4,1fr)}
@@ -705,6 +707,7 @@ a{color:inherit;text-decoration:none}
 .vxs-box{width:100%;max-width:640px;background:var(--paper,#FBFAF7);border:1px solid rgba(184,150,90,.35);box-shadow:0 30px 80px rgba(0,0,0,.4)}
 .vxs-row{display:flex;align-items:center;border-bottom:1px solid var(--line,#E5E0D2)}
 .vxs-in{flex:1;min-width:0;border:0;background:transparent;padding:18px 20px;font-family:var(--sans);font-size:16px;color:var(--ink);outline:none;-webkit-appearance:none;appearance:none}
+.vxs-in:focus-visible{outline:2px solid var(--gold);outline-offset:-3px}
 .vxs-in::-webkit-search-cancel-button,.vxs-in::-webkit-search-decoration,.vxs-in::-webkit-search-results-button{-webkit-appearance:none;appearance:none;display:none}
 .vxs-x{flex:none;align-self:stretch;display:flex;align-items:center;justify-content:center;width:54px;min-height:54px;border:0;background:transparent;font-size:26px;line-height:1;color:var(--mid);padding:0;cursor:pointer;transition:color .25s}
 .vxs-x:hover,.vxs-x:focus-visible{color:var(--ink)}
@@ -734,6 +737,12 @@ a{color:inherit;text-decoration:none}
 @media(max-width:1280px){.hdr-cta .hdr-srch{width:40px;padding:0}.hdr-cta .hdr-srch .srch-txt{display:none}.hdr-cta .hdr-wa{padding:0 14px}}
 @media(min-width:961px) and (max-width:1280px){.hdr-cta .hdr-btn{padding:0 18px}.hdr-cta{gap:12px}}
 @media(max-width:960px){.hdr-cta .hdr-wa{width:40px;padding:0}}
+/* logo — strapline-free wordmark, slightly larger (brief s.5) */
+.hdr-logo img{width:142px;height:auto}
+.mnav-top img{width:132px;height:auto}
+.foot-grid img{width:128px;height:auto}
+@media(max-width:960px){.hdr-logo img{width:120px}}
+.hero-slide picture{display:block;width:100%;height:100%}
 </style>
 <script>(function(){var h=location.hostname;if(h&&!/(^|\.)vederetravel\.com$/.test(h)){var m=document.createElement("meta");m.name="robots";m.content="noindex,nofollow";document.head.appendChild(m);}})();</script>
 <!-- TrustBox script -->
@@ -744,8 +753,8 @@ a{color:inherit;text-decoration:none}
 
 <header class="hdr" id="hdr">
   <div class="hdr-in">
-    <a class="hdr-logo" href="index.html" aria-label="Vedere Travel">
-      <img src="assets/img/site/brand/logo-vedere-wordmark-01.png" alt="Vedere Travel" width="1200" height="253"></a>
+    <a class="hdr-logo" href="index.html" aria-label="Vedere Travel — home">
+      <img src="assets/img/site/brand/logo-vedere-wordmark-02.png" alt="Vedere Travel" width="1200" height="160"></a>
     <ul class="hdr-nav" id="hdrNav">
       <li><a href="sports-travel.html">Sports Travel</a><div class="mega"><div class="mega-in">
   <div class="mega-col"><p class="mega-hd">Sport</p><ul class="mega-list"><li class="act" data-cat="formula-one"><button type="button" onmouseenter="megaPick('s','formula-one')" onclick="location.href='formula-one.html'">Formula One<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="football"><button type="button" onmouseenter="megaPick('s','football')" onclick="location.href='football.html'">Football<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="tennis"><button type="button" onmouseenter="megaPick('s','tennis')" onclick="location.href='tennis.html'">Tennis<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="golf"><button type="button" onmouseenter="megaPick('s','golf')" onclick="location.href='golf.html'">Golf<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="us-sports"><button type="button" onmouseenter="megaPick('s','us-sports')" onclick="location.href='us-sports.html'">US Sports<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="cricket"><button type="button" onmouseenter="megaPick('s','cricket')" onclick="location.href='cricket.html'">Cricket<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="rugby"><button type="button" onmouseenter="megaPick('s','rugby')" onclick="location.href='rugby.html'">Rugby<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="other-sports"><button type="button" onmouseenter="megaPick('s','other-sports')" onclick="location.href='other-sports.html'">Other Sports<span class="chev">&rsaquo;</span></button></li></ul></div>
@@ -780,7 +789,7 @@ a{color:inherit;text-decoration:none}
 </div></div></li>
       
       <li><a href="about.html">About</a><div class="mini">
-        <a href="about.html">About Us</a><a href="about.html">Who We Are</a><a href="luxury-travel.html#founders-club">The Founders Club</a>
+        <a href="about.html">About Us</a><a href="about.html">Who We Are</a><a href="luxury-travel.html#founders-club">Vedere Founders Club</a>
       </div></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -795,7 +804,7 @@ a{color:inherit;text-decoration:none}
 
 <div class="mnav" id="mnav" role="dialog" aria-modal="true" aria-label="Menu" hidden>
   <div class="mnav-top">
-    <img src="assets/img/site/brand/logo-vedere-wordmark-01.png" alt="Vedere Travel" width="1200" height="253">
+    <img src="assets/img/site/brand/logo-vedere-wordmark-02.png" alt="Vedere Travel" width="1200" height="160">
     <button class="mnav-x" id="mnavX" aria-label="Close menu"><span></span><span></span></button>
   </div>
   <div class="mnav-body">
@@ -813,7 +822,7 @@ a{color:inherit;text-decoration:none}
         <a href="middle-east.html">Middle East</a><a href="europe.html">Europe</a><a href="caribbean.html">Caribbean</a><a href="indian-ocean.html">Indian Ocean</a><a href="africa.html">Africa</a><a href="asia.html">Asia</a><a href="north-america.html">North America</a><a href="villas.html">Villas</a><a class="lead" href="luxury-travel.html">All Luxury Travel</a>
       </div></div>
     </div>
-    <a class="mnav-link" href="luxury-travel.html#founders-club">The Founders Club</a>
+    <a class="mnav-link" href="luxury-travel.html#founders-club">Vedere Founders Club</a>
     <a class="mnav-link" href="about.html">About</a>
     <a class="mnav-link" href="#enquire">Contact</a>
   </div>
@@ -832,10 +841,13 @@ a{color:inherit;text-decoration:none}
 <!-- 1 · HERO -->
 <section class="hero" id="top">
   <div class="hero-slides">
-    <div class="hero-slide on"><img src="assets/img/luxury/index/luxury-hero-01.jpg" alt="Luxury travel with Vedere" width="1600" height="1067" fetchpriority="high"></div>
-    <div class="hero-slide"><img src="assets/img/luxury/index/luxury-hero-02.jpg" alt="A couple walking a Maldivian sandbank at sunset" width="1600" height="898"></div>
-    <div class="hero-slide"><img src="assets/img/luxury/index/luxury-hero-03.jpg" alt="A private villa and pool in Corsica" width="1600" height="900"></div>
-  </div>
+      <div class="hero-slide on"><picture><source type="image/webp" srcset="assets/img/heroes/luxury-travel/luxury-travel-slide-01-1000.webp 1000w, assets/img/heroes/luxury-travel/luxury-travel-slide-01-1600.webp 1600w, assets/img/heroes/luxury-travel/luxury-travel-slide-01-2400.webp 2400w" sizes="100vw"><img src="assets/img/heroes/luxury-travel/luxury-travel-slide-01.jpg" alt="Cheval Blanc Randheli in the Maldives at sunset, with a lagoon villa over the water" width="2400" height="1800" fetchpriority="high"></picture></div>
+      <div class="hero-slide"><picture><source type="image/webp" srcset="assets/img/heroes/luxury-travel/luxury-travel-slide-02-1000.webp 1000w, assets/img/heroes/luxury-travel/luxury-travel-slide-02-1600.webp 1600w, assets/img/heroes/luxury-travel/luxury-travel-slide-02-2400.webp 2400w" sizes="100vw"><img src="assets/img/heroes/luxury-travel/luxury-travel-slide-02.jpg" alt="The Sea Scape terrace at Six Senses Ibiza looking out to sea at sunset" width="2400" height="1600" decoding="async"></picture></div>
+      <div class="hero-slide"><picture><source type="image/webp" srcset="assets/img/heroes/luxury-travel/luxury-travel-slide-03-1000.webp 1000w, assets/img/heroes/luxury-travel/luxury-travel-slide-03-1600.webp 1600w, assets/img/heroes/luxury-travel/luxury-travel-slide-03-2400.webp 2400w" sizes="100vw"><img src="assets/img/heroes/luxury-travel/luxury-travel-slide-03.jpg" alt="The clifftop swimming pool at Caruso, Ravello, looking out over the Amalfi hills" width="2400" height="1800" decoding="async"></picture></div>
+      <div class="hero-slide"><picture><source type="image/webp" srcset="assets/img/heroes/luxury-travel/luxury-travel-slide-04-1000.webp 1000w, assets/img/heroes/luxury-travel/luxury-travel-slide-04-1600.webp 1600w, assets/img/heroes/luxury-travel/luxury-travel-slide-04-2400.webp 2400w" sizes="100vw"><img src="assets/img/heroes/luxury-travel/luxury-travel-slide-04.jpg" alt="The Cloud 22 sky pool at Atlantis The Royal in Dubai at sunset" width="2400" height="1600" decoding="async"></picture></div>
+      <div class="hero-slide"><picture><source type="image/webp" srcset="assets/img/heroes/luxury-travel/luxury-travel-slide-05-1000.webp 1000w, assets/img/heroes/luxury-travel/luxury-travel-slide-05-1600.webp 1600w, assets/img/heroes/luxury-travel/luxury-travel-slide-05-2400.webp 2400w" sizes="100vw"><img src="assets/img/heroes/luxury-travel/luxury-travel-slide-05.jpg" alt="The Carlyle hotel rising above the Manhattan skyline in New York at sunset" width="2000" height="1499" decoding="async"></picture></div>
+      <div class="hero-slide"><picture><source type="image/webp" srcset="assets/img/heroes/luxury-travel/luxury-travel-slide-06-1000.webp 1000w, assets/img/heroes/luxury-travel/luxury-travel-slide-06-1600.webp 1600w, assets/img/heroes/luxury-travel/luxury-travel-slide-06-2400.webp 2400w" sizes="100vw"><img src="assets/img/heroes/luxury-travel/luxury-travel-slide-06.jpg" alt="The Eden-Roc swimming pool at Hotel du Cap-Eden-Roc, above the sea at sunset" width="2400" height="1552" decoding="async"></picture></div>
+    </div>
   <div class="hero-scrim"></div>
   <div class="hero-in">
     <nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Vedere Travel</a><i>/</i><span>Luxury Travel</span></nav>
@@ -850,10 +862,15 @@ a{color:inherit;text-decoration:none}
 <p class="hero-trust-note">Flight-inclusive packages are ATOL protected (ATOL 12703) &middot; Travel Trust Association member X3919.</p>
   </div>
   <div class="hero-dots">
-    <button class="hero-dot on" onclick="goSlide(0)" aria-label="Image 1"></button>
-    <button class="hero-dot" onclick="goSlide(1)" aria-label="Image 2"></button>
-    <button class="hero-dot" onclick="goSlide(2)" aria-label="Image 3"></button>
-  </div>
+      <button class="hero-dot on" onclick="goSlide(0)" aria-label="Show image 1"></button>
+      <button class="hero-dot" onclick="goSlide(1)" aria-label="Show image 2"></button>
+      <button class="hero-dot" onclick="goSlide(2)" aria-label="Show image 3"></button>
+      <button class="hero-dot" onclick="goSlide(3)" aria-label="Show image 4"></button>
+      <button class="hero-dot" onclick="goSlide(4)" aria-label="Show image 5"></button>
+      <button class="hero-dot" onclick="goSlide(5)" aria-label="Show image 6"></button>
+    </div>
+  
+  <button class="hero-pause" onclick="toggleHero(this)" aria-label="Pause image rotation" aria-pressed="false">&#10073;&#10073;</button>
 </section>
 
 
@@ -877,7 +894,7 @@ a{color:inherit;text-decoration:none}
       </div>
     </div>
     <figure class="figure">
-      <img src="assets/img/luxury/index/luxury-region-villas.jpg" alt="Interiors from the Vedere luxury collection" width="1000" height="562" loading="lazy">
+      <img src="assets/img/luxury/index/luxury-region-villas.jpg" alt="An infinity pool and sun loungers on the terrace of a hillside private villa" width="1000" height="562" loading="lazy">
       <figcaption>Hotels chosen with care, and honest advice on each.</figcaption>
     </figure>
   </div>
@@ -892,7 +909,7 @@ a{color:inherit;text-decoration:none}
     <div class="rule"></div>
     <p class="lede">Choose a region to explore destinations, hotels and holiday ideas. If somewhere you have in mind is not shown, call us — we arrange holidays well beyond these pages.</p>
     <div class="regions"><article class="reg">
-  <div class="reg-media"><img src="assets/img/luxury/index/luxury-region-europe.jpg" alt="Europe — Vedere luxury travel" width="1000" height="666" loading="lazy"></div>
+  <div class="reg-media"><img src="assets/img/luxury/index/luxury-region-europe.jpg" alt="An Amalfi Coast town on terraced cliffs above a bay of moored boats, southern Italy" width="1000" height="666" loading="lazy"></div>
   <div class="reg-body">
     <h3 class="reg-name">Europe</h3>
     <p class="reg-line">Two hours from home, and a world of choice.</p>
@@ -901,7 +918,7 @@ a{color:inherit;text-decoration:none}
     <a class="reg-cta" href="europe.html"><span class="reg-cta-ln"></span>Explore Europe</a>
   </div>
 </article><article class="reg">
-  <div class="reg-media"><img src="assets/img/luxury/index/luxury-region-caribbean.jpg" alt="The Caribbean — Vedere luxury travel" width="1000" height="667" loading="lazy"></div>
+  <div class="reg-media"><img src="assets/img/luxury/index/luxury-region-caribbean.jpg" alt="A beachfront resort among palms below a forested volcanic peak in the Caribbean" width="1000" height="667" loading="lazy"></div>
   <div class="reg-body">
     <h3 class="reg-name">The Caribbean</h3>
     <p class="reg-line">Winter sun with a hundred years of practice behind it.</p>
@@ -910,7 +927,7 @@ a{color:inherit;text-decoration:none}
     <a class="reg-cta" href="caribbean.html"><span class="reg-cta-ln"></span>Explore The Caribbean</a>
   </div>
 </article><article class="reg">
-  <div class="reg-media"><img src="assets/img/luxury/index/luxury-region-indian-ocean.jpg" alt="The Indian Ocean — Vedere luxury travel" width="1000" height="562" loading="lazy"></div>
+  <div class="reg-media"><img src="assets/img/luxury/index/luxury-region-indian-ocean.jpg" alt="Paddleboarders on a turquoise lagoon beside a jetty of overwater villas" width="1000" height="562" loading="lazy"></div>
   <div class="reg-body">
     <h3 class="reg-name">The Indian Ocean</h3>
     <p class="reg-line">Where the overwater villa was invented, and perfected.</p>
@@ -919,7 +936,7 @@ a{color:inherit;text-decoration:none}
     <a class="reg-cta" href="indian-ocean.html"><span class="reg-cta-ln"></span>Explore The Indian Ocean</a>
   </div>
 </article><article class="reg">
-  <div class="reg-media"><img src="assets/img/luxury/index/luxury-region-middle-east.jpg" alt="The Middle East — Vedere luxury travel" width="1000" height="667" loading="lazy"></div>
+  <div class="reg-media"><img src="assets/img/luxury/index/luxury-region-middle-east.jpg" alt="The Dubai skyline in silhouette against an orange sunset" width="1000" height="667" loading="lazy"></div>
   <div class="reg-body">
     <h3 class="reg-name">The Middle East</h3>
     <p class="reg-line">Seven hours, four hours ahead, and reliably warm.</p>
@@ -928,7 +945,7 @@ a{color:inherit;text-decoration:none}
     <a class="reg-cta" href="middle-east.html"><span class="reg-cta-ln"></span>Explore The Middle East</a>
   </div>
 </article><article class="reg">
-  <div class="reg-media"><img src="assets/img/luxury/index/luxury-region-africa.jpg" alt="Africa — Vedere luxury travel" width="1000" height="750" loading="lazy"></div>
+  <div class="reg-media"><img src="assets/img/luxury/index/luxury-region-africa.jpg" alt="An open-sided safari lodge lounge looking out over the bush" width="1000" height="750" loading="lazy"></div>
   <div class="reg-body">
     <h3 class="reg-name">Africa</h3>
     <p class="reg-line">Safaris, winelands and wide-open wilderness.</p>
@@ -937,7 +954,7 @@ a{color:inherit;text-decoration:none}
     <a class="reg-cta" href="africa.html"><span class="reg-cta-ln"></span>Explore Africa</a>
   </div>
 </article><article class="reg">
-  <div class="reg-media"><img src="assets/img/luxury/index/luxury-region-asia.jpg" alt="Asia — Vedere luxury travel" width="1000" height="626" loading="lazy"></div>
+  <div class="reg-media"><img src="assets/img/luxury/index/luxury-region-asia.jpg" alt="Boats among limestone karst islands on a misty bay at sunrise" width="1000" height="626" loading="lazy"></div>
   <div class="reg-body">
     <h3 class="reg-name">Asia</h3>
     <p class="reg-line">Cities, temples, islands and food worth travelling for.</p>
@@ -946,7 +963,7 @@ a{color:inherit;text-decoration:none}
     <a class="reg-cta" href="asia.html"><span class="reg-cta-ln"></span>Explore Asia</a>
   </div>
 </article><article class="reg">
-  <div class="reg-media"><img src="assets/img/luxury/index/luxury-region-north-america.jpg" alt="North America — Vedere luxury travel" width="1000" height="562" loading="lazy"></div>
+  <div class="reg-media"><img src="assets/img/luxury/index/luxury-region-north-america.jpg" alt="A clifftop restaurant terrace above the Pacific at sunset on the Big Sur coast" width="1000" height="562" loading="lazy"></div>
   <div class="reg-body">
     <h3 class="reg-name">North America</h3>
     <p class="reg-line">Cities, deserts and coastline — often in one trip.</p>
@@ -980,12 +997,12 @@ a{color:inherit;text-decoration:none}
 </article></div>
   </div>
 </section>
-<!-- THE FOUNDERS CLUB -->
+<!-- VEDERE FOUNDERS CLUB -->
 <span id="circle" aria-hidden="true"></span><section class="circle-sec" id="founders-club">
   <div class="wrap">
     <div class="circle-head">
       <p class="eyebrow">Membership</p>
-      <h2 class="h2">The Founders Club</h2>
+      <h2 class="h2">Vedere Founders Club</h2>
       <div class="rule mid"></div>
       <p class="circle-lede">Every journey you book with us earns points, and those points come straight off your next one. There is nothing to join &mdash; you become a member the moment you travel with us for the first time.</p>
       <p class="circle-pts"><b>100 points</b><span>&equals; &pound;1 off your next journey</span></p>
@@ -1170,7 +1187,7 @@ a{color:inherit;text-decoration:none}
 <!-- 7 · VILLAS + CIRCLE -->
 <div class="promo promo--single">
   <article class="promo-card" id="villas">
-    <img src="assets/img/luxury/index/luxury-region-villas.jpg" alt="Private luxury villa with pool" width="1000" height="562" loading="lazy">
+    <img src="assets/img/luxury/index/luxury-region-villas.jpg" alt="An infinity pool and sun loungers on the terrace of a hillside private villa" width="1000" height="562" loading="lazy">
     <div class="promo-scrim"></div>
     <div class="promo-body">
       <p class="promo-eyebrow">Private Residences</p>
@@ -1231,14 +1248,14 @@ a{color:inherit;text-decoration:none}
       <div class="field"><label for="children">Children<span class="opt">optional</span></label><input id="children" name="children" type="number" min="0" value="0"></div>
       <div class="field f-full"><label for="notes">Tell us about the trip<span class="opt">optional</span></label><textarea id="notes" name="message" placeholder="Occasion, what matters most, anywhere you have loved before."></textarea></div>
       <div class="f-full"><button class="btn btn-solid" type="submit" style="width:100%">Send Enquiry</button></div>
-      <p class="form-note">By submitting this enquiry you agree to Vedere Travel contacting you about your trip. We never share your details with third parties.</p>
+      <p class="form-note">By submitting this enquiry you agree to Vedere Travel contacting you about your trip. We use your details to answer your enquiry and arrange your travel, sharing them only with the suppliers needed to deliver it. We never sell your data.</p>
     </form>
   </div>
 </section>
 
 <footer class="foot"><div class="wrap">
   <div class="foot-grid">
-    <div><img src="assets/img/site/brand/logo-vedere-wordmark-01.png" alt="Vedere Travel" width="1200" height="253">
+    <div><img src="assets/img/site/brand/logo-vedere-wordmark-02.png" alt="Vedere Travel" width="1200" height="160">
       <p class="foot-t">One partner. Every journey. Luxury travel and bespoke sports packages through one specialist team.</p>
       <p class="contact"><a href="tel:+441616975895">0161 697 5895</a><br><a href="mailto:Info@Vederetravel.com">Info@Vederetravel.com</a><br>Sowerby Bridge, HX6 2AG</p></div>
     <div><p class="foot-h">Destinations</p><ul>
@@ -1246,7 +1263,7 @@ a{color:inherit;text-decoration:none}
     </ul></div>
     <div><p class="foot-h">Vedere</p><ul>
       <li><a href="about.html">About us</a></li><li><a href="villas.html">Villas</a></li>
-      <li><a href="luxury-travel.html#founders-club">The Founders Club</a></li><li><a href="sports-travel.html">Sports travel</a></li>
+      <li><a href="luxury-travel.html#founders-club">Vedere Founders Club</a></li><li><a href="sports-travel.html">Sports travel</a></li>
       <li><a href="booking-conditions.html">Booking conditions</a></li><li><a href="atol.html">ATOL protection</a></li></ul></div>
   </div>
   <div class="foot-trust"><img src="assets/img/site/trust/atol-12703-01.png" alt="ATOL protected &mdash; ATOL 12703" width="360" height="360" loading="lazy"><img class="ft-mk" src="assets/img/site/trust/iata-white-01.png" alt="IATA accredited agent" width="437" height="280" loading="lazy"><!-- TrustBox widget - Micro Review Count -->
@@ -1262,10 +1279,12 @@ a{color:inherit;text-decoration:none}
 
 <script>
 var slide=0,slides=document.querySelectorAll('.hero-slide'),dots=document.querySelectorAll('.hero-dot'),timer;
+var vxHeroOn=true;
+function toggleHero(b){vxHeroOn=!vxHeroOn;b.setAttribute('aria-pressed',String(!vxHeroOn));b.innerHTML=vxHeroOn?'&#10073;&#10073;':'&#9654;';b.setAttribute('aria-label',vxHeroOn?'Pause image rotation':'Resume image rotation');}
 function goSlide(n){slide=(n+slides.length)%slides.length;
 slides.forEach(function(s,i){s.classList.toggle('on',i===slide)});
 dots.forEach(function(d,i){d.classList.toggle('on',i===slide)});restart();}
-function restart(){clearInterval(timer);timer=setInterval(function(){goSlide(slide+1)},6500)}
+function restart(){clearInterval(timer);timer=setInterval(function(){if(!vxHeroOn||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;goSlide(slide+1)},6500)}
 if(slides.length)restart();
 function tgFaq(b){var f=b.parentElement,a=b.nextElementSibling,o=f.classList.contains('open');
 f.classList.toggle('open');b.setAttribute('aria-expanded',!o);a.style.maxHeight=o?null:a.scrollHeight+'px';}
@@ -1273,7 +1292,6 @@ function openEnq(sel){var s=document.getElementById('pkg')||document.getElementB
 function submitEnq(e){e.preventDefault();var f=e.target,b=f.querySelector('button[type=submit]');if(f.dataset.busy)return false;f.dataset.busy='1';if(window.dataLayer){window.dataLayer.push({event:'enquiry_attempt',page:'luxury-travel'})}b.textContent='Sending\u2026';b.disabled=true;var fd=new FormData(f);fd.append('page','luxury-travel');fd.append('url',location.pathname);fetch('/enquire',{method:'POST',body:fd}).then(function(r){if(!r.ok)throw 0;b.textContent='Enquiry received \u2713';var ok=f.querySelector('.form-ok');if(!ok){ok=document.createElement('p');ok.className='form-ok';f.appendChild(ok);}ok.innerHTML='Thank you \u2014 your enquiry is with our specialists and you\u2019ll hear from us within one working day. If it\u2019s urgent, call <a href=\'tel:+441616975895\'>0161\u00a0697\u00a05895</a>.';var er0=f.querySelector('.form-err');if(er0)er0.remove();if(window.dataLayer){window.dataLayer.push({event:'enquiry_received',page:'luxury-travel'})}}).catch(function(){b.textContent='Try again';b.disabled=false;delete f.dataset.busy;var er=f.querySelector('.form-err');if(!er){er=document.createElement('p');er.className='form-err';f.appendChild(er);}er.innerHTML='We could not send your enquiry just now. Please try again in a moment, or email <a href=\'mailto:Info@Vederetravel.com\'>Info@Vederetravel.com</a> or call 0161\u00a0697\u00a05895 \u2014 your details are still in the form.';});return false;}
 document.querySelectorAll('.btn-solid,.nav-cta').forEach(function(b){b.addEventListener('click',function(){
 if(window.dataLayer){window.dataLayer.push({event:'cta_click',label:(b.textContent||'').trim(),page:'luxury-travel'})}});});
-if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){clearInterval(timer);}
 </script>
 <script>
 function megaPick(kind, id){

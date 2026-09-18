@@ -22,13 +22,13 @@
 <meta property="og:title" content="The 155th Open 2027 | St Andrews Packages | Vedere Travel">
 <meta property="og:description" content="The 155th Open at St Andrews, July 2027. Packages from &pound;1,995pp with official Open Experiences hospitality, Old Course Hotel stays and private transfers.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://vederetravel.com/assets/img/sports/library/golf-the-open-st-andrews/golf-the-open-st-andrews-02.jpg">
-<meta property="og:image" content="https://vederetravel.com/assets/img/sports/library/golf-the-open-st-andrews/golf-the-open-st-andrews-02.jpg">
-<meta property="og:image:alt" content="The Old Course links at St Andrews, home of The Open">
+<meta name="twitter:image" content="https://vederetravel.com/assets/img/heroes/the-open-2027/the-open-2027-hero-01.jpg">
+<meta property="og:image" content="https://vederetravel.com/assets/img/heroes/the-open-2027/the-open-2027-hero-01.jpg">
+<meta property="og:image:alt" content="A view across the Old Course at St Andrews Links in Scotland at sunset">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/img/sports/library/golf-the-open-st-andrews/golf-the-open-st-andrews-02.jpg" fetchpriority="high">
+<link rel="preload" as="image" type="image/webp" href="assets/img/heroes/the-open-2027/the-open-2027-hero-01-1600.webp" imagesrcset="assets/img/heroes/the-open-2027/the-open-2027-hero-01-1000.webp 1000w, assets/img/heroes/the-open-2027/the-open-2027-hero-01-1600.webp 1600w, assets/img/heroes/the-open-2027/the-open-2027-hero-01-2400.webp 2400w" imagesizes="100vw" fetchpriority="high">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Vedere Travel","item":"https://vederetravel.com/"},{"@type":"ListItem","position":2,"name":"Sports Travel","item":"https://vederetravel.com/sports-travel"},{"@type":"ListItem","position":3,"name":"Golf","item":"https://vederetravel.com/sports-travel/golf"},{"@type":"ListItem","position":4,"name":"The 155th Open 2027","item":"https://vederetravel.com/sports-travel/golf/the-open-2027"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"The 155th Open 2027 travel packages","description":"The 155th Open at St Andrews, July 2027. Packages from £1,995pp with official Open Experiences hospitality, Old Course Hotel stays and private transfers.","image":"https://vederetravel.com/assets/img/sports/golf/the-open-2027/the-open-hero-01.jpg","brand":{"@type":"Brand","name":"Vedere Travel"},"offers":{"@type":"AggregateOffer","priceCurrency":"GBP","lowPrice":1995,"highPrice":9950,"offerCount":4,"availability":"https://schema.org/InStock","url":"https://vederetravel.com/sports-travel/golf/the-open-2027"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsEvent","name":"The 155th Open 2027","startDate":"2027-07-15","endDate":"2027-07-18","eventStatus":"https://schema.org/EventScheduled","image":"https://vederetravel.com/assets/img/sports/golf/the-open-2027/the-open-hero-01.jpg","url":"https://vederetravel.com/sports-travel/golf/the-open-2027","location":{"@type":"Place","name":"The Old Course, St Andrews","address":{"@type":"PostalAddress","addressLocality":"St Andrews, Fife","addressCountry":"GB"}}}</script>
@@ -739,6 +739,7 @@ a{color:inherit;text-decoration:none}
 .vxs-box{width:100%;max-width:640px;background:var(--paper,#FBFAF7);border:1px solid rgba(184,150,90,.35);box-shadow:0 30px 80px rgba(0,0,0,.4)}
 .vxs-row{display:flex;align-items:center;border-bottom:1px solid var(--line,#E5E0D2)}
 .vxs-in{flex:1;min-width:0;border:0;background:transparent;padding:18px 20px;font-family:var(--sans);font-size:16px;color:var(--ink);outline:none;-webkit-appearance:none;appearance:none}
+.vxs-in:focus-visible{outline:2px solid var(--gold);outline-offset:-3px}
 .vxs-in::-webkit-search-cancel-button,.vxs-in::-webkit-search-decoration,.vxs-in::-webkit-search-results-button{-webkit-appearance:none;appearance:none;display:none}
 .vxs-x{flex:none;align-self:stretch;display:flex;align-items:center;justify-content:center;width:54px;min-height:54px;border:0;background:transparent;font-size:26px;line-height:1;color:var(--mid);padding:0;cursor:pointer;transition:color .25s}
 .vxs-x:hover,.vxs-x:focus-visible{color:var(--ink)}
@@ -784,6 +785,7 @@ a{color:inherit;text-decoration:none}
 /* ===== hotel gallery + figure alignment (site-wide parity patch) ===== */
 .ht-imgs{display:flex}
 .htg{position:relative;flex:1;height:auto;min-height:320px;overflow:hidden;background:var(--ink);outline:none}
+.htg:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
 .htg-track{display:flex;height:100%;transition:transform .45s ease}
 @media(prefers-reduced-motion:reduce){.htg-track{transition:none}}
 .htg-slide{flex:0 0 100%;min-width:0}
@@ -795,6 +797,13 @@ a{color:inherit;text-decoration:none}
 .ht:not(:has(.ht-imgs)){grid-template-columns:1fr}
 @media(max-width:860px){.htg{min-height:0;aspect-ratio:3/2}}
 .split:has(.figure){align-items:center}
+/* logo — strapline-free wordmark, slightly larger (brief s.5) */
+.hdr-logo img{width:142px;height:auto}
+.mnav-top img{width:132px;height:auto}
+.foot-grid img{width:128px;height:auto}
+@media(max-width:960px){.hdr-logo img{width:120px}}
+.htg-cap{font-size:11px;letter-spacing:.05em;color:var(--mid);margin:-6px 0 14px}
+.hero-slide picture{display:block;width:100%;height:100%}
 </style>
 <script>(function(){var h=location.hostname;if(h&&!/(^|\.)vederetravel\.com$/.test(h)){var m=document.createElement("meta");m.name="robots";m.content="noindex,nofollow";document.head.appendChild(m);}})();</script>
 <!-- TrustBox script -->
@@ -804,8 +813,8 @@ a{color:inherit;text-decoration:none}
 <body>
 <header class="hdr" id="hdr">
   <div class="hdr-in">
-    <a class="hdr-logo" href="index.html" aria-label="Vedere Travel">
-      <img src="assets/img/site/brand/logo-vedere-wordmark-01.png" alt="Vedere Travel" width="1200" height="253"></a>
+    <a class="hdr-logo" href="index.html" aria-label="Vedere Travel — home">
+      <img src="assets/img/site/brand/logo-vedere-wordmark-02.png" alt="Vedere Travel" width="1200" height="160"></a>
     <ul class="hdr-nav" id="hdrNav">
       <li><a href="sports-travel.html">Sports Travel</a><div class="mega"><div class="mega-in">
   <div class="mega-col"><p class="mega-hd">Sport</p><ul class="mega-list"><li class="act" data-cat="formula-one"><button type="button" onmouseenter="megaPick('s','formula-one')" onclick="location.href='formula-one.html'">Formula One<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="football"><button type="button" onmouseenter="megaPick('s','football')" onclick="location.href='football.html'">Football<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="tennis"><button type="button" onmouseenter="megaPick('s','tennis')" onclick="location.href='tennis.html'">Tennis<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="golf"><button type="button" onmouseenter="megaPick('s','golf')" onclick="location.href='golf.html'">Golf<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="us-sports"><button type="button" onmouseenter="megaPick('s','us-sports')" onclick="location.href='us-sports.html'">US Sports<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="cricket"><button type="button" onmouseenter="megaPick('s','cricket')" onclick="location.href='cricket.html'">Cricket<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="rugby"><button type="button" onmouseenter="megaPick('s','rugby')" onclick="location.href='rugby.html'">Rugby<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="other-sports"><button type="button" onmouseenter="megaPick('s','other-sports')" onclick="location.href='other-sports.html'">Other Sports<span class="chev">&rsaquo;</span></button></li></ul></div>
@@ -840,7 +849,7 @@ a{color:inherit;text-decoration:none}
 </div></div></li>
       
       <li><a href="about.html">About</a><div class="mini">
-        <a href="about.html">About Us</a><a href="about.html">Who We Are</a><a href="luxury-travel.html#founders-club">The Founders Club</a>
+        <a href="about.html">About Us</a><a href="about.html">Who We Are</a><a href="luxury-travel.html#founders-club">Vedere Founders Club</a>
       </div></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -854,7 +863,7 @@ a{color:inherit;text-decoration:none}
 </header>
 <div class="mnav" id="mnav" role="dialog" aria-modal="true" aria-label="Menu" hidden>
   <div class="mnav-top">
-    <img src="assets/img/site/brand/logo-vedere-wordmark-01.png" alt="Vedere Travel" width="1200" height="253">
+    <img src="assets/img/site/brand/logo-vedere-wordmark-02.png" alt="Vedere Travel" width="1200" height="160">
     <button class="mnav-x" id="mnavX" aria-label="Close menu"><span></span><span></span></button>
   </div>
   <div class="mnav-body">
@@ -872,7 +881,7 @@ a{color:inherit;text-decoration:none}
         <a href="middle-east.html">Middle East</a><a href="europe.html">Europe</a><a href="caribbean.html">Caribbean</a><a href="indian-ocean.html">Indian Ocean</a><a href="africa.html">Africa</a><a href="asia.html">Asia</a><a href="north-america.html">North America</a><a href="villas.html">Villas</a><a class="lead" href="luxury-travel.html">All Luxury Travel</a>
       </div></div>
     </div>
-    <a class="mnav-link" href="luxury-travel.html#founders-club">The Founders Club</a>
+    <a class="mnav-link" href="luxury-travel.html#founders-club">Vedere Founders Club</a>
     <a class="mnav-link" href="about.html">About</a>
     <a class="mnav-link" href="#enquire">Contact</a>
   </div>
@@ -890,8 +899,8 @@ a{color:inherit;text-decoration:none}
 
 <section class="hero" id="top">
   <div class="hero-slides">
-    <div class="hero-slide on"><img src="assets/img/sports/library/golf-the-open-st-andrews/golf-the-open-st-andrews-02.jpg" alt="The Old Course links at St Andrews, home of The Open" width="2000" height="1334" fetchpriority="high" decoding="async"></div>
-  </div>
+      <div class="hero-slide on"><picture><source type="image/webp" srcset="assets/img/heroes/the-open-2027/the-open-2027-hero-01-1000.webp 1000w, assets/img/heroes/the-open-2027/the-open-2027-hero-01-1600.webp 1600w, assets/img/heroes/the-open-2027/the-open-2027-hero-01-2400.webp 2400w" sizes="100vw"><img src="assets/img/heroes/the-open-2027/the-open-2027-hero-01.jpg" alt="A view across the Old Course at St Andrews Links in Scotland at sunset" width="2000" height="1334" fetchpriority="high"></picture></div>
+    </div>
   <div class="hero-scrim"></div>
   <div class="hero-in">
     <nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Vedere Travel</a><i>/</i><a href="sports-travel.html">Sports Travel</a><i>/</i><a href="golf.html">Golf</a><i>/</i><span>The 155th Open 2027</span></nav>
@@ -1017,7 +1026,7 @@ a{color:inherit;text-decoration:none}
     <h2 class="h2">Where to stay<br><em>in St Andrews.</em></h2>
     <div class="rule"></div>
     <p class="lede">Four addresses, from the hotel standing on the championship links itself to a clifftop resort with two courses of its own and a country house ten minutes west.</p>
-    <div style="margin-top:44px"><article class="ht">
+    <div style="margin-top:44px"><article class="ht" id="old-course-hotel-golf-resort-and-spa">
 
 <div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="assets/img/hotels/old-course-hotel/old-course-hotel-ext-01.jpg" alt="Exterior of the Old Course Hotel, St Andrews, Scotland" width="1600" height="1067" loading="lazy"></div><div class="htg-slide"><img src="assets/img/hotels/old-course-hotel/old-course-hotel-int-01.jpg" alt="Fairway suite at the Old Course Hotel, St Andrews" width="1600" height="1067" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
 <div class="ht-head"><h3 class="ht-name">Old Course Hotel, Golf Resort &amp; Spa</h3><span class="ht-stars">5&#9733;</span></div>
@@ -1028,10 +1037,11 @@ a{color:inherit;text-decoration:none}
 <div><dt>Board</dt><dd>Breakfast daily</dd></div>
 <div><dt>Facilities</dt><dd>Full spa and thermal suite, its own championship course, the Road Hole Bar and its whisky list, Hall of Champions during Open week</dd></div>
 </dl>
+<p class="htg-cap">Quoted room: Deluxe Room / Old Course View &middot; suite pictured</p>
 <p class="ht-why"><strong>Why we selected it</strong>The only hotel standing on the championship links, and the Hall of Champions hospitality venue sits inside it during the week. If you are taking Platinum or Signature, stay here &mdash; the walk to your seat is measured in minutes rather than transfers.</p>
 <p class="ht-why"><strong>Best suited to</strong>Guests on the upper hospitality tiers who want to be on the course itself.</p>
 <p class="ht-pk">Platinum Weekend &middot; Signature St Andrews</p>
-</div></article><article class="ht">
+</div></article><article class="ht" id="rusacks-st-andrews">
 
 <div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="assets/img/hotels/rusacks-st-andrews/rusacks-st-andrews-ext-01.jpg" alt="Rooftop restaurant and bar at Rusacks St Andrews, Scotland" width="1600" height="1067" loading="lazy"></div><div class="htg-slide"><img src="assets/img/hotels/rusacks-st-andrews/rusacks-st-andrews-int-01.jpg" alt="King bedroom with carved headboard and green velvet cover at Rusacks St Andrews" width="1600" height="1066" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
 <div class="ht-head"><h3 class="ht-name">Rusacks St Andrews</h3><span class="ht-stars">5&#9733;</span></div>
@@ -1042,10 +1052,11 @@ a{color:inherit;text-decoration:none}
 <div><dt>Board</dt><dd>Breakfast daily</dd></div>
 <div><dt>Facilities</dt><dd>Rooftop restaurant over the closing hole, whisky bar, Victorian building with a contemporary wing, fitness suite</dd></div>
 </dl>
+<p class="htg-cap">Quoted room: Superior Double / Links View</p>
 <p class="ht-why"><strong>Why we selected it</strong>Townhouse luxury directly on the 18th fairway, with rooftop dining over the closing hole &mdash; arguably the best view in the town. Ask for a links-facing room; the difference is worth the supplement.</p>
 <p class="ht-why"><strong>Best suited to</strong>Couples who want the links and the town in the same step.</p>
 <p class="ht-pk">Open Experiences Hospitality &middot; Platinum Weekend</p>
-</div></article><article class="ht">
+</div></article><article class="ht" id="fairmont-st-andrews">
 
 <div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="assets/img/hotels/fairmont-st-andrews/fairmont-st-andrews-ext-01.jpg" alt="Fairmont St Andrews coastal estate and golf course in golden light, Scotland" width="1600" height="740" loading="lazy"></div><div class="htg-slide"><img src="assets/img/hotels/fairmont-st-andrews/fairmont-st-andrews-int-01.jpg" alt="Junior suite king bedroom at Fairmont St Andrews, Scotland" width="1600" height="1200" loading="lazy"></div><div class="htg-slide"><img src="assets/img/hotels/fairmont-st-andrews/fairmont-st-andrews-int-02.jpg" alt="King bedroom at Fairmont St Andrews, Scotland" width="1600" height="1203" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 3</p></div></div><div class="ht-body">
 <div class="ht-head"><h3 class="ht-name">Fairmont St Andrews</h3><span class="ht-stars">5&#9733;</span></div>
@@ -1056,10 +1067,11 @@ a{color:inherit;text-decoration:none}
 <div><dt>Board</dt><dd>Breakfast daily</dd></div>
 <div><dt>Facilities</dt><dd>Two clifftop golf courses, spa and indoor pool, several restaurants and bars, sea-view rooms</dd></div>
 </dl>
+<p class="htg-cap">Quoted room: Deluxe King / Junior Suite</p>
 <p class="ht-why"><strong>Why we selected it</strong>The easiest option for a larger group &mdash; more rooms and more space than anywhere in town, and two courses on the doorstep for the days either side of the championship. Ten minutes by car puts you at the links without the crowds outside the door.</p>
 <p class="ht-why"><strong>Best suited to</strong>Larger groups, and golfers who want to play as well as watch.</p>
 <p class="ht-pk">Championship Experience &middot; Open Experiences Hospitality</p>
-</div></article><article class="ht">
+</div></article><article class="ht" id="rufflets">
 
 <div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="assets/img/hotels/rufflets/rufflets-ext-01.jpg" alt="Ivy-covered hotel exterior and garden at Rufflets, St Andrews, Scotland" width="1600" height="1200" loading="lazy"></div><div class="htg-slide"><img src="assets/img/hotels/rufflets/rufflets-int-01.jpg" alt="Gilroy suite bedroom at Rufflets, St Andrews" width="1600" height="1068" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
 <div class="ht-head"><h3 class="ht-name">Rufflets</h3><span class="ht-stars">4&#9733;</span></div>
@@ -1070,6 +1082,7 @@ a{color:inherit;text-decoration:none}
 <div><dt>Board</dt><dd>Breakfast daily</dd></div>
 <div><dt>Facilities</dt><dd>Walled gardens, country-house drawing rooms, kitchen-garden restaurant, private dining, easy parking</dd></div>
 </dl>
+<p class="htg-cap">Quoted room: Classic Double / Garden Room &middot; suite pictured</p>
 <p class="ht-why"><strong>Why we selected it</strong>A country-house boutique a short drive from the centre, for a quieter base with a garden and no championship crowd outside the window. The evenings here are a different trip from the one in town, and some guests much prefer it.</p>
 <p class="ht-why"><strong>Best suited to</strong>Guests who want the championship by day and genuine quiet at night.</p>
 <p class="ht-pk">Championship Experience</p>
@@ -1122,7 +1135,7 @@ a{color:inherit;text-decoration:none}
     <div class="rule"></div>
     <p class="lede">From securing your tickets to arranging flights, accommodation, transfers, restaurant reservations and the wider journey around the event, Vedere brings every part of the trip together under one specialist.</p>
     <div class="why-grid">
-      <div class="why"><h3 class="why-t">Official access</h3><p class="why-b">Tickets and hospitality sourced through official channels and issued in your name &mdash; confirmed before you travel, never from the secondary market.</p></div>
+      <div class="why"><h3 class="why-t">Official access</h3><p class="why-b">Tickets and hospitality sourced through official channels, and issued in your name where the organiser requires it &mdash; confirmed before you travel, never bought from unofficial resale.</p></div>
       <div class="why"><h3 class="why-t">A single point of contact</h3><p class="why-b">One specialist looks after the whole trip. Flights, hotel, tickets, transfers and reservations, from the first conversation to the return flight.</p></div>
       <div class="why"><h3 class="why-t">Hotels we know</h3><p class="why-b">We recommend properties chosen with care, and we tell you which rooms are worth the upgrade and which are not.</p></div>
       <div class="why"><h3 class="why-t">Support that travels with you</h3><p class="why-b">Concierge support before, during and after the trip, and ATOL protection on every flight-inclusive booking.</p></div>
@@ -1166,7 +1179,7 @@ a{color:inherit;text-decoration:none}
 <section class="tinted"><div class="wrap" style="text-align:center"><p class="eyebrow">The 2027 Golf Season</p><div class="cta-row" style="justify-content:center"><a class="btn btn-line" href="us-masters-2027.html">&larr; The Masters 2027</a><a class="btn btn-solid" href="golf.html">All Golf</a><a class="btn btn-line" href="ryder-cup-2027.html">The Ryder Cup 2027 &rarr;</a></div></div></section>
 <footer class="foot"><div class="wrap">
   <div class="foot-grid">
-    <div><img src="assets/img/site/brand/logo-vedere-wordmark-01.png" alt="Vedere Travel" width="1200" height="253">
+    <div><img src="assets/img/site/brand/logo-vedere-wordmark-02.png" alt="Vedere Travel" width="1200" height="160">
       <p class="foot-t">One partner. Every journey.</p>
       <p class="contact"><a href="tel:+441616975895">0161 697 5895</a><br><a href="mailto:Info@Vederetravel.com">Info@Vederetravel.com</a><br>Sowerby Bridge, HX6 2AG</p></div>
     <div><p class="foot-h">Golf</p><ul><li><a href="golf.html">All golf</a></li><li><a href="phoenix-open-2027.html">WM Phoenix Open 2027</a></li><li><a href="us-masters-2027.html">The Masters 2027</a></li><li><a href="the-open-2027.html">The 155th Open 2027</a></li><li><a href="ryder-cup-2027.html">The Ryder Cup 2027</a></li></ul></div>
@@ -1188,7 +1201,7 @@ var slide=0,slides=document.querySelectorAll('.hero-slide'),dots=document.queryS
 function goSlide(n){slide=(n+slides.length)%slides.length;
 slides.forEach(function(s,i){s.classList.toggle('on',i===slide)});
 dots.forEach(function(d,i){d.classList.toggle('on',i===slide)});restart();}
-function restart(){clearInterval(timer);timer=setInterval(function(){goSlide(slide+1)},6500)}
+function restart(){clearInterval(timer);if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;timer=setInterval(function(){goSlide(slide+1)},6500)}
 if(slides.length)restart();
 function tgAcc(b){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',!o);
 var p=b.nextElementSibling;p.style.maxHeight=o?null:p.scrollHeight+'px';}

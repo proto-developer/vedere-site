@@ -20,12 +20,12 @@
 <meta property="og:url" content="https://vederetravel.com/about-us">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Vedere Travel">
 <meta property="og:title" content="About Us | Vedere Travel">
-<meta property="og:description" content="Luxury sports travel, luxury holidays, city and corporate breaks — one partner, one point of contact.">
-<meta name="twitter:image" content="https://vederetravel.com/assets/img/site/about/about-alex-catton-01.jpg">
+<meta property="og:description" content="Luxury sports travel, luxury holidays, city and corporate breaks — one partner, a dedicated specialist.">
+<meta name="twitter:image" content="https://vederetravel.com/assets/img/heroes/about/about-hero-01.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preload" as="image" href="assets/img/sports/index/sports-hero-02.jpg" fetchpriority="high">
-<meta property="og:image" content="https://vederetravel.com/assets/img/site/about/about-alex-catton-01.jpg">
-<meta property="og:image:alt" content="Alex Catton, founder of Vedere Travel">
+<link rel="preload" as="image" type="image/webp" href="assets/img/heroes/about/about-hero-01-1600.webp" imagesrcset="assets/img/heroes/about/about-hero-01-1000.webp 1000w, assets/img/heroes/about/about-hero-01-1600.webp 1600w, assets/img/heroes/about/about-hero-01-2400.webp 2400w" imagesizes="100vw" fetchpriority="high">
+<meta property="og:image" content="https://vederetravel.com/assets/img/heroes/about/about-hero-01.jpg">
+<meta property="og:image:alt" content="Fernando Alonso's Aston Martin on track at the 2026 Monaco Grand Prix">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
@@ -615,6 +615,8 @@ a{color:inherit;text-decoration:none}
 .vxs-in{flex:1;min-width:0;border:0;background:transparent;padding:18px 20px;font-family:var(--sans);font-size:16px;color:var(--ink);outline:none;-webkit-appearance:none;appearance:none}
 .vxs-in::-webkit-search-cancel-button,.vxs-in::-webkit-search-decoration,.vxs-in::-webkit-search-results-button{-webkit-appearance:none;appearance:none;display:none}
 .vxs-x{flex:none;align-self:stretch;display:flex;align-items:center;justify-content:center;width:54px;min-height:54px;border:0;background:transparent;font-size:26px;line-height:1;color:var(--mid);padding:0;cursor:pointer;transition:color .25s}
+.vxs-in:focus-visible{outline:2px solid var(--gold);outline-offset:-3px}
+.field input:focus-visible,.field select:focus-visible,.field textarea:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .vxs-x:hover,.vxs-x:focus-visible{color:var(--ink)}
 .vxs-live{margin:0;padding:6px 20px 0;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mid)}
 .vxs-list{max-height:52vh;overflow:auto;padding:8px 8px 12px}
@@ -643,6 +645,16 @@ a{color:inherit;text-decoration:none}
 @media(max-width:1280px){.hdr-cta .hdr-srch{width:40px;padding:0}.hdr-cta .hdr-srch .srch-txt{display:none}.hdr-cta .hdr-wa{padding:0 14px}}
 @media(min-width:961px) and (max-width:1280px){.hdr-cta .hdr-btn{padding:0 18px}.hdr-cta{gap:12px}}
 @media(max-width:960px){.hdr-cta .hdr-wa{width:40px;padding:0}}
+/* logo — strapline-free wordmark, slightly larger (brief s.5) */
+.hdr-logo img{width:142px;height:auto}
+.mnav-top img{width:132px;height:auto}
+.foot-grid img{width:128px;height:auto}
+@media(max-width:960px){.hdr-logo img{width:120px}}
+/* About — Panache partnership figure (portrait, uncropped) */
+.pn-figure{margin:0}
+.pn-figure img{width:100%;max-width:460px;height:auto;display:block;margin-inline:auto}
+@media(max-width:900px){.pn-figure img{max-width:420px}}
+.hero-slide picture{display:block;width:100%;height:100%}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vederetravel.com"}, {"@type": "ListItem", "position": 2, "name": "About", "item": "https://vederetravel.com/about"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TravelAgency", "name": "Vedere Travel", "url": "https://vederetravel.com", "telephone": "+44 161 697 5895", "email": "Info@Vederetravel.com", "address": {"@type": "PostalAddress", "addressLocality": "Sowerby Bridge", "postalCode": "HX6 2AG", "addressCountry": "GB"}}</script>
@@ -656,8 +668,8 @@ a{color:inherit;text-decoration:none}
 
 <header class="hdr" id="hdr">
   <div class="hdr-in">
-    <a class="hdr-logo" href="index.html" aria-label="Vedere Travel">
-      <img src="assets/img/site/brand/logo-vedere-wordmark-01.png" alt="Vedere Travel" width="1200" height="253"></a>
+    <a class="hdr-logo" href="index.html" aria-label="Vedere Travel — home">
+      <img src="assets/img/site/brand/logo-vedere-wordmark-02.png" alt="Vedere Travel" width="1200" height="160"></a>
     <ul class="hdr-nav" id="hdrNav">
       <li><a href="sports-travel.html">Sports Travel</a><div class="mega"><div class="mega-in">
   <div class="mega-col"><p class="mega-hd">Sport</p><ul class="mega-list"><li class="act" data-cat="formula-one"><button type="button" onmouseenter="megaPick('s','formula-one')" onclick="location.href='formula-one.html'">Formula One<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="football"><button type="button" onmouseenter="megaPick('s','football')" onclick="location.href='football.html'">Football<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="tennis"><button type="button" onmouseenter="megaPick('s','tennis')" onclick="location.href='tennis.html'">Tennis<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="golf"><button type="button" onmouseenter="megaPick('s','golf')" onclick="location.href='golf.html'">Golf<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="us-sports"><button type="button" onmouseenter="megaPick('s','us-sports')" onclick="location.href='us-sports.html'">US Sports<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="cricket"><button type="button" onmouseenter="megaPick('s','cricket')" onclick="location.href='cricket.html'">Cricket<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="rugby"><button type="button" onmouseenter="megaPick('s','rugby')" onclick="location.href='rugby.html'">Rugby<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="other-sports"><button type="button" onmouseenter="megaPick('s','other-sports')" onclick="location.href='other-sports.html'">Other Sports<span class="chev">&rsaquo;</span></button></li></ul></div>
@@ -692,7 +704,7 @@ a{color:inherit;text-decoration:none}
 </div></div></li>
       
       <li><a href="about.html">About</a><div class="mini">
-        <a href="about.html">About Us</a><a href="about.html">Who We Are</a><a href="luxury-travel.html#founders-club">The Founders Club</a>
+        <a href="about.html">About Us</a><a href="about.html">Who We Are</a><a href="luxury-travel.html#founders-club">Vedere Founders Club</a>
       </div></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -707,7 +719,7 @@ a{color:inherit;text-decoration:none}
 
 <div class="mnav" id="mnav" role="dialog" aria-modal="true" aria-label="Menu" hidden>
   <div class="mnav-top">
-    <img src="assets/img/site/brand/logo-vedere-wordmark-01.png" alt="Vedere Travel" width="1200" height="253">
+    <img src="assets/img/site/brand/logo-vedere-wordmark-02.png" alt="Vedere Travel" width="1200" height="160">
     <button class="mnav-x" id="mnavX" aria-label="Close menu"><span></span><span></span></button>
   </div>
   <div class="mnav-body">
@@ -725,7 +737,7 @@ a{color:inherit;text-decoration:none}
         <a href="middle-east.html">Middle East</a><a href="europe.html">Europe</a><a href="caribbean.html">Caribbean</a><a href="indian-ocean.html">Indian Ocean</a><a href="africa.html">Africa</a><a href="asia.html">Asia</a><a href="north-america.html">North America</a><a href="villas.html">Villas</a><a class="lead" href="luxury-travel.html">All Luxury Travel</a>
       </div></div>
     </div>
-    <a class="mnav-link" href="luxury-travel.html#founders-club">The Founders Club</a>
+    <a class="mnav-link" href="luxury-travel.html#founders-club">Vedere Founders Club</a>
     <a class="mnav-link" href="about.html">About</a>
     <a class="mnav-link" href="#enquire">Contact</a>
   </div>
@@ -742,13 +754,13 @@ a{color:inherit;text-decoration:none}
 </nav>
 
 <section class="hero" id="top">
-  <img class="hero-fallback hero-fallback--only" src="assets/img/sports/index/sports-hero-02.jpg" alt="A packed stadium under the lights at a major football occasion" width="1600" height="1089" fetchpriority="high" style="display:block">
+  <picture><source type="image/webp" srcset="assets/img/heroes/about/about-hero-01-1000.webp 1000w, assets/img/heroes/about/about-hero-01-1600.webp 1600w, assets/img/heroes/about/about-hero-01-2400.webp 2400w" sizes="100vw"><img class="hero-fallback hero-fallback--only" src="assets/img/heroes/about/about-hero-01.jpg" alt="Fernando Alonso's Aston Martin on track at the 2026 Monaco Grand Prix" width="2400" height="1371" fetchpriority="high" style="display:block;object-position:55% 55%"></picture>
   <div class="hero-scrim"></div>
   <div class="hero-in">
     <nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Vedere Travel</a><i>/</i><span>About Us</span></nav>
     <p class="hero-eyebrow">One Partner. Every Journey.</p>
     <h1>We are Vedere Travel</h1>
-    <p class="hero-sub">A luxury sports and travel operator built on a simple idea — one company, one point of contact, every journey handled properly.</p>
+    <p class="hero-sub">A luxury sports and travel operator built on a simple idea — one company, a dedicated specialist, every journey handled properly.</p>
     <div class="hero-btns">
       <a class="btn btn-solid" href="#enquire">Speak to a Specialist</a>
       <a class="btn btn-line" href="#founder">Meet Our Founder</a>
@@ -765,7 +777,7 @@ a{color:inherit;text-decoration:none}
       <div class="body">
         <p>Vedere Travel was founded in 2023 as a luxury sports and experiences operator — official tickets, serious hospitality and carefully chosen hotels, built around Formula One weekends, football tours and the great occasions of the sporting calendar.</p>
         <p>What happened next was not a pivot; it was our clients asking the obvious question. If we could handle a Grand Prix weekend down to the last transfer, why not the family holiday, the anniversary trip, the company incentive? So we grew — naturally, and deliberately — into the operator we are today.</p>
-        <p>One partner for your sports travel, your luxury holidays, your city breaks and your corporate travel. One specialist who knows your name, looks after the whole trip and answers the phone. That is what "One Partner. Every Journey." means, and it is the standard everything else here is measured against.</p>
+        <p>One partner for your sports travel, your luxury holidays, your city breaks and your corporate travel. A dedicated specialist who gets to know you and holds every element of the trip, with the wider team behind them. That is what "One Partner. Every Journey." means, and it is the standard everything else here is measured against.</p>
       </div>
       <div class="cta-row">
         <a class="btn btn-solid" href="luxury-travel.html">Luxury Travel</a>
@@ -791,10 +803,26 @@ a{color:inherit;text-decoration:none}
       <div class="rule"></div>
       <div class="body">
         <p>Alex has spent fifteen years in sports and luxury travel. His career began in the United States before he returned to the UK to work with professional sports academies, planning and delivering pre-season training camps around the world — the kind of operation where nothing is allowed to go wrong, because an entire squad is depending on it.</p>
-        <p>From there he became a leader in luxury sports travel, recognised in TTG's 30 Under 30 as one of travel's future leaders. And along the way he kept running into the same gap in the market: plenty of ticket sellers, plenty of travel agents, and almost nobody doing both properly — a premium operator with official event access on one side and genuine luxury travel expertise on the other.</p>
+        <p>From there he became a leader in luxury sports travel, recognised in TTG's 30 Under 30 as one of travel's future leaders. And along the way he kept running into the same gap in the market: plenty of ticket sellers, plenty of travel agents, and very few operators combining the two — official event access on one side and genuine luxury travel expertise on the other.</p>
         <p>Vedere is his answer to that. The name is Italian — <em>to see</em> — because that is what this company exists for: to put you there, seeing it for yourself, with every detail already handled.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="panache">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Partnership</p>
+      <h2 class="h2">Vedere Travel X <em>Panache Cruises</em></h2>
+      <div class="rule"></div>
+      <div class="body">
+        <p>Vedere Travel is working in partnership with Panache Cruises, one of the UK&rsquo;s fastest-growing travel companies. Founded in 2020, Panache reported &pound;50.1 million in turnover for the year to May 2026 and has earned recognition for its growth, service and workplace culture. Its achievements include a place in The Sunday Times Hundred 2025, which recognises Britain&rsquo;s fastest-growing private companies; inclusion in The Sunday Times Best Places to Work in 2025 and 2026; and both Luxury Cruise Agency of the Year and Luxury Travel Workplace of the Year at the TTG Luxury Travel Awards 2025. The partnership brings together Vedere&rsquo;s sports travel expertise and Panache&rsquo;s experience of building a successful luxury travel business. It is designed to accelerate Vedere&rsquo;s growth towards our ambition of becoming the UK&rsquo;s largest specialist operator for sports travel and luxury experiences, while keeping personal service at the heart of every journey.</p>
+      </div>
+    </div>
+    <figure class="pn-figure">
+      <img src="assets/img/site/about/panache-partnership-01.jpg" alt="Representatives of Vedere Travel and Panache Cruises pictured together in front of both company logos." width="1000" height="1333" loading="lazy">
+    </figure>
   </div>
 </section>
 
@@ -803,7 +831,7 @@ a{color:inherit;text-decoration:none}
     <p class="eyebrow">How We Work</p>
     <h2 class="h2">One specialist,<br><em>from start to finish.</em></h2>
     <div class="rule"></div>
-    <p class="lede">You will only ever deal with one person at Vedere — a specialist who gets to know you, understands what you are looking for, and holds every element of the trip from first call to the journey home.</p>
+    <p class="lede">You are given a dedicated specialist at Vedere &mdash; one person who gets to know you, understands what you are looking for, and holds every element of the trip from first call to the journey home, with the wider team behind them so there is always someone who knows your booking.</p>
     <div class="why-grid">
       <div class="why"><h3 class="why-t">Official access</h3><p class="why-b">Official tickets and hospitality for Formula One, football and the major events — sourced properly, never through the back door.</p></div>
       <div class="why"><h3 class="why-t">Hotels we know</h3><p class="why-b">We recommend hotels chosen with care, and pass on the benefits hotels extend to our guests.</p></div>
@@ -884,7 +912,7 @@ a{color:inherit;text-decoration:none}
 
 <footer class="foot"><div class="wrap">
   <div class="foot-grid">
-    <div><img src="assets/img/site/brand/logo-vedere-wordmark-01.png" alt="Vedere Travel" width="1200" height="253">
+    <div><img src="assets/img/site/brand/logo-vedere-wordmark-02.png" alt="Vedere Travel" width="1200" height="160">
       <p class="foot-t">One partner. Every journey.</p>
       <p class="contact"><a href="tel:+441616975895">0161 697 5895</a><br><a href="mailto:Info@Vederetravel.com">Info@Vederetravel.com</a><br>Sowerby Bridge, HX6 2AG</p></div>
     <div><p class="foot-h">The Middle East</p><ul>

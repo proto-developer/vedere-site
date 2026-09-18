@@ -22,13 +22,13 @@
 <meta property="og:title" content="US Open 2027 Packages &amp; Hospitality | Vedere Travel">
 <meta property="og:description" content="US Open 2027, 29 August &ndash; 12 September in New York. Reserved Arthur Ashe seating, night sessions and Manhattan five-star hotels. Guide from &pound;3,750pp.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://vederetravel.com/assets/img/sports/library/tennis-us-open-emirates-suite/tennis-us-open-emirates-suite-01.jpg">
-<meta property="og:image" content="https://vederetravel.com/assets/img/sports/library/tennis-us-open-emirates-suite/tennis-us-open-emirates-suite-01.jpg">
-<meta property="og:image:alt" content="Daytime view across the court at Arthur Ashe Stadium, home of the US Open">
+<meta name="twitter:image" content="https://vederetravel.com/assets/img/heroes/us-open-2027/us-open-2027-hero-01.jpg">
+<meta property="og:image" content="https://vederetravel.com/assets/img/heroes/us-open-2027/us-open-2027-hero-01.jpg">
+<meta property="og:image:alt" content="A daytime view across the court at Arthur Ashe Stadium during the 2026 US Open">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/img/sports/library/tennis-us-open-emirates-suite/tennis-us-open-emirates-suite-01.jpg" fetchpriority="high">
+<link rel="preload" as="image" type="image/webp" href="assets/img/heroes/us-open-2027/us-open-2027-hero-01-1600.webp" imagesrcset="assets/img/heroes/us-open-2027/us-open-2027-hero-01-1000.webp 1000w, assets/img/heroes/us-open-2027/us-open-2027-hero-01-1600.webp 1600w, assets/img/heroes/us-open-2027/us-open-2027-hero-01-2400.webp 2400w" imagesizes="100vw" fetchpriority="high">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Vedere Travel","item":"https://vederetravel.com/"},{"@type":"ListItem","position":2,"name":"Sports Travel","item":"https://vederetravel.com/sports-travel"},{"@type":"ListItem","position":3,"name":"Tennis","item":"https://vederetravel.com/sports-travel/tennis"},{"@type":"ListItem","position":4,"name":"US Open 2027","item":"https://vederetravel.com/sports-travel/tennis/us-open-2027"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsEvent","name":"US Open 2027","sport":"Tennis","startDate":"2027-08-29","endDate":"2027-09-12","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"USTA Billie Jean King National Tennis Center","address":{"@type":"PostalAddress","addressLocality":"Flushing Meadows, Queens","addressRegion":"NY","addressCountry":"US"}}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"US Open 2027 Packages","description":"US Open 2027 travel packages with reserved Arthur Ashe Stadium seating, Manhattan five-star hotels, flights and private transfers to Flushing Meadows.","brand":{"@type":"Brand","name":"Vedere Travel"},"offers":{"@type":"AggregateOffer","priceCurrency":"GBP","lowPrice":"3750","highPrice":"9950","offerCount":"4","availability":"https://schema.org/PreOrder","seller":{"@type":"TravelAgency","name":"Vedere Travel","telephone":"+441616975895"}}}</script>
@@ -739,6 +739,7 @@ a{color:inherit;text-decoration:none}
 .vxs-box{width:100%;max-width:640px;background:var(--paper,#FBFAF7);border:1px solid rgba(184,150,90,.35);box-shadow:0 30px 80px rgba(0,0,0,.4)}
 .vxs-row{display:flex;align-items:center;border-bottom:1px solid var(--line,#E5E0D2)}
 .vxs-in{flex:1;min-width:0;border:0;background:transparent;padding:18px 20px;font-family:var(--sans);font-size:16px;color:var(--ink);outline:none;-webkit-appearance:none;appearance:none}
+.vxs-in:focus-visible{outline:2px solid var(--gold);outline-offset:-3px}
 .vxs-in::-webkit-search-cancel-button,.vxs-in::-webkit-search-decoration,.vxs-in::-webkit-search-results-button{-webkit-appearance:none;appearance:none;display:none}
 .vxs-x{flex:none;align-self:stretch;display:flex;align-items:center;justify-content:center;width:54px;min-height:54px;border:0;background:transparent;font-size:26px;line-height:1;color:var(--mid);padding:0;cursor:pointer;transition:color .25s}
 .vxs-x:hover,.vxs-x:focus-visible{color:var(--ink)}
@@ -783,6 +784,7 @@ a{color:inherit;text-decoration:none}
 /* ===== hotel gallery + figure alignment (site-wide parity patch) ===== */
 .ht-imgs{display:flex}
 .htg{position:relative;flex:1;height:auto;min-height:320px;overflow:hidden;background:var(--ink);outline:none}
+.htg:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
 .htg-track{display:flex;height:100%;transition:transform .45s ease}
 @media(prefers-reduced-motion:reduce){.htg-track{transition:none}}
 .htg-slide{flex:0 0 100%;min-width:0}
@@ -794,6 +796,13 @@ a{color:inherit;text-decoration:none}
 .ht:not(:has(.ht-imgs)){grid-template-columns:1fr}
 @media(max-width:860px){.htg{min-height:0;aspect-ratio:3/2}}
 .split:has(.figure){align-items:center}
+/* logo — strapline-free wordmark, slightly larger (brief s.5) */
+.hdr-logo img{width:142px;height:auto}
+.mnav-top img{width:132px;height:auto}
+.foot-grid img{width:128px;height:auto}
+@media(max-width:960px){.hdr-logo img{width:120px}}
+.htg-cap{font-size:11px;letter-spacing:.05em;color:var(--mid);margin:-6px 0 14px}
+.hero-slide picture{display:block;width:100%;height:100%}
 </style>
 <script>(function(){var h=location.hostname;if(h&&!/(^|\.)vederetravel\.com$/.test(h)){var m=document.createElement("meta");m.name="robots";m.content="noindex,nofollow";document.head.appendChild(m);}})();</script>
 <!-- TrustBox script -->
@@ -803,8 +812,8 @@ a{color:inherit;text-decoration:none}
 <body>
 <header class="hdr" id="hdr">
   <div class="hdr-in">
-    <a class="hdr-logo" href="index.html" aria-label="Vedere Travel">
-      <img src="assets/img/site/brand/logo-vedere-wordmark-01.png" alt="Vedere Travel" width="1200" height="253"></a>
+    <a class="hdr-logo" href="index.html" aria-label="Vedere Travel — home">
+      <img src="assets/img/site/brand/logo-vedere-wordmark-02.png" alt="Vedere Travel" width="1200" height="160"></a>
     <ul class="hdr-nav" id="hdrNav">
       <li><a href="sports-travel.html">Sports Travel</a><div class="mega"><div class="mega-in">
   <div class="mega-col"><p class="mega-hd">Sport</p><ul class="mega-list"><li class="act" data-cat="formula-one"><button type="button" onmouseenter="megaPick('s','formula-one')" onclick="location.href='formula-one.html'">Formula One<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="football"><button type="button" onmouseenter="megaPick('s','football')" onclick="location.href='football.html'">Football<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="tennis"><button type="button" onmouseenter="megaPick('s','tennis')" onclick="location.href='tennis.html'">Tennis<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="golf"><button type="button" onmouseenter="megaPick('s','golf')" onclick="location.href='golf.html'">Golf<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="us-sports"><button type="button" onmouseenter="megaPick('s','us-sports')" onclick="location.href='us-sports.html'">US Sports<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="cricket"><button type="button" onmouseenter="megaPick('s','cricket')" onclick="location.href='cricket.html'">Cricket<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="rugby"><button type="button" onmouseenter="megaPick('s','rugby')" onclick="location.href='rugby.html'">Rugby<span class="chev">&rsaquo;</span></button></li><li class="" data-cat="other-sports"><button type="button" onmouseenter="megaPick('s','other-sports')" onclick="location.href='other-sports.html'">Other Sports<span class="chev">&rsaquo;</span></button></li></ul></div>
@@ -839,7 +848,7 @@ a{color:inherit;text-decoration:none}
 </div></div></li>
       
       <li><a href="about.html">About</a><div class="mini">
-        <a href="about.html">About Us</a><a href="about.html">Who We Are</a><a href="luxury-travel.html#founders-club">The Founders Club</a>
+        <a href="about.html">About Us</a><a href="about.html">Who We Are</a><a href="luxury-travel.html#founders-club">Vedere Founders Club</a>
       </div></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -853,7 +862,7 @@ a{color:inherit;text-decoration:none}
 </header>
 <div class="mnav" id="mnav" role="dialog" aria-modal="true" aria-label="Menu" hidden>
   <div class="mnav-top">
-    <img src="assets/img/site/brand/logo-vedere-wordmark-01.png" alt="Vedere Travel" width="1200" height="253">
+    <img src="assets/img/site/brand/logo-vedere-wordmark-02.png" alt="Vedere Travel" width="1200" height="160">
     <button class="mnav-x" id="mnavX" aria-label="Close menu"><span></span><span></span></button>
   </div>
   <div class="mnav-body">
@@ -871,7 +880,7 @@ a{color:inherit;text-decoration:none}
         <a href="middle-east.html">Middle East</a><a href="europe.html">Europe</a><a href="caribbean.html">Caribbean</a><a href="indian-ocean.html">Indian Ocean</a><a href="africa.html">Africa</a><a href="asia.html">Asia</a><a href="north-america.html">North America</a><a href="villas.html">Villas</a><a class="lead" href="luxury-travel.html">All Luxury Travel</a>
       </div></div>
     </div>
-    <a class="mnav-link" href="luxury-travel.html#founders-club">The Founders Club</a>
+    <a class="mnav-link" href="luxury-travel.html#founders-club">Vedere Founders Club</a>
     <a class="mnav-link" href="about.html">About</a>
     <a class="mnav-link" href="#enquire">Contact</a>
   </div>
@@ -889,9 +898,8 @@ a{color:inherit;text-decoration:none}
 
 <section class="hero" id="top">
   <div class="hero-slides">
-    <div class="hero-slide on"><img src="assets/img/sports/library/tennis-us-open-emirates-suite/tennis-us-open-emirates-suite-01.jpg" alt="Daytime view across the court at Arthur Ashe Stadium, home of the US Open" width="2000" height="1333" fetchpriority="high" decoding="async"></div>
-    <div class="hero-slide"><img src="assets/img/destinations/new-york/new-york-01.jpg" alt="Manhattan skyline at sunset, New York City" width="2000" height="1333" decoding="async"></div>
-  </div>
+      <div class="hero-slide on"><picture><source type="image/webp" srcset="assets/img/heroes/us-open-2027/us-open-2027-hero-01-1000.webp 1000w, assets/img/heroes/us-open-2027/us-open-2027-hero-01-1600.webp 1600w, assets/img/heroes/us-open-2027/us-open-2027-hero-01-2400.webp 2400w" sizes="100vw"><img src="assets/img/heroes/us-open-2027/us-open-2027-hero-01.jpg" alt="A daytime view across the court at Arthur Ashe Stadium during the 2026 US Open" width="2400" height="1600" fetchpriority="high"></picture></div>
+    </div>
   <div class="hero-scrim"></div>
   <div class="hero-in">
     <nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Vedere Travel</a><i>/</i><a href="sports-travel.html">Sports Travel</a><i>/</i><a href="tennis.html">Tennis</a><i>/</i><span>US Open 2027</span></nav>
@@ -902,10 +910,7 @@ a{color:inherit;text-decoration:none}
     <p class="hero-basis">Two adults sharing &middot; guide from price</p>
     <div class="hero-btns"><a class="btn btn-solid" href="#packages">See Packages</a><a class="btn btn-line" href="#enquire">Speak to a Specialist</a></div>
   </div>
-  <div class="hero-dots">
-    <button class="hero-dot on" onclick="goSlide(0)" aria-label="Show image 1"></button>
-    <button class="hero-dot" onclick="goSlide(1)" aria-label="Show image 2"></button>
-  </div>
+  
 </section>
 <nav class="evnav" aria-label="Page sections"><div class="evnav-in"><a href="#packages">Packages</a><a href="#tickets">Tickets</a><a href="#hotels">Hotels</a><a href="#faq">FAQs</a><a class="ev-enq" href="#enquire">Enquire</a></div></nav>
 </div>
@@ -1016,7 +1021,7 @@ a{color:inherit;text-decoration:none}
     <h2 class="h2">Where to stay<br><em>in Manhattan.</em></h2>
     <div class="rule"></div>
     <p class="lede">All four are Manhattan addresses, because this is the slam where the city and the tennis stay separate. Flushing Meadows is twenty minutes on the LIRR from Penn Station, or a private car on the upper tiers.</p>
-    <div style="margin-top:44px"><article class="ht">
+    <div style="margin-top:44px"><article class="ht" id="the-mark">
 
 <div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="assets/img/hotels/the-mark/the-mark-ext-01.jpg" alt="The Mark hotel on the Upper East Side, New York" width="1600" height="1196" loading="lazy"></div><div class="htg-slide"><img src="assets/img/hotels/the-mark/the-mark-int-01.jpg" alt="Guest bedroom at The Mark on the Upper East Side, New York" width="1600" height="900" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
 <div class="ht-head"><h3 class="ht-name">The Mark</h3><span class="ht-stars">5★</span></div>
@@ -1027,10 +1032,11 @@ a{color:inherit;text-decoration:none}
 <div><dt>Board</dt><dd>Room only</dd></div>
 <div><dt>Facilities</dt><dd>The Mark Restaurant by Jean-Georges, Frédéric Fekkai salon, fitness centre, in-house bar</dd></div>
 </dl>
+<p class="htg-cap">Quoted room: Deluxe King / Park View Suite</p>
 <p class="ht-why"><strong>Why we selected it</strong>The Upper East Side benchmark, and the closest thing New York has to a European grand hotel with a downtown attitude. Jacques Grange's interiors still look better than anything built since.</p>
 <p class="ht-why"><strong>Best suited to</strong>Guests who want the quiet side of Manhattan and a serious hotel to come back to.</p>
 <p class="ht-pk">Finals in Manhattan</p>
-</div></article><article class="ht">
+</div></article><article class="ht" id="mandarin-oriental-new-york">
 
 <div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="assets/img/hotels/mandarin-oriental-new-york/mandarin-oriental-new-york-ext-01.jpg" alt="MO Lounge at Mandarin Oriental New York" width="1600" height="1067" loading="lazy"></div><div class="htg-slide"><img src="assets/img/hotels/mandarin-oriental-new-york/mandarin-oriental-new-york-int-01.jpg" alt="New York skyline suite bedroom at Mandarin Oriental New York" width="1600" height="1132" loading="lazy"></div><div class="htg-slide"><img src="assets/img/hotels/mandarin-oriental-new-york/mandarin-oriental-new-york-ext-02.jpg" alt="View over Central Park from Mandarin Oriental New York" width="1600" height="1067" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 3</p></div></div><div class="ht-body">
 <div class="ht-head"><h3 class="ht-name">Mandarin Oriental New York</h3><span class="ht-stars">5★</span></div>
@@ -1041,10 +1047,11 @@ a{color:inherit;text-decoration:none}
 <div><dt>Board</dt><dd>Breakfast daily</dd></div>
 <div><dt>Facilities</dt><dd>Indoor lap pool, spa, 35th-floor lounge, fitness centre</dd></div>
 </dl>
+<p class="htg-cap">Quoted room: Park View King / Central Park Suite</p>
 <p class="ht-why"><strong>Why we selected it</strong>The skyline rooms are the argument, and they win. From the thirty-fifth floor upwards the view over Central Park does something no other hotel in the city can offer.</p>
 <p class="ht-why"><strong>Best suited to</strong>Couples and corporate guests who want the view and the Midtown convenience.</p>
 <p class="ht-pk">Ashe Premium · Courtside &amp; Hospitality</p>
-</div></article><article class="ht">
+</div></article><article class="ht" id="the-langham-fifth-avenue">
 
 <div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="assets/img/hotels/the-langham-fifth-avenue/the-langham-fifth-avenue-ext-01.jpg" alt="Lobby lounge at The Langham, Fifth Avenue, New York" width="1600" height="1067" loading="lazy"></div><div class="htg-slide"><img src="assets/img/hotels/the-langham-fifth-avenue/the-langham-fifth-avenue-int-01.jpg" alt="Deluxe king room at The Langham, Fifth Avenue, New York" width="1600" height="1199" loading="lazy"></div><div class="htg-slide"><img src="assets/img/hotels/the-langham-fifth-avenue/the-langham-fifth-avenue-int-02.jpg" alt="Deluxe city-view room with kitchen at The Langham, Fifth Avenue, New York" width="1600" height="1199" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 3</p></div></div><div class="ht-body">
 <div class="ht-head"><h3 class="ht-name">The Langham, Fifth Avenue</h3><span class="ht-stars">5★</span></div>
@@ -1055,10 +1062,11 @@ a{color:inherit;text-decoration:none}
 <div><dt>Board</dt><dd>Breakfast daily</dd></div>
 <div><dt>Facilities</dt><dd>Ai Fiori restaurant, Chuan Body + Soul spa, fitness centre, in-room dining around the clock</dd></div>
 </dl>
+<p class="htg-cap">Quoted room: Superior King / One-Bedroom Suite</p>
 <p class="ht-why"><strong>Why we selected it</strong>The largest rooms of the four, which in Manhattan is not a small thing. Midtown convenience with the shortest reliable journey to the tennis of any of our addresses.</p>
 <p class="ht-why"><strong>Best suited to</strong>Families and guests who want space, and anyone taking the train out to Queens each day.</p>
 <p class="ht-pk">New York Experience · Ashe Premium</p>
-</div></article><article class="ht">
+</div></article><article class="ht" id="baccarat-hotel">
 
 <div class="ht-imgs"><div class="htg" tabindex="0" role="group" aria-label="Hotel photographs"><div class="htg-track"><div class="htg-slide"><img src="assets/img/hotels/baccarat-hotel/baccarat-hotel-ext-01.jpg" alt="Grand Salon at Baccarat Hotel, New York" width="1600" height="1067" loading="lazy"></div><div class="htg-slide"><img src="assets/img/hotels/baccarat-hotel/baccarat-hotel-int-01.jpg" alt="Grand Classic king bedroom at Baccarat Hotel, New York" width="1600" height="1067" loading="lazy"></div></div><button class="htg-btn htg-prev" type="button" aria-label="Previous image">&lsaquo;</button><button class="htg-btn htg-next" type="button" aria-label="Next image">&rsaquo;</button><p class="htg-ind" aria-live="polite">1 / 2</p></div></div><div class="ht-body">
 <div class="ht-head"><h3 class="ht-name">Baccarat Hotel</h3><span class="ht-stars">5★</span></div>
@@ -1069,6 +1077,7 @@ a{color:inherit;text-decoration:none}
 <div><dt>Board</dt><dd>Room only</dd></div>
 <div><dt>Facilities</dt><dd>Indoor pool, Spa de La Mer, Grand Salon bar, fitness centre</dd></div>
 </dl>
+<p class="htg-cap">Quoted room: Classic King</p>
 <p class="ht-why"><strong>Why we selected it</strong>Jewel-box glamour opposite MoMA, and the most New York of our three in the way the word is usually meant. Smaller and louder than the others, and very good at what it does.</p>
 <p class="ht-why"><strong>Best suited to</strong>Guests who want the evenings to matter as much as the tennis.</p>
 <p class="ht-pk">New York Experience · Ashe Premium</p>
@@ -1126,7 +1135,7 @@ a{color:inherit;text-decoration:none}
     <div class="rule"></div>
     <p class="lede">From securing your tickets to arranging flights, accommodation, transfers, restaurant reservations and the wider journey around the event, Vedere brings every part of the trip together under one specialist.</p>
     <div class="why-grid">
-      <div class="why"><h3 class="why-t">Official access</h3><p class="why-b">Tickets and hospitality sourced through official channels and issued in your name &mdash; confirmed before you travel, never from the secondary market.</p></div>
+      <div class="why"><h3 class="why-t">Official access</h3><p class="why-b">Tickets and hospitality sourced through official channels, and issued in your name where the organiser requires it &mdash; confirmed before you travel, never bought from unofficial resale.</p></div>
       <div class="why"><h3 class="why-t">A single point of contact</h3><p class="why-b">One specialist looks after the whole trip. Flights, hotel, tickets, transfers and reservations, from the first conversation to the return flight.</p></div>
       <div class="why"><h3 class="why-t">Hotels we know</h3><p class="why-b">We recommend properties chosen with care, and we tell you which rooms are worth the upgrade and which are not.</p></div>
       <div class="why"><h3 class="why-t">Support that travels with you</h3><p class="why-b">Concierge support before, during and after the trip, and ATOL protection on every flight-inclusive booking.</p></div>
@@ -1171,7 +1180,7 @@ a{color:inherit;text-decoration:none}
 <section class="tinted"><div class="wrap" style="text-align:center"><p class="eyebrow">The 2027 Season</p><div class="cta-row" style="justify-content:center"><a class="btn btn-line" href="wimbledon-2027.html">&larr; Wimbledon 2027</a><a class="btn btn-solid" href="tennis.html">All Four Slams</a></div></div></section>
 <footer class="foot"><div class="wrap">
   <div class="foot-grid">
-    <div><img src="assets/img/site/brand/logo-vedere-wordmark-01.png" alt="Vedere Travel" width="1200" height="253">
+    <div><img src="assets/img/site/brand/logo-vedere-wordmark-02.png" alt="Vedere Travel" width="1200" height="160">
       <p class="foot-t">One partner. Every journey.</p>
       <p class="contact"><a href="tel:+441616975895">0161 697 5895</a><br><a href="mailto:Info@Vederetravel.com">Info@Vederetravel.com</a><br>Sowerby Bridge, HX6 2AG</p></div>
     <div><p class="foot-h">Tennis</p><ul><li><a href="tennis.html">Tennis</a></li><li><a href="australian-open-2027.html">Australian Open 2027</a></li><li><a href="roland-garros-2027.html">Roland-Garros 2027</a></li><li><a href="wimbledon-2027.html">Wimbledon 2027</a></li><li><a href="us-open-2027.html">US Open 2027</a></li></ul></div>
@@ -1193,7 +1202,7 @@ var slide=0,slides=document.querySelectorAll('.hero-slide'),dots=document.queryS
 function goSlide(n){slide=(n+slides.length)%slides.length;
 slides.forEach(function(s,i){s.classList.toggle('on',i===slide)});
 dots.forEach(function(d,i){d.classList.toggle('on',i===slide)});restart();}
-function restart(){clearInterval(timer);timer=setInterval(function(){goSlide(slide+1)},6500)}
+function restart(){clearInterval(timer);if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;timer=setInterval(function(){goSlide(slide+1)},6500)}
 if(slides.length)restart();
 function tgAcc(b){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',!o);
 var p=b.nextElementSibling;p.style.maxHeight=o?null:p.scrollHeight+'px';}
