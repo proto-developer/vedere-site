@@ -1,0 +1,1613 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/about-us",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/formula-one/abu-dhabi-grand-prix",
+      "destination": "/abu-dhabi-grand-prix-2026.html"
+    },
+    {
+      "source": "/luxury-travel/middle-east/abu-dhabi",
+      "destination": "/abu-dhabi.html"
+    },
+    {
+      "source": "/luxury-travel/africa",
+      "destination": "/africa.html"
+    },
+    {
+      "source": "/luxury-travel/caribbean/antigua",
+      "destination": "/antigua.html"
+    },
+    {
+      "source": "/luxury-travel/north-america/arizona",
+      "destination": "/arizona.html"
+    },
+    {
+      "source": "/luxury-travel/asia",
+      "destination": "/asia.html"
+    },
+    {
+      "source": "/formula-one/austin-grand-prix",
+      "destination": "/austin.html"
+    },
+    {
+      "source": "/formula-one/australian-grand-prix",
+      "destination": "/australian-grand-prix-2027.html"
+    },
+    {
+      "source": "/sports-travel/tennis/australian-open",
+      "destination": "/australian-open-2027.html"
+    },
+    {
+      "source": "/formula-one/austrian-grand-prix",
+      "destination": "/austrian-grand-prix-2027.html"
+    },
+    {
+      "source": "/formula-one/azerbaijan-grand-prix",
+      "destination": "/azerbaijan-grand-prix-2026.html"
+    },
+    {
+      "source": "/formula-one/bahrain-grand-prix",
+      "destination": "/bahrain-grand-prix-2027.html"
+    },
+    {
+      "source": "/luxury-travel/asia/bali",
+      "destination": "/bali.html"
+    },
+    {
+      "source": "/luxury-travel/caribbean/barbados",
+      "destination": "/barbados.html"
+    },
+    {
+      "source": "/formula-one/belgian-grand-prix",
+      "destination": "/belgian-grand-prix-2027.html"
+    },
+    {
+      "source": "/luxury-travel/africa/botswana",
+      "destination": "/botswana.html"
+    },
+    {
+      "source": "/sports-travel/other-sports/boxing",
+      "destination": "/boxing.html"
+    },
+    {
+      "source": "/formula-one/british-grand-prix",
+      "destination": "/british-grand-prix-2027.html"
+    },
+    {
+      "source": "/luxury-travel/caribbean/british-virgin-islands",
+      "destination": "/british-virgin-islands.html"
+    },
+    {
+      "source": "/luxury-travel/north-america/california",
+      "destination": "/california.html"
+    },
+    {
+      "source": "/formula-one/canadian-grand-prix",
+      "destination": "/canadian-grand-prix-2027.html"
+    },
+    {
+      "source": "/luxury-travel/caribbean",
+      "destination": "/caribbean.html"
+    },
+    {
+      "source": "/formula-one/chinese-grand-prix",
+      "destination": "/chinese-grand-prix-2027.html"
+    },
+    {
+      "source": "/sports-travel/cricket",
+      "destination": "/cricket.html"
+    },
+    {
+      "source": "/luxury-travel/europe/croatia",
+      "destination": "/croatia.html"
+    },
+    {
+      "source": "/sports-travel/other-sports/darts",
+      "destination": "/darts.html"
+    },
+    {
+      "source": "/luxury-travel/middle-east/dubai",
+      "destination": "/dubai.html"
+    },
+    {
+      "source": "/formula-one/dutch-grand-prix",
+      "destination": "/dutch-grand-prix-2026.html"
+    },
+    {
+      "source": "/sports-travel/cricket/england-tour-of-south-africa-2026-27",
+      "destination": "/england-tour-of-south-africa-2026-27.html"
+    },
+    {
+      "source": "/sports-travel/football/euro-2028",
+      "destination": "/euro-2028.html"
+    },
+    {
+      "source": "/luxury-travel/europe",
+      "destination": "/europe.html"
+    },
+    {
+      "source": "/sports-travel/football/european-football-breaks",
+      "destination": "/european-football-breaks.html"
+    },
+    {
+      "source": "/luxury-travel/europe/finland",
+      "destination": "/finland.html"
+    },
+    {
+      "source": "/luxury-travel/north-america/florida",
+      "destination": "/florida.html"
+    },
+    {
+      "source": "/sports-travel/football",
+      "destination": "/football.html"
+    },
+    {
+      "source": "/sports-travel/formula-one",
+      "destination": "/formula-one.html"
+    },
+    {
+      "source": "/luxury-travel/europe/france",
+      "destination": "/france.html"
+    },
+    {
+      "source": "/sports-travel/golf",
+      "destination": "/golf.html"
+    },
+    {
+      "source": "/luxury-travel/europe/greece",
+      "destination": "/greece.html"
+    },
+    {
+      "source": "/luxury-travel/caribbean/grenada",
+      "destination": "/grenada.html"
+    },
+    {
+      "source": "/sports-travel/other-sports/horse-racing",
+      "destination": "/horse-racing.html"
+    },
+    {
+      "source": "/formula-one/hungarian-grand-prix",
+      "destination": "/hungarian-grand-prix-2027.html"
+    },
+    {
+      "source": "/luxury-travel/indian-ocean",
+      "destination": "/indian-ocean.html"
+    },
+    {
+      "source": "/formula-one/italian-grand-prix",
+      "destination": "/italian-grand-prix-2026.html"
+    },
+    {
+      "source": "/luxury-travel/europe/italy",
+      "destination": "/italy.html"
+    },
+    {
+      "source": "/luxury-travel/asia/japan",
+      "destination": "/japan.html"
+    },
+    {
+      "source": "/formula-one/japanese-grand-prix",
+      "destination": "/japanese-grand-prix-2027.html"
+    },
+    {
+      "source": "/luxury-travel/africa/kenya",
+      "destination": "/kenya.html"
+    },
+    {
+      "source": "/formula-one/las-vegas-grand-prix",
+      "destination": "/las-vegas-grand-prix-2026.html"
+    },
+    {
+      "source": "/formula-one/malaysian-grand-prix",
+      "destination": "/malaysian-grand-prix-2026.html"
+    },
+    {
+      "source": "/luxury-travel/indian-ocean/maldives",
+      "destination": "/maldives.html"
+    },
+    {
+      "source": "/luxury-travel/indian-ocean/mauritius",
+      "destination": "/mauritius.html"
+    },
+    {
+      "source": "/formula-one/mexico-city-grand-prix",
+      "destination": "/mexico-city-grand-prix-2026.html"
+    },
+    {
+      "source": "/luxury-travel/caribbean/mexico",
+      "destination": "/mexico.html"
+    },
+    {
+      "source": "/formula-one/miami-grand-prix",
+      "destination": "/miami-grand-prix-2027.html"
+    },
+    {
+      "source": "/luxury-travel/middle-east",
+      "destination": "/middle-east.html"
+    },
+    {
+      "source": "/sports-travel/us-sports/mlb",
+      "destination": "/mlb.html"
+    },
+    {
+      "source": "/formula-one/monaco-grand-prix",
+      "destination": "/monaco-grand-prix-2027.html"
+    },
+    {
+      "source": "/luxury-travel/europe/montenegro",
+      "destination": "/montenegro.html"
+    },
+    {
+      "source": "/sports-travel/us-sports/nba",
+      "destination": "/nba.html"
+    },
+    {
+      "source": "/luxury-travel/north-america/new-england",
+      "destination": "/new-england.html"
+    },
+    {
+      "source": "/luxury-travel/north-america/new-york",
+      "destination": "/new-york.html"
+    },
+    {
+      "source": "/sports-travel/us-sports/nfl",
+      "destination": "/nfl.html"
+    },
+    {
+      "source": "/sports-travel/us-sports/nhl",
+      "destination": "/nhl.html"
+    },
+    {
+      "source": "/luxury-travel/europe/nordics",
+      "destination": "/nordics.html"
+    },
+    {
+      "source": "/luxury-travel/north-america",
+      "destination": "/north-america.html"
+    },
+    {
+      "source": "/sports-travel/other-sports",
+      "destination": "/other-sports.html"
+    },
+    {
+      "source": "/sports-travel/golf/phoenix-open",
+      "destination": "/phoenix-open-2027.html"
+    },
+    {
+      "source": "/luxury-travel/europe/portugal",
+      "destination": "/portugal.html"
+    },
+    {
+      "source": "/formula-one/portuguese-grand-prix",
+      "destination": "/portuguese-grand-prix-2027.html"
+    },
+    {
+      "source": "/sports-travel/football/premier-league-wembley-hospitality",
+      "destination": "/premier-league-wembley-hospitality.html"
+    },
+    {
+      "source": "/formula-one/qatar-grand-prix",
+      "destination": "/qatar-grand-prix-2026.html"
+    },
+    {
+      "source": "/sports-travel/tennis/roland-garros",
+      "destination": "/roland-garros-2027.html"
+    },
+    {
+      "source": "/sports-travel/rugby/rugby-world-cup-2027",
+      "destination": "/rugby-world-cup-2027.html"
+    },
+    {
+      "source": "/sports-travel/rugby",
+      "destination": "/rugby.html"
+    },
+    {
+      "source": "/sports-travel/golf/ryder-cup-2027",
+      "destination": "/ryder-cup-2027.html"
+    },
+    {
+      "source": "/formula-one/sao-paulo-grand-prix",
+      "destination": "/sao-paulo-grand-prix-2026.html"
+    },
+    {
+      "source": "/formula-one/saudi-arabian-grand-prix",
+      "destination": "/saudi-arabian-grand-prix-2027.html"
+    },
+    {
+      "source": "/luxury-travel/indian-ocean/seychelles",
+      "destination": "/seychelles.html"
+    },
+    {
+      "source": "/formula-one/singapore-grand-prix",
+      "destination": "/singapore-grand-prix-2026.html"
+    },
+    {
+      "source": "/sports-travel/rugby/six-nations",
+      "destination": "/six-nations.html"
+    },
+    {
+      "source": "/luxury-travel/africa/south-africa",
+      "destination": "/south-africa.html"
+    },
+    {
+      "source": "/luxury-travel/europe/spain",
+      "destination": "/spain.html"
+    },
+    {
+      "source": "/formula-one/spanish-grand-prix",
+      "destination": "/spanish-grand-prix-2026.html"
+    },
+    {
+      "source": "/luxury-travel/indian-ocean/sri-lanka",
+      "destination": "/sri-lanka.html"
+    },
+    {
+      "source": "/luxury-travel/caribbean/st-lucia",
+      "destination": "/st-lucia.html"
+    },
+    {
+      "source": "/sports-travel/tennis",
+      "destination": "/tennis.html"
+    },
+    {
+      "source": "/luxury-travel/asia/thailand",
+      "destination": "/thailand.html"
+    },
+    {
+      "source": "/sports-travel/cricket/the-ashes-2027",
+      "destination": "/the-ashes-2027.html"
+    },
+    {
+      "source": "/sports-travel/golf/the-open",
+      "destination": "/the-open-2027.html"
+    },
+    {
+      "source": "/luxury-travel/europe/turkey",
+      "destination": "/turkey.html"
+    },
+    {
+      "source": "/formula-one/turkish-grand-prix",
+      "destination": "/turkish-grand-prix-2027.html"
+    },
+    {
+      "source": "/sports-travel/other-sports/ufc",
+      "destination": "/ufc.html"
+    },
+    {
+      "source": "/sports-travel/golf/us-masters",
+      "destination": "/us-masters-2027.html"
+    },
+    {
+      "source": "/sports-travel/tennis/us-open",
+      "destination": "/us-open-2027.html"
+    },
+    {
+      "source": "/sports-travel/us-sports",
+      "destination": "/us-sports.html"
+    },
+    {
+      "source": "/luxury-travel/asia/vietnam",
+      "destination": "/vietnam.html"
+    },
+    {
+      "source": "/luxury-travel/villas",
+      "destination": "/villas.html"
+    },
+    {
+      "source": "/sports-travel/tennis/wimbledon",
+      "destination": "/wimbledon-2027.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/about.html",
+      "destination": "/about-us",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/about-us",
+      "permanent": true
+    },
+    {
+      "source": "/abu-dhabi-grand-prix-2026.html",
+      "destination": "/formula-one/abu-dhabi-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/abu-dhabi-grand-prix-2026",
+      "destination": "/formula-one/abu-dhabi-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/abu-dhabi-grand-prix-2026",
+      "destination": "/formula-one/abu-dhabi-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/abu-dhabi.html",
+      "destination": "/luxury-travel/middle-east/abu-dhabi",
+      "permanent": true
+    },
+    {
+      "source": "/abu-dhabi",
+      "destination": "/luxury-travel/middle-east/abu-dhabi",
+      "permanent": true
+    },
+    {
+      "source": "/africa.html",
+      "destination": "/luxury-travel/africa",
+      "permanent": true
+    },
+    {
+      "source": "/africa",
+      "destination": "/luxury-travel/africa",
+      "permanent": true
+    },
+    {
+      "source": "/antigua.html",
+      "destination": "/luxury-travel/caribbean/antigua",
+      "permanent": true
+    },
+    {
+      "source": "/antigua",
+      "destination": "/luxury-travel/caribbean/antigua",
+      "permanent": true
+    },
+    {
+      "source": "/arizona.html",
+      "destination": "/luxury-travel/north-america/arizona",
+      "permanent": true
+    },
+    {
+      "source": "/arizona",
+      "destination": "/luxury-travel/north-america/arizona",
+      "permanent": true
+    },
+    {
+      "source": "/asia.html",
+      "destination": "/luxury-travel/asia",
+      "permanent": true
+    },
+    {
+      "source": "/asia",
+      "destination": "/luxury-travel/asia",
+      "permanent": true
+    },
+    {
+      "source": "/atol.html",
+      "destination": "/atol",
+      "permanent": true
+    },
+    {
+      "source": "/austin.html",
+      "destination": "/formula-one/austin-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/austin",
+      "destination": "/formula-one/austin-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/austin-grand-prix-2026",
+      "destination": "/formula-one/austin-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/australian-grand-prix-2027.html",
+      "destination": "/formula-one/australian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/australian-grand-prix-2027",
+      "destination": "/formula-one/australian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/australian-grand-prix-2027",
+      "destination": "/formula-one/australian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/australian-open-2027.html",
+      "destination": "/sports-travel/tennis/australian-open",
+      "permanent": true
+    },
+    {
+      "source": "/australian-open-2027",
+      "destination": "/sports-travel/tennis/australian-open",
+      "permanent": true
+    },
+    {
+      "source": "/sports-travel/tennis/australian-open-2027",
+      "destination": "/sports-travel/tennis/australian-open",
+      "permanent": true
+    },
+    {
+      "source": "/austrian-grand-prix-2027.html",
+      "destination": "/formula-one/austrian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/austrian-grand-prix-2027",
+      "destination": "/formula-one/austrian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/austrian-grand-prix-2027",
+      "destination": "/formula-one/austrian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/azerbaijan-grand-prix-2026.html",
+      "destination": "/formula-one/azerbaijan-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/azerbaijan-grand-prix-2026",
+      "destination": "/formula-one/azerbaijan-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/azerbaijan-grand-prix-2026",
+      "destination": "/formula-one/azerbaijan-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/bahrain-grand-prix-2027.html",
+      "destination": "/formula-one/bahrain-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/bahrain-grand-prix-2027",
+      "destination": "/formula-one/bahrain-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/bahrain-grand-prix-2027",
+      "destination": "/formula-one/bahrain-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/bali.html",
+      "destination": "/luxury-travel/asia/bali",
+      "permanent": true
+    },
+    {
+      "source": "/bali",
+      "destination": "/luxury-travel/asia/bali",
+      "permanent": true
+    },
+    {
+      "source": "/barbados.html",
+      "destination": "/luxury-travel/caribbean/barbados",
+      "permanent": true
+    },
+    {
+      "source": "/barbados",
+      "destination": "/luxury-travel/caribbean/barbados",
+      "permanent": true
+    },
+    {
+      "source": "/belgian-grand-prix-2027.html",
+      "destination": "/formula-one/belgian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/belgian-grand-prix-2027",
+      "destination": "/formula-one/belgian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/belgian-grand-prix-2027",
+      "destination": "/formula-one/belgian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/booking-conditions.html",
+      "destination": "/booking-conditions",
+      "permanent": true
+    },
+    {
+      "source": "/botswana.html",
+      "destination": "/luxury-travel/africa/botswana",
+      "permanent": true
+    },
+    {
+      "source": "/botswana",
+      "destination": "/luxury-travel/africa/botswana",
+      "permanent": true
+    },
+    {
+      "source": "/boxing.html",
+      "destination": "/sports-travel/other-sports/boxing",
+      "permanent": true
+    },
+    {
+      "source": "/boxing",
+      "destination": "/sports-travel/other-sports/boxing",
+      "permanent": true
+    },
+    {
+      "source": "/british-grand-prix-2027.html",
+      "destination": "/formula-one/british-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/british-grand-prix-2027",
+      "destination": "/formula-one/british-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/british-grand-prix-2027",
+      "destination": "/formula-one/british-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/british-virgin-islands.html",
+      "destination": "/luxury-travel/caribbean/british-virgin-islands",
+      "permanent": true
+    },
+    {
+      "source": "/british-virgin-islands",
+      "destination": "/luxury-travel/caribbean/british-virgin-islands",
+      "permanent": true
+    },
+    {
+      "source": "/california.html",
+      "destination": "/luxury-travel/north-america/california",
+      "permanent": true
+    },
+    {
+      "source": "/california",
+      "destination": "/luxury-travel/north-america/california",
+      "permanent": true
+    },
+    {
+      "source": "/canadian-grand-prix-2027.html",
+      "destination": "/formula-one/canadian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/canadian-grand-prix-2027",
+      "destination": "/formula-one/canadian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/canadian-grand-prix-2027",
+      "destination": "/formula-one/canadian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/caribbean.html",
+      "destination": "/luxury-travel/caribbean",
+      "permanent": true
+    },
+    {
+      "source": "/caribbean",
+      "destination": "/luxury-travel/caribbean",
+      "permanent": true
+    },
+    {
+      "source": "/chinese-grand-prix-2027.html",
+      "destination": "/formula-one/chinese-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/chinese-grand-prix-2027",
+      "destination": "/formula-one/chinese-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/chinese-grand-prix-2027",
+      "destination": "/formula-one/chinese-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/cricket.html",
+      "destination": "/sports-travel/cricket",
+      "permanent": true
+    },
+    {
+      "source": "/cricket",
+      "destination": "/sports-travel/cricket",
+      "permanent": true
+    },
+    {
+      "source": "/croatia.html",
+      "destination": "/luxury-travel/europe/croatia",
+      "permanent": true
+    },
+    {
+      "source": "/croatia",
+      "destination": "/luxury-travel/europe/croatia",
+      "permanent": true
+    },
+    {
+      "source": "/darts.html",
+      "destination": "/sports-travel/other-sports/darts",
+      "permanent": true
+    },
+    {
+      "source": "/darts",
+      "destination": "/sports-travel/other-sports/darts",
+      "permanent": true
+    },
+    {
+      "source": "/dubai.html",
+      "destination": "/luxury-travel/middle-east/dubai",
+      "permanent": true
+    },
+    {
+      "source": "/dubai",
+      "destination": "/luxury-travel/middle-east/dubai",
+      "permanent": true
+    },
+    {
+      "source": "/dutch-grand-prix-2026.html",
+      "destination": "/formula-one/dutch-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/dutch-grand-prix-2026",
+      "destination": "/formula-one/dutch-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/dutch-grand-prix-2026",
+      "destination": "/formula-one/dutch-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/england-tour-of-south-africa-2026-27.html",
+      "destination": "/sports-travel/cricket/england-tour-of-south-africa-2026-27",
+      "permanent": true
+    },
+    {
+      "source": "/england-tour-of-south-africa-2026-27",
+      "destination": "/sports-travel/cricket/england-tour-of-south-africa-2026-27",
+      "permanent": true
+    },
+    {
+      "source": "/euro-2028.html",
+      "destination": "/sports-travel/football/euro-2028",
+      "permanent": true
+    },
+    {
+      "source": "/euro-2028",
+      "destination": "/sports-travel/football/euro-2028",
+      "permanent": true
+    },
+    {
+      "source": "/europe.html",
+      "destination": "/luxury-travel/europe",
+      "permanent": true
+    },
+    {
+      "source": "/europe",
+      "destination": "/luxury-travel/europe",
+      "permanent": true
+    },
+    {
+      "source": "/european-football-breaks.html",
+      "destination": "/sports-travel/football/european-football-breaks",
+      "permanent": true
+    },
+    {
+      "source": "/european-football-breaks",
+      "destination": "/sports-travel/football/european-football-breaks",
+      "permanent": true
+    },
+    {
+      "source": "/finland.html",
+      "destination": "/luxury-travel/europe/finland",
+      "permanent": true
+    },
+    {
+      "source": "/finland",
+      "destination": "/luxury-travel/europe/finland",
+      "permanent": true
+    },
+    {
+      "source": "/florida.html",
+      "destination": "/luxury-travel/north-america/florida",
+      "permanent": true
+    },
+    {
+      "source": "/florida",
+      "destination": "/luxury-travel/north-america/florida",
+      "permanent": true
+    },
+    {
+      "source": "/football.html",
+      "destination": "/sports-travel/football",
+      "permanent": true
+    },
+    {
+      "source": "/football",
+      "destination": "/sports-travel/football",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one.html",
+      "destination": "/sports-travel/formula-one",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one",
+      "destination": "/sports-travel/formula-one",
+      "permanent": true
+    },
+    {
+      "source": "/france.html",
+      "destination": "/luxury-travel/europe/france",
+      "permanent": true
+    },
+    {
+      "source": "/france",
+      "destination": "/luxury-travel/europe/france",
+      "permanent": true
+    },
+    {
+      "source": "/golf.html",
+      "destination": "/sports-travel/golf",
+      "permanent": true
+    },
+    {
+      "source": "/golf",
+      "destination": "/sports-travel/golf",
+      "permanent": true
+    },
+    {
+      "source": "/greece.html",
+      "destination": "/luxury-travel/europe/greece",
+      "permanent": true
+    },
+    {
+      "source": "/greece",
+      "destination": "/luxury-travel/europe/greece",
+      "permanent": true
+    },
+    {
+      "source": "/grenada.html",
+      "destination": "/luxury-travel/caribbean/grenada",
+      "permanent": true
+    },
+    {
+      "source": "/grenada",
+      "destination": "/luxury-travel/caribbean/grenada",
+      "permanent": true
+    },
+    {
+      "source": "/horse-racing.html",
+      "destination": "/sports-travel/other-sports/horse-racing",
+      "permanent": true
+    },
+    {
+      "source": "/horse-racing",
+      "destination": "/sports-travel/other-sports/horse-racing",
+      "permanent": true
+    },
+    {
+      "source": "/hungarian-grand-prix-2027.html",
+      "destination": "/formula-one/hungarian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/hungarian-grand-prix-2027",
+      "destination": "/formula-one/hungarian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/hungarian-grand-prix-2027",
+      "destination": "/formula-one/hungarian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/indian-ocean.html",
+      "destination": "/luxury-travel/indian-ocean",
+      "permanent": true
+    },
+    {
+      "source": "/indian-ocean",
+      "destination": "/luxury-travel/indian-ocean",
+      "permanent": true
+    },
+    {
+      "source": "/italian-grand-prix-2026.html",
+      "destination": "/formula-one/italian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/italian-grand-prix-2026",
+      "destination": "/formula-one/italian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/italian-grand-prix-2026",
+      "destination": "/formula-one/italian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/italy.html",
+      "destination": "/luxury-travel/europe/italy",
+      "permanent": true
+    },
+    {
+      "source": "/italy",
+      "destination": "/luxury-travel/europe/italy",
+      "permanent": true
+    },
+    {
+      "source": "/japan.html",
+      "destination": "/luxury-travel/asia/japan",
+      "permanent": true
+    },
+    {
+      "source": "/japan",
+      "destination": "/luxury-travel/asia/japan",
+      "permanent": true
+    },
+    {
+      "source": "/japanese-grand-prix-2027.html",
+      "destination": "/formula-one/japanese-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/japanese-grand-prix-2027",
+      "destination": "/formula-one/japanese-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/japanese-grand-prix-2027",
+      "destination": "/formula-one/japanese-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/kenya.html",
+      "destination": "/luxury-travel/africa/kenya",
+      "permanent": true
+    },
+    {
+      "source": "/kenya",
+      "destination": "/luxury-travel/africa/kenya",
+      "permanent": true
+    },
+    {
+      "source": "/las-vegas-grand-prix-2026.html",
+      "destination": "/formula-one/las-vegas-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/las-vegas-grand-prix-2026",
+      "destination": "/formula-one/las-vegas-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/las-vegas-grand-prix-2026",
+      "destination": "/formula-one/las-vegas-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/luxury-travel.html",
+      "destination": "/luxury-travel",
+      "permanent": true
+    },
+    {
+      "source": "/malaysian-grand-prix-2026.html",
+      "destination": "/formula-one/malaysian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/malaysian-grand-prix-2026",
+      "destination": "/formula-one/malaysian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/malaysian-grand-prix-2026",
+      "destination": "/formula-one/malaysian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/maldives.html",
+      "destination": "/luxury-travel/indian-ocean/maldives",
+      "permanent": true
+    },
+    {
+      "source": "/maldives",
+      "destination": "/luxury-travel/indian-ocean/maldives",
+      "permanent": true
+    },
+    {
+      "source": "/mauritius.html",
+      "destination": "/luxury-travel/indian-ocean/mauritius",
+      "permanent": true
+    },
+    {
+      "source": "/mauritius",
+      "destination": "/luxury-travel/indian-ocean/mauritius",
+      "permanent": true
+    },
+    {
+      "source": "/mexico-city-grand-prix-2026.html",
+      "destination": "/formula-one/mexico-city-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/mexico-city-grand-prix-2026",
+      "destination": "/formula-one/mexico-city-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/mexico-city-grand-prix-2026",
+      "destination": "/formula-one/mexico-city-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/mexico.html",
+      "destination": "/luxury-travel/caribbean/mexico",
+      "permanent": true
+    },
+    {
+      "source": "/mexico",
+      "destination": "/luxury-travel/caribbean/mexico",
+      "permanent": true
+    },
+    {
+      "source": "/miami-grand-prix-2027.html",
+      "destination": "/formula-one/miami-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/miami-grand-prix-2027",
+      "destination": "/formula-one/miami-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/miami-grand-prix-2027",
+      "destination": "/formula-one/miami-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/middle-east.html",
+      "destination": "/luxury-travel/middle-east",
+      "permanent": true
+    },
+    {
+      "source": "/middle-east",
+      "destination": "/luxury-travel/middle-east",
+      "permanent": true
+    },
+    {
+      "source": "/mlb.html",
+      "destination": "/sports-travel/us-sports/mlb",
+      "permanent": true
+    },
+    {
+      "source": "/mlb",
+      "destination": "/sports-travel/us-sports/mlb",
+      "permanent": true
+    },
+    {
+      "source": "/monaco-grand-prix-2027.html",
+      "destination": "/formula-one/monaco-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/monaco-grand-prix-2027",
+      "destination": "/formula-one/monaco-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/monaco-grand-prix-2027",
+      "destination": "/formula-one/monaco-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/montenegro.html",
+      "destination": "/luxury-travel/europe/montenegro",
+      "permanent": true
+    },
+    {
+      "source": "/montenegro",
+      "destination": "/luxury-travel/europe/montenegro",
+      "permanent": true
+    },
+    {
+      "source": "/nba.html",
+      "destination": "/sports-travel/us-sports/nba",
+      "permanent": true
+    },
+    {
+      "source": "/nba",
+      "destination": "/sports-travel/us-sports/nba",
+      "permanent": true
+    },
+    {
+      "source": "/new-england.html",
+      "destination": "/luxury-travel/north-america/new-england",
+      "permanent": true
+    },
+    {
+      "source": "/new-england",
+      "destination": "/luxury-travel/north-america/new-england",
+      "permanent": true
+    },
+    {
+      "source": "/new-york.html",
+      "destination": "/luxury-travel/north-america/new-york",
+      "permanent": true
+    },
+    {
+      "source": "/new-york",
+      "destination": "/luxury-travel/north-america/new-york",
+      "permanent": true
+    },
+    {
+      "source": "/nfl.html",
+      "destination": "/sports-travel/us-sports/nfl",
+      "permanent": true
+    },
+    {
+      "source": "/nfl",
+      "destination": "/sports-travel/us-sports/nfl",
+      "permanent": true
+    },
+    {
+      "source": "/nhl.html",
+      "destination": "/sports-travel/us-sports/nhl",
+      "permanent": true
+    },
+    {
+      "source": "/nhl",
+      "destination": "/sports-travel/us-sports/nhl",
+      "permanent": true
+    },
+    {
+      "source": "/nordics.html",
+      "destination": "/luxury-travel/europe/nordics",
+      "permanent": true
+    },
+    {
+      "source": "/nordics",
+      "destination": "/luxury-travel/europe/nordics",
+      "permanent": true
+    },
+    {
+      "source": "/north-america.html",
+      "destination": "/luxury-travel/north-america",
+      "permanent": true
+    },
+    {
+      "source": "/north-america",
+      "destination": "/luxury-travel/north-america",
+      "permanent": true
+    },
+    {
+      "source": "/other-sports.html",
+      "destination": "/sports-travel/other-sports",
+      "permanent": true
+    },
+    {
+      "source": "/other-sports",
+      "destination": "/sports-travel/other-sports",
+      "permanent": true
+    },
+    {
+      "source": "/phoenix-open-2027.html",
+      "destination": "/sports-travel/golf/phoenix-open",
+      "permanent": true
+    },
+    {
+      "source": "/phoenix-open-2027",
+      "destination": "/sports-travel/golf/phoenix-open",
+      "permanent": true
+    },
+    {
+      "source": "/sports-travel/golf/phoenix-open-2027",
+      "destination": "/sports-travel/golf/phoenix-open",
+      "permanent": true
+    },
+    {
+      "source": "/portugal.html",
+      "destination": "/luxury-travel/europe/portugal",
+      "permanent": true
+    },
+    {
+      "source": "/portugal",
+      "destination": "/luxury-travel/europe/portugal",
+      "permanent": true
+    },
+    {
+      "source": "/portuguese-grand-prix-2027.html",
+      "destination": "/formula-one/portuguese-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/portuguese-grand-prix-2027",
+      "destination": "/formula-one/portuguese-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/portuguese-grand-prix-2027",
+      "destination": "/formula-one/portuguese-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/premier-league-wembley-hospitality.html",
+      "destination": "/sports-travel/football/premier-league-wembley-hospitality",
+      "permanent": true
+    },
+    {
+      "source": "/premier-league-wembley-hospitality",
+      "destination": "/sports-travel/football/premier-league-wembley-hospitality",
+      "permanent": true
+    },
+    {
+      "source": "/qatar-grand-prix-2026.html",
+      "destination": "/formula-one/qatar-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/qatar-grand-prix-2026",
+      "destination": "/formula-one/qatar-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/qatar-grand-prix-2026",
+      "destination": "/formula-one/qatar-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/roland-garros-2027.html",
+      "destination": "/sports-travel/tennis/roland-garros",
+      "permanent": true
+    },
+    {
+      "source": "/roland-garros-2027",
+      "destination": "/sports-travel/tennis/roland-garros",
+      "permanent": true
+    },
+    {
+      "source": "/sports-travel/tennis/roland-garros-2027",
+      "destination": "/sports-travel/tennis/roland-garros",
+      "permanent": true
+    },
+    {
+      "source": "/rugby-world-cup-2027.html",
+      "destination": "/sports-travel/rugby/rugby-world-cup-2027",
+      "permanent": true
+    },
+    {
+      "source": "/rugby-world-cup-2027",
+      "destination": "/sports-travel/rugby/rugby-world-cup-2027",
+      "permanent": true
+    },
+    {
+      "source": "/rugby.html",
+      "destination": "/sports-travel/rugby",
+      "permanent": true
+    },
+    {
+      "source": "/rugby",
+      "destination": "/sports-travel/rugby",
+      "permanent": true
+    },
+    {
+      "source": "/ryder-cup-2027.html",
+      "destination": "/sports-travel/golf/ryder-cup-2027",
+      "permanent": true
+    },
+    {
+      "source": "/ryder-cup-2027",
+      "destination": "/sports-travel/golf/ryder-cup-2027",
+      "permanent": true
+    },
+    {
+      "source": "/sao-paulo-grand-prix-2026.html",
+      "destination": "/formula-one/sao-paulo-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/sao-paulo-grand-prix-2026",
+      "destination": "/formula-one/sao-paulo-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/sao-paulo-grand-prix-2026",
+      "destination": "/formula-one/sao-paulo-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/saudi-arabian-grand-prix-2027.html",
+      "destination": "/formula-one/saudi-arabian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/saudi-arabian-grand-prix-2027",
+      "destination": "/formula-one/saudi-arabian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/saudi-arabian-grand-prix-2027",
+      "destination": "/formula-one/saudi-arabian-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/seychelles.html",
+      "destination": "/luxury-travel/indian-ocean/seychelles",
+      "permanent": true
+    },
+    {
+      "source": "/seychelles",
+      "destination": "/luxury-travel/indian-ocean/seychelles",
+      "permanent": true
+    },
+    {
+      "source": "/singapore-grand-prix-2026.html",
+      "destination": "/formula-one/singapore-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/singapore-grand-prix-2026",
+      "destination": "/formula-one/singapore-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/singapore-grand-prix-2026",
+      "destination": "/formula-one/singapore-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/six-nations.html",
+      "destination": "/sports-travel/rugby/six-nations",
+      "permanent": true
+    },
+    {
+      "source": "/six-nations",
+      "destination": "/sports-travel/rugby/six-nations",
+      "permanent": true
+    },
+    {
+      "source": "/south-africa.html",
+      "destination": "/luxury-travel/africa/south-africa",
+      "permanent": true
+    },
+    {
+      "source": "/south-africa",
+      "destination": "/luxury-travel/africa/south-africa",
+      "permanent": true
+    },
+    {
+      "source": "/spain.html",
+      "destination": "/luxury-travel/europe/spain",
+      "permanent": true
+    },
+    {
+      "source": "/spain",
+      "destination": "/luxury-travel/europe/spain",
+      "permanent": true
+    },
+    {
+      "source": "/spanish-grand-prix-2026.html",
+      "destination": "/formula-one/spanish-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/spanish-grand-prix-2026",
+      "destination": "/formula-one/spanish-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/spanish-grand-prix-2026",
+      "destination": "/formula-one/spanish-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/sports-travel.html",
+      "destination": "/sports-travel",
+      "permanent": true
+    },
+    {
+      "source": "/sri-lanka.html",
+      "destination": "/luxury-travel/indian-ocean/sri-lanka",
+      "permanent": true
+    },
+    {
+      "source": "/sri-lanka",
+      "destination": "/luxury-travel/indian-ocean/sri-lanka",
+      "permanent": true
+    },
+    {
+      "source": "/st-lucia.html",
+      "destination": "/luxury-travel/caribbean/st-lucia",
+      "permanent": true
+    },
+    {
+      "source": "/st-lucia",
+      "destination": "/luxury-travel/caribbean/st-lucia",
+      "permanent": true
+    },
+    {
+      "source": "/team-travel.html",
+      "destination": "/team-travel",
+      "permanent": true
+    },
+    {
+      "source": "/tennis.html",
+      "destination": "/sports-travel/tennis",
+      "permanent": true
+    },
+    {
+      "source": "/tennis",
+      "destination": "/sports-travel/tennis",
+      "permanent": true
+    },
+    {
+      "source": "/thailand.html",
+      "destination": "/luxury-travel/asia/thailand",
+      "permanent": true
+    },
+    {
+      "source": "/thailand",
+      "destination": "/luxury-travel/asia/thailand",
+      "permanent": true
+    },
+    {
+      "source": "/the-ashes-2027.html",
+      "destination": "/sports-travel/cricket/the-ashes-2027",
+      "permanent": true
+    },
+    {
+      "source": "/the-ashes-2027",
+      "destination": "/sports-travel/cricket/the-ashes-2027",
+      "permanent": true
+    },
+    {
+      "source": "/the-open-2027.html",
+      "destination": "/sports-travel/golf/the-open",
+      "permanent": true
+    },
+    {
+      "source": "/the-open-2027",
+      "destination": "/sports-travel/golf/the-open",
+      "permanent": true
+    },
+    {
+      "source": "/sports-travel/golf/the-open-2027",
+      "destination": "/sports-travel/golf/the-open",
+      "permanent": true
+    },
+    {
+      "source": "/turkey.html",
+      "destination": "/luxury-travel/europe/turkey",
+      "permanent": true
+    },
+    {
+      "source": "/turkey",
+      "destination": "/luxury-travel/europe/turkey",
+      "permanent": true
+    },
+    {
+      "source": "/turkish-grand-prix-2027.html",
+      "destination": "/formula-one/turkish-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/turkish-grand-prix-2027",
+      "destination": "/formula-one/turkish-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/formula-one/turkish-grand-prix-2027",
+      "destination": "/formula-one/turkish-grand-prix",
+      "permanent": true
+    },
+    {
+      "source": "/ufc.html",
+      "destination": "/sports-travel/other-sports/ufc",
+      "permanent": true
+    },
+    {
+      "source": "/ufc",
+      "destination": "/sports-travel/other-sports/ufc",
+      "permanent": true
+    },
+    {
+      "source": "/us-masters-2027.html",
+      "destination": "/sports-travel/golf/us-masters",
+      "permanent": true
+    },
+    {
+      "source": "/us-masters-2027",
+      "destination": "/sports-travel/golf/us-masters",
+      "permanent": true
+    },
+    {
+      "source": "/sports-travel/golf/us-masters-2027",
+      "destination": "/sports-travel/golf/us-masters",
+      "permanent": true
+    },
+    {
+      "source": "/us-open-2027.html",
+      "destination": "/sports-travel/tennis/us-open",
+      "permanent": true
+    },
+    {
+      "source": "/us-open-2027",
+      "destination": "/sports-travel/tennis/us-open",
+      "permanent": true
+    },
+    {
+      "source": "/sports-travel/tennis/us-open-2027",
+      "destination": "/sports-travel/tennis/us-open",
+      "permanent": true
+    },
+    {
+      "source": "/us-sports.html",
+      "destination": "/sports-travel/us-sports",
+      "permanent": true
+    },
+    {
+      "source": "/us-sports",
+      "destination": "/sports-travel/us-sports",
+      "permanent": true
+    },
+    {
+      "source": "/vietnam.html",
+      "destination": "/luxury-travel/asia/vietnam",
+      "permanent": true
+    },
+    {
+      "source": "/vietnam",
+      "destination": "/luxury-travel/asia/vietnam",
+      "permanent": true
+    },
+    {
+      "source": "/villas.html",
+      "destination": "/luxury-travel/villas",
+      "permanent": true
+    },
+    {
+      "source": "/villas",
+      "destination": "/luxury-travel/villas",
+      "permanent": true
+    },
+    {
+      "source": "/wimbledon-2027.html",
+      "destination": "/sports-travel/tennis/wimbledon",
+      "permanent": true
+    },
+    {
+      "source": "/wimbledon-2027",
+      "destination": "/sports-travel/tennis/wimbledon",
+      "permanent": true
+    },
+    {
+      "source": "/sports-travel/tennis/wimbledon-2027",
+      "destination": "/sports-travel/tennis/wimbledon",
+      "permanent": true
+    }
+  ]
+}
