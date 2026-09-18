@@ -11,8 +11,13 @@
 > - **Years remain in the H1, titles, descriptions, copy and structured data** — only the URL is
 >   evergreen, so each page is re-used and updated season to season.
 > - **22,021 internal links** repointed to canonical paths; zero `.html` links remain anywhere.
-> - **`vercel.json`**: 100 rewrites (canonical path → file) and **241 permanent 301s** — every
->   `.html` form, bare slug and old dated URL folds into the evergreen canonical.
+> - **Pages now live in the folder their URL names** (`formula-one/monaco-grand-prix/index.html`),
+>   and every asset reference is root-relative (`/assets/…`). The site therefore works on any static
+>   server, including local preview, with no rewrites. *(An earlier version relied on Vercel rewrites
+>   to flat files; that broke local preview and would have broken every image on nested URLs,
+>   because relative `assets/…` paths resolved under the page's folder. Fixed the same day.)*
+> - **`vercel.json`**: **241 permanent 301s** — every old `.html` form, bare slug and dated URL
+>   folds into the evergreen canonical. No rewrites are needed.
 > - **Sitemap and the site search index** regenerated against the new URLs.
 > - Verified: 107/107 canonicals correct, no links to unknown paths, no redirect/rewrite conflicts,
 >   no rewrite pointing at a missing file.
