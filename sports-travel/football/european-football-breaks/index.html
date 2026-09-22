@@ -624,6 +624,14 @@ section[id]{scroll-margin-top:90px}
 
 #como .promo-scrim{background:linear-gradient(to right,rgba(9,22,16,.94) 0%,rgba(9,22,16,.80) 42%,rgba(9,22,16,.30) 78%,rgba(9,22,16,.15) 100%),linear-gradient(to top,rgba(9,22,16,.85),rgba(9,22,16,0) 65%)}
 @media(max-width:760px){#como .promo-scrim{background:linear-gradient(to top,rgba(9,22,16,.94),rgba(9,22,16,.62) 70%,rgba(9,22,16,.5) 100%)}}
+/* Scenic Como block. The lake/sunset master is 1920x1440, so the frame is held
+   at its native 4:3 -- a shallower crop loses either the stadium or the sky. */
+.como-scenic{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,56px);align-items:center;margin-top:clamp(36px,4.5vw,56px)}
+.como-scenic figure{margin:0}
+.como-scenic img{width:100%;height:auto;display:block;aspect-ratio:4/3;object-fit:cover}
+.como-scenic figcaption{font-family:var(--serif);font-size:11.5px;font-style:italic;color:var(--mid);padding-top:10px}
+.como-scenic-h{font-size:clamp(23px,2.5vw,31px);margin:0 0 14px}
+@media(max-width:860px){.como-scenic{grid-template-columns:1fr;gap:26px}}
 
 /* ===== MOBILE DRAWER ===== */
 .mnav{position:fixed;inset:0;z-index:430;background:#0A1710;display:flex;flex-direction:column;
@@ -1058,7 +1066,7 @@ a{color:inherit;text-decoration:none}
     <p class="lede">The one we recommend most often to people who think they have seen every football trip. It exists because of our partnership with the club &mdash; not because it was available to buy.</p>
     <div class="promo promo--single" style="margin-top:36px">
       <article class="promo-card">
-        <img src="/assets/img/sports/library/football-como/football-como-01.jpg" alt="Stadio Sinigaglia, home of Como 1907, beside Lake Como" width="1920" height="1080" loading="lazy">
+        <img src="/assets/img/sports/library/football-como/football-como-02.jpg" alt="Stadio Sinigaglia under floodlights on a European night, with a full-stand supporters&rsquo; display" width="1920" height="1200" loading="lazy">
         <div class="promo-scrim"></div>
         <div class="promo-body">
           <p class="promo-eyebrow">Vedere Travel X Como 1907 &middot; Guide from &pound;1,495pp</p>
@@ -1067,6 +1075,20 @@ a{color:inherit;text-decoration:none}
           <a class="btn btn-solid" href="#enquire">Enquire About Como</a>
         </div>
       </article>
+    </div>
+    <div class="como-scenic">
+      <figure>
+        <img src="/assets/img/sports/library/football-como/football-como-lake-sunset-01.jpg" alt="Stadio Sinigaglia on the shore of Lake Como at sunset, with the hills beyond" width="1920" height="1440" loading="lazy">
+        <figcaption>Stadio Sinigaglia at the head of the lake, with the town and the hills behind it.</figcaption>
+      </figure>
+      <div>
+        <p class="eyebrow">The Setting</p>
+        <h3 class="como-scenic-h">A ground on the shore.</h3>
+        <div class="body">
+          <p>There is no other ground in Serie A quite like it. The stadium sits at the head of the lake with the town behind it and the mountains rising on either side &mdash; a hundred metres from the water, and a short walk from the piazza.</p>
+          <p>Ferries run from the waterfront to Bellagio and Varenna, so an afternoon on the lake and an evening at the match belong comfortably to the same day.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>

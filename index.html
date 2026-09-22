@@ -415,7 +415,7 @@ td:first-child{font-family:var(--serif);font-size:15px;color:var(--ink);font-wei
 .promo{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:0}
 .promo-card{position:relative;min-height:440px;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink)}
 .promo-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.promo-scrim{position:absolute;inset:0;background:linear-gradient(to top,rgba(9,22,16,.95) 0%,rgba(9,22,16,.5) 55%,rgba(9,22,16,.12) 100%)}
+.promo-scrim{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(to top,rgba(9,22,16,.95) 0%,rgba(9,22,16,.5) 55%,rgba(9,22,16,.12) 100%)}
 .promo-body{position:relative;z-index:2;padding:38px 34px}
 .promo-eyebrow{font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:12px}
 .promo-h{font-family:var(--serif);font-size:clamp(26px,3vw,36px);color:#fff;font-weight:500;line-height:1.06;margin-bottom:12px}
@@ -825,7 +825,62 @@ a{color:inherit;text-decoration:none}
 .foot-grid img{width:128px;height:auto}
 @media(max-width:960px){.hdr-logo img{width:120px}}
 .hero-slide picture{display:block;width:100%;height:100%}
-.media-link{position:absolute;inset:0;display:block;z-index:1}
+.media-link{position:absolute;inset:0;display:block;z-index:0}
+
+/* Overlays: darken the column the text actually occupies, so the photograph
+   stays open on the other side. Tuned against measured WCAG contrast. */
+.hero-scrim{
+  background:
+    linear-gradient(100deg,rgba(9,22,16,.90) 0%,rgba(9,22,16,.78) 28%,rgba(9,22,16,.40) 56%,rgba(9,22,16,0) 80%),
+    linear-gradient(to top,rgba(9,22,16,.94) 0%,rgba(9,22,16,.66) 38%,rgba(9,22,16,.30) 70%,rgba(9,22,16,.12) 100%);
+}
+.promo-scrim{
+  background:
+    linear-gradient(100deg,rgba(9,22,16,.88) 0%,rgba(9,22,16,.74) 34%,rgba(9,22,16,.34) 62%,rgba(9,22,16,0) 84%),
+    linear-gradient(to top,rgba(9,22,16,.94) 0%,rgba(9,22,16,.80) 40%,rgba(9,22,16,.48) 68%,rgba(9,22,16,.14) 100%);
+}
+.feat-scrim{
+  background:linear-gradient(to top,rgba(9,22,16,.96) 0%,rgba(9,22,16,.82) 34%,rgba(9,22,16,.45) 62%,transparent 100%);
+}
+@media(max-width:760px){
+  .hero-scrim{
+    background:linear-gradient(to top,rgba(9,22,16,.96) 0%,rgba(9,22,16,.90) 46%,rgba(9,22,16,.70) 74%,rgba(9,22,16,.42) 100%);
+  }
+  .promo-scrim{
+    background:linear-gradient(to top,rgba(9,22,16,.97) 0%,rgba(9,22,16,.94) 48%,rgba(9,22,16,.80) 76%,rgba(9,22,16,.36) 100%);
+  }
+}
+/* ===== homepage legibility pass =====
+   Headings stay Cormorant Garamond. Text set over photographs uses regular Jost,
+   solid white, at a readable size; small event details and links lifted to ~14px. */
+.hero-sub,.promo-p{
+  font-family:var(--sans);font-style:normal;font-weight:400;color:#fff;
+  font-size:18px;line-height:1.62;letter-spacing:.005em;
+  text-shadow:0 1px 3px rgba(9,22,16,.55),0 2px 18px rgba(9,22,16,.45);
+  text-wrap:balance;
+}
+.hero-sub{max-width:44ch;margin-bottom:28px}
+.promo-p{max-width:38ch;margin-bottom:24px}
+/* eyebrows over photographs */
+.hero-eyebrow{font-size:11px;letter-spacing:.26em;color:var(--gold-lt);text-shadow:0 1px 4px rgba(9,22,16,.6)}
+.promo-eyebrow{font-size:11px;letter-spacing:.22em;color:var(--gold-lt);text-shadow:0 1px 4px rgba(9,22,16,.6)}
+/* event details and links on the featured cards */
+.feat-when{font-size:13px;font-weight:400;letter-spacing:.1em;color:#E8D3A8}
+.feat-inc{font-size:14px;line-height:1.55;color:#fff;margin-top:7px}
+.feat-price span{font-size:12px;letter-spacing:.08em;color:#fff}
+.feat-cta{font-size:14px;font-weight:500;letter-spacing:.1em;color:#EBD6AC;border-bottom-color:rgba(235,214,172,.6);margin-top:13px}
+/* trust row under the hero */
+.hero-trust .tr-tp{font-size:14px}
+.hero-trust-note{font-size:14px;line-height:1.55;color:rgba(255,255,255,.9)}
+/* sport tile supporting line */
+.sc-ln{font-size:14px}
+@media(max-width:760px){
+  .hero-sub,.promo-p{font-size:16.5px;line-height:1.6}
+  .hero-sub{max-width:38ch;margin-bottom:24px}
+  .promo-p{max-width:40ch}
+  .feat-inc,.feat-cta,.hero-trust-note,.hero-trust .tr-tp,.sc-ln{font-size:14px}
+  .feat-when{font-size:12.5px}
+}
 </style>
 <script>(function(){var h=location.hostname;if(h&&!/(^|\.)vederetravel\.com$/.test(h)){var m=document.createElement("meta");m.name="robots";m.content="noindex,nofollow";document.head.appendChild(m);}})();</script>
 <!-- TrustBox script -->
@@ -934,7 +989,7 @@ a{color:inherit;text-decoration:none}
   <div class="hero-in">
     <p class="hero-eyebrow">One Partner. Every Journey.</p>
     <h1>Your luxury sports<br>travel specialists</h1>
-    <p class="hero-sub">Tell us the event you want to experience. We&rsquo;ll help you choose your seats, find the right hotel and arrange the travel around it, with a dedicated specialist to guide you throughout.</p>
+    <p class="hero-sub">Official Tickets, premium hospitality, hotels and travel, arranged around your sporting occasion by one dedicated specialist.</p>
     <div class="hero-btns">
       <button class="btn btn-solid" onclick="openEnq()">Plan Your Trip</button>
       <a class="btn btn-line" href="#featured">Explore Sports Journeys</a>
@@ -1076,22 +1131,22 @@ a{color:inherit;text-decoration:none}
 <!-- 9 · TEAM + CORPORATE -->
 <div class="promo promo--two" id="groups">
   <article class="promo-card">
-    <a class="media-link" href="/team-travel" tabindex="-1" aria-hidden="true"><img src="/assets/img/sports/index/sports-card-team-travel.jpg" alt="A squad training session" width="800" height="532" loading="lazy"></a>
+    <a class="media-link" href="/team-travel" tabindex="-1" aria-hidden="true"><img src="/assets/img/sourced/team-travel/marbella-team-huddle-01.jpg" alt="A squad gathered in a huddle on a training pitch below the mountains near Marbella" width="1600" height="1090" loading="lazy"></a>
     <div class="promo-scrim"></div>
     <div class="promo-body">
       <p class="promo-eyebrow">For Clubs &amp; Squads</p>
       <h3 class="promo-h">Team Travel Programme</h3>
-      <p class="promo-p">Squad flights, kit and equipment logistics, training facility access, dietary requirements and staff travel — handled by people who understand that a fixture does not move because a connection was missed.</p>
+      <p class="promo-p">Flights, hotels and logistics for clubs, academies and schools, managed by one specialist.</p>
       <a class="btn btn-solid" href="/team-travel">Team Travel</a>
     </div>
   </article>
   <article class="promo-card">
-    <a class="media-link" href="/contact" tabindex="-1" aria-hidden="true"><img src="/assets/img/sports/index/sports-card-corporate.jpg" alt="Corporate hospitality suite at a sporting event" width="800" height="440" loading="lazy"></a>
+    <a class="media-link" href="/contact" tabindex="-1" aria-hidden="true"><img src="/assets/img/sourced/corporate-travel/royal-ascot-champagne-toast-01.jpg" alt="Guests in morning dress sharing a champagne toast in front of the grandstand at Royal Ascot" width="1600" height="1067" loading="lazy"></a>
     <div class="promo-scrim"></div>
     <div class="promo-body">
       <p class="promo-eyebrow">For Business</p>
       <h3 class="promo-h">Corporate Travel</h3>
-      <p class="promo-p">Client entertainment, incentive trips and staff rewards at the events that people actually clear their diary for. Consolidated invoicing, one account manager, and complete discretion.</p>
+      <p class="promo-p">Sporting hospitality, client entertainment and incentive trips, arranged around your business.</p>
       <a class="btn btn-solid" href="/contact">Corporate Travel</a>
     </div>
   </article>
