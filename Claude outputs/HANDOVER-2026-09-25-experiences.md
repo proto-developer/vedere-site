@@ -33,3 +33,10 @@ image pack `Vedere-Experiences-Website-Images-Revised` (24 September 2026) and i
 The Teatro del Silenzio aerial is a 1977px original (no upscaling), so its largest WebP variant is labelled 1977w rather than 2400w.
 Castelfalfi's hotel card combines the pack's Tabaccaia bedroom and Giglio Blu pools (captioned as a shared estate amenity) with the borgo photograph.
 The gala photograph is captioned as the Andrea Bocelli Foundation gala at Palazzo Vecchio, not as the concert audience, per the pack notes.
+
+## 4. Revisions of 26 September 2026
+
+- Corporate Hospitality / Sports Travel promo pair removed from `/experiences`.
+- Homepage hero overlay lightened (bottom 0.96 → 0.86, mid 0.72 → 0.50, top 0.14 → 0.08) so the slides read through while keeping the dark tint.
+- WhatsApp header link on all 109 pages now opens +44 7788 157390 (was the office landline).
+- `index.html` was found deleted from the working tree after the "Added Experiences page" commit and was restored from that commit before the edits above.
