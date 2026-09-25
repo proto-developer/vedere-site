@@ -1206,6 +1206,46 @@
       "source": "/sports-travel/tennis/wimbledon-2027",
       "destination": "/sports-travel/tennis/wimbledon",
       "permanent": true
+    },
+    {
+      "source": "/experiences.html",
+      "destination": "/experiences",
+      "permanent": true
+    },
+    {
+      "source": "/xperiences.html",
+      "destination": "/experiences",
+      "permanent": true
+    },
+    {
+      "source": "/xperiences",
+      "destination": "/experiences",
+      "permanent": true
+    },
+    {
+      "source": "/experiences/index.html",
+      "destination": "/experiences",
+      "permanent": true
+    },
+    {
+      "source": "/andrea-bocelli-2027.html",
+      "destination": "/experiences/andrea-bocelli-2027",
+      "permanent": true
+    },
+    {
+      "source": "/andrea-bocelli-2027",
+      "destination": "/experiences/andrea-bocelli-2027",
+      "permanent": true
+    },
+    {
+      "source": "/experiences/andrea-bocelli-2027.html",
+      "destination": "/experiences/andrea-bocelli-2027",
+      "permanent": true
+    },
+    {
+      "source": "/experiences/andrea-bocelli",
+      "destination": "/experiences/andrea-bocelli-2027",
+      "permanent": true
     }
   ]
 }
