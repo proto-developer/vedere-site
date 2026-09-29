@@ -804,6 +804,30 @@ a{color:inherit;text-decoration:none}
 @media(max-width:960px){.hdr-logo img{width:120px}}
 .htg-cap{font-size:11px;letter-spacing:.05em;color:var(--mid);margin:-6px 0 14px}
 .hero-slide picture{display:block;width:100%;height:100%}
+/* ===== site-wide overlays (Sept 2026): copied from the homepage so every image/text overlay matches index.html ===== */
+.hero-scrim{
+  background:
+    linear-gradient(100deg,rgba(9,22,16,.90) 0%,rgba(9,22,16,.78) 28%,rgba(9,22,16,.40) 56%,rgba(9,22,16,0) 80%),
+    linear-gradient(to top,rgba(9,22,16,.94) 0%,rgba(9,22,16,.66) 38%,rgba(9,22,16,.30) 70%,rgba(9,22,16,.12) 100%);
+}
+.promo-scrim{
+  background:
+    linear-gradient(100deg,rgba(9,22,16,.88) 0%,rgba(9,22,16,.74) 34%,rgba(9,22,16,.34) 62%,rgba(9,22,16,0) 84%),
+    linear-gradient(to top,rgba(9,22,16,.94) 0%,rgba(9,22,16,.80) 40%,rgba(9,22,16,.48) 68%,rgba(9,22,16,.14) 100%);
+}
+.feat-scrim{
+  background:linear-gradient(to top,rgba(9,22,16,.96) 0%,rgba(9,22,16,.82) 34%,rgba(9,22,16,.45) 62%,transparent 100%);
+}
+@media(max-width:760px){
+  .hero-scrim{
+    background:linear-gradient(to top,rgba(9,22,16,.96) 0%,rgba(9,22,16,.90) 46%,rgba(9,22,16,.70) 74%,rgba(9,22,16,.42) 100%);
+  }
+  .promo-scrim{
+    background:linear-gradient(to top,rgba(9,22,16,.97) 0%,rgba(9,22,16,.94) 48%,rgba(9,22,16,.80) 76%,rgba(9,22,16,.36) 100%);
+  }
+}
+.band-scrim{position:absolute;inset:0;background:linear-gradient(100deg,rgba(9,22,16,.94) 0%,rgba(9,22,16,.66) 48%,rgba(9,22,16,.2) 100%)}
+
 </style>
 <script>(function(){var h=location.hostname;if(h&&!/(^|\.)vederetravel\.com$/.test(h)){var m=document.createElement("meta");m.name="robots";m.content="noindex,nofollow";document.head.appendChild(m);}})();</script>
 <!-- TrustBox script -->

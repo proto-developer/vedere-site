@@ -655,6 +655,30 @@ a{color:inherit;text-decoration:none}
 .pn-figure img{width:100%;max-width:460px;height:auto;display:block;margin-inline:auto}
 @media(max-width:900px){.pn-figure img{max-width:420px}}
 .hero-slide picture{display:block;width:100%;height:100%}
+/* ===== site-wide overlays (Sept 2026): copied from the homepage so every image/text overlay matches index.html ===== */
+.hero-scrim{
+  background:
+    linear-gradient(100deg,rgba(9,22,16,.90) 0%,rgba(9,22,16,.78) 28%,rgba(9,22,16,.40) 56%,rgba(9,22,16,0) 80%),
+    linear-gradient(to top,rgba(9,22,16,.94) 0%,rgba(9,22,16,.66) 38%,rgba(9,22,16,.30) 70%,rgba(9,22,16,.12) 100%);
+}
+.promo-scrim{
+  background:
+    linear-gradient(100deg,rgba(9,22,16,.88) 0%,rgba(9,22,16,.74) 34%,rgba(9,22,16,.34) 62%,rgba(9,22,16,0) 84%),
+    linear-gradient(to top,rgba(9,22,16,.94) 0%,rgba(9,22,16,.80) 40%,rgba(9,22,16,.48) 68%,rgba(9,22,16,.14) 100%);
+}
+.feat-scrim{
+  background:linear-gradient(to top,rgba(9,22,16,.96) 0%,rgba(9,22,16,.82) 34%,rgba(9,22,16,.45) 62%,transparent 100%);
+}
+@media(max-width:760px){
+  .hero-scrim{
+    background:linear-gradient(to top,rgba(9,22,16,.96) 0%,rgba(9,22,16,.90) 46%,rgba(9,22,16,.70) 74%,rgba(9,22,16,.42) 100%);
+  }
+  .promo-scrim{
+    background:linear-gradient(to top,rgba(9,22,16,.97) 0%,rgba(9,22,16,.94) 48%,rgba(9,22,16,.80) 76%,rgba(9,22,16,.36) 100%);
+  }
+}
+.band-scrim{position:absolute;inset:0;background:linear-gradient(100deg,rgba(9,22,16,.94) 0%,rgba(9,22,16,.66) 48%,rgba(9,22,16,.2) 100%)}
+
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vederetravel.com"}, {"@type": "ListItem", "position": 2, "name": "About", "item": "https://vederetravel.com/about-us"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TravelAgency", "name": "Vedere Travel", "url": "https://vederetravel.com", "telephone": "+44 161 697 5895", "email": "Info@Vederetravel.com", "address": {"@type": "PostalAddress", "addressLocality": "Sowerby Bridge", "postalCode": "HX6 2AG", "addressCountry": "GB"}}</script>
