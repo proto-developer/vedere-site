@@ -1,0 +1,9 @@
+# WordPress theme builds are generated from this site; not source
+wordpress-build/
+wordpress-build-*/
+
+# local tooling
+node_modules/
+.DS_Store
+Thumbs.db
+.kilo/
