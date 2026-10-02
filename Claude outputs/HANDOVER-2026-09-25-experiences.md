@@ -40,3 +40,21 @@ The gala photograph is captioned as the Andrea Bocelli Foundation gala at Palazz
 - Homepage hero overlay lightened (bottom 0.96 → 0.86, mid 0.72 → 0.50, top 0.14 → 0.08) so the slides read through while keeping the dark tint.
 - WhatsApp header link on all 109 pages now opens +44 7788 157390 (was the office landline).
 - `index.html` was found deleted from the working tree after the "Added Experiences page" commit and was restored from that commit before the edits above.
+
+## 5. Staging test — https://vederetravel.com/myfreshinstall01 (26 September 2026)
+
+Theme v1.7.1 deployed in a sub-folder install (WordPress 7.1.2, Contact Form 7 active). Automated comparison of every route against the local build:
+
+| Check | Result |
+|---|---|
+| Pages | 109 of 109 return 200; title and section structure identical to local; page body identical after the theme's URL rewriting (one transient timeout on the golf hub passed on retry) |
+| Navigation | Experiences tab, drop-down, mobile drawer and footer link present on every page; root-relative links and mega-menu `location.href` targets correctly prefixed with `/myfreshinstall01` |
+| Homepage | Singapore start hero with the lighter tint; WhatsApp +44 7788 157390 |
+| Experiences pages | Four grid cards, no promo pair; Bocelli page shows four packages, four hotels, three-image Castelfalfi gallery |
+| Forms | Contact Form 7 rendered on all 107 pages that carry a form; Experiences and Bocelli forms have every field and option (checkboxes post as arrays, as on other pages). Sending was not tested to avoid emailing the client |
+| Assets | 329 image/script URLs checked (all from the three new/changed pages plus a random sample) — all 200 |
+| Redirects | `/xperiences`, `/xperiences.html`, `/experiences.html`, `/andrea-bocelli-2027(.html)`, `/experiences/andrea-bocelli`, legacy `.html` files, `/about`, `/formula-one` all 301 to the right page |
+| Root files | sitemap.xml (109 URLs incl. both new pages), site.webmanifest, favicon, search script with the six new entries — all served. `robots.txt` is 404 inside the sub-folder, which is expected: robots only applies at the domain root |
+| Native templates | Blog and 404 templates carry the Experiences link in header and footer |
+
+Only differences found: Cloudflare's Email Address Obfuscation rewrites `mailto:` links on the staging domain (`/cdn-cgi/l/email-protection`). Links still work with JavaScript; disable the Cloudflare setting if plain mailto links are preferred.
